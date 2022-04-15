@@ -1,13 +1,14 @@
 body{
 
     font-family: 'Roboto', sans-serif;
-    
+    height: 1400px;
+    width: 100%;    
 }
 
 /* INICIO DO NAVEGADOR */
 header{
  
-   height: 80px;   
+   height: 100px;   
    width: 100%;
    padding: 10px 0px;
     
@@ -296,17 +297,17 @@ footer{
 .container-footer{
     position: relative;
     margin: 0px auto;
-    width: 940px;
+    width: 60%;
     height: 400px;
 }
 
-h2, p, input{
-    position: absolute;
+.container-footer h2, .container-footer p {
+    position: relative;
+    text-align: center;
 }
 
 .container-footer > h2{
     font-size: 1.6em;
-    left: 235px;
     font-weight: bold;
     top: 100px;
     
@@ -314,25 +315,19 @@ h2, p, input{
 
 .container-footer > p{
     color: #6b6d75;
-    left: 250px;
     top: 150px;
 }
 
 .input-email {
     width: 255px;
-    height: 30px;
+    height: 40px;
     top: 200px;
-    left: 270px;
     border-radius: 8px;
     border: 1px solid black;
     padding: 5px 5px;
     display: inline-block;
-}
-
-.botao-menu-footer {
-    position: absolute;
-    top: 200px;
-    left: 540px;
+    position: relative;
+    left: 230px;
 }
 
 .botao-menu-footer {
@@ -342,13 +337,14 @@ h2, p, input{
     font-size: 14px;
     border: none;
     height: 42px;
-    margin-left: 6px;
+    position: absolute;
+    top: 240px;
+    left: 500px;
 }
 
 
 #reservado {
     font-size: 14px;
-    top: 300px;
-    left: 300px;
+    top: 270px;
 }
 
