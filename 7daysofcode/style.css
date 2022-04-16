@@ -1,12 +1,14 @@
 body{
 
     font-family: 'Roboto', sans-serif;
-    height: 1400px;
-    width: 100%;    
+    height: 2800px;
+    width: 100%;   
+    font-weight: 300; 
 }
 
+
 /* INICIO DO NAVEGADOR */
-header{
+.header{
  
    height: 100px;   
    width: 100%;
@@ -23,7 +25,7 @@ header{
      
 }
 
-.logo h1, .logo img, .paginas, .botao-menu input{
+.logo > h1, .logo > img, .paginas, .botao-menu > input{
     position: absolute;
 }
 
@@ -35,18 +37,18 @@ header{
       
 }
 
-.logo img {
+.logo > img {
     
     top: 20px;
 }
 
-.logo h1 {
+.logo > h1 {
     margin-left: 33px;
     top: 30px;
 }
 
 
-.menu-princial li{ 
+.menu-princial > li{ 
 
     display: inline-block; 
     margin-left: 20px;
@@ -61,7 +63,7 @@ header{
 }
 
 
-.menu-princial a {
+.menu-princial > a {
 
     text-decoration: none;
     color: #667085;
@@ -74,7 +76,7 @@ header{
 } 
 
 
-.botao-menu input{
+.botao-menu > input{
 
     height: 35px;
     width: 90px;
@@ -116,9 +118,9 @@ header{
 
 /* MAIN CABEÇALHO-SECTION */
 
-main {
+.main {
     width: 100%;
-    height: 3100px;
+    height: 2750px;
 }
 
 .section-cabecalho{
@@ -130,24 +132,26 @@ main {
       
 }
 
-h2, h3, p {
+  .depoimento > h2, .depoimento > p {
     position: absolute;
     text-align: center;
    
-}
+} 
 
-.section-cabecalho h2{
+.section-cabecalho > h2{
 
     color: #8e2424;
     font-size: 0.9em;
     top: 100px;
-    right: 470px;
-    
+    text-align: center;
+    position: relative;
+    font-weight: 500;
 }
 
-.section-cabecalho h2, .section-cabecalho h3{
 
-    font-weight: bold;
+ .section-cabecalho > h3{
+
+    font-weight: 500;
 
 }
 
@@ -155,8 +159,8 @@ h2, h3, p {
 
     font-size: 2em;
     top: 151px;
-    right: 300px;
-
+    position: relative;
+    text-align: center;
 }
 
 .section-cabecalho > p{
@@ -164,69 +168,194 @@ h2, h3, p {
     color: #8b8d96;
     font-size: 16px;
     line-height: 1.5;
-    top: 227px;
-    left: 158px;
+    top: 215px;
+    position: relative;
+    text-align: center;
 }
 
 
 /* CONTAINER-INF */
 
+
+.container-inf {
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    top: 30px;
+    left: 40px;
+}
+
+h3.itens-titulo{
+    font-weight: 500;
+}
+
+.lista-inf li {
+    display: inline-block;
+    width: 260px;
+    vertical-align: top;
+}
+
+.lista-itens-inf  > h3{
+    font-size: 4em;
+    color: #8e2424;
+}
+
+.lista-itens-inf{
+    padding-left: 10px;
+}
+
+
+p.texto-lista {
+    color: #8b8d96;
+    font-size: 15px;
+}
+
+p.p-inf {
+    font-weight: bold;
+    margin: 10px 0px 10px  0px;
+}
+
+li.lista-itens-inf{
+    margin-left: 20px;
+}
+
 .section-inf {
 
     position: relative;   
-    height: 288px;   
+    height: 270px;   
     width: 100%;
-}
-
-
-.section-inf th{
-
-    color: #8e2424;
-    font-weight: bold;
-    font-size: 2.5em;
-    text-align: left;
-    line-height: 1.7;
-   
-}
-
-table{
-    margin: 0px auto;
-    width: 80%;
-    position: absolute;
-    left: 156px;
-} 
-
-.section-inf tr {
-    line-height: 1.5;
-}
-
-
-.titulo-td {
-
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 2;
-   
-}
-
-.p-td {
-    color: #8b8d96;
-    font-size: 14px;
-    
-}
-
-.titulo-td, .p-td, th {
-    padding-right: 10px;
-
 }
 
 /* SECTION DE VAGAS */
 
 .vagas {
     width: 100%;
-    height: 1798px;
-    background: blue;
+    height: 1500px;
 }
+
+.cabecalho-vagas {
+    width: 80%;
+    height: 485px;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+}
+
+.cabecalho-vagas > h3, .cabecalho-vagas > p {
+    text-align: center;
+    position: relative;
+}
+
+
+.cabecalho-vagas > h2{
+
+    font-size: 0.9em;
+    color: #8e2424;
+    background: #fdf8f8;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    left: 450px;
+}
+
+
+.cabecalho-vagas > h3 {
+    font-weight: 500;
+    font-size: 2em;
+    top: 50px;
+}
+
+.cabecalho-vagas > p {
+  
+    top: 70px;
+    color: #8b8d96;
+}
+
+.cabecalho-vagas > img {
+
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    left: 50px;
+    top: 125px;
+}
+
+.vagas-abertas {
+
+    width: 80%;
+    height: 900px;
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+
+}
+
+.container-vagas-01 {
+    width: 100%;
+    height: 340px;
+}
+
+.primeira-sec {
+    height: 340px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+
+.primeira-sec > ul, .segunda-sec > ul {
+    position: absolute;
+    top: 50px;
+}
+
+li.lista-item {
+    border: 1px solid  #d9dbe2cb;
+    margin-bottom: 10px;
+    line-height: 3;
+    border-radius: 10px;
+    padding: 10px 490px 10px 20px;
+    cursor: pointer;
+    }
+
+    
+li.lista-item:hover {
+    background: #dee1ee;
+}
+
+.lista-item p {
+    display: inline-block;
+    padding-right: 10px;
+    color: #8b8d96;
+
+}
+
+.primeira-sec h3,  .segunda-sec h3{
+    font-weight: 400;
+}
+
+/* SEGUNDO CONTAINER */
+
+.container-vagas-02 {
+    width: 100%;
+    height: 480px;
+}
+
+.segunda-sec {
+    height: 480px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+.segunda-sec > ul {
+    position: absolute;
+    top: 420px;
+}
+
 
 
 
@@ -247,37 +376,37 @@ table{
     color: #8e2424;
     font-size: 0.9em;
     top: 80px;
-    right: 470px;
-    font-weight: bold;
+    font-weight: 500;
+    position: relative;
+
 }
 
-.depoimentoJulia {
+p.depoimentoJulia {
     font-size: 30px;
-    position: absolute;
-    right: 150px;
+    position: relative;
+    text-align: center;
     top: 120px;
 
 }
 
-.depoimento img {
+.depoimento > img {
     height: 60px;
     width: 50px;
     border-radius: 30px;
     position: absolute;
-    top: 240px;
-    left: 560px;
+    top: 320px;
+    left: 580px;
 }
 
-.Colaboradora {
-    position: absolute;
-    left: 540px;
+p.Colaboradora {
+    position: relative;
     top: 330px;
     font-weight: bold;
 }
 
-.cargo {
-    position: absolute;
-    left: 510px;
+p.cargo {
+    position: relative;
+    text-align: center;
     top: 360px;
     color: #8b8d96;
 }
@@ -287,7 +416,7 @@ table{
 /* TAG FOOTER */
 
 
-footer{
+.footer{
     width: 100%;
     height: 400px;
     background: #ececee; 
@@ -301,14 +430,14 @@ footer{
     height: 400px;
 }
 
-.container-footer h2, .container-footer p {
+.container-footer > h2, .container-footer > p {
     position: relative;
     text-align: center;
 }
 
 .container-footer > h2{
     font-size: 1.6em;
-    font-weight: bold;
+    font-weight: 500;
     top: 100px;
     
 }
@@ -340,6 +469,11 @@ footer{
     position: absolute;
     top: 240px;
     left: 500px;
+}
+
+.botao-cadastrar:hover {
+    background:#b84848;
+    
 }
 
 
