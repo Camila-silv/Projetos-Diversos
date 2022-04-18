@@ -1,0 +1,251 @@
+
+@media screen and (max-width: 1500px){
+    .closebtn {
+        /* color: #66708500; */
+        cursor: none;
+        right: 9999px;
+        position: absolute;
+    }
+
+    .nav-button{
+        /* color: #66708500; */
+        cursor: none;
+        right: 9999px;
+        position: absolute;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .main {
+        height: 2440px;
+    }
+    
+    .caixa {
+        width: 400px;
+    }
+
+    .nav-button {
+        border: 0px;
+        border-radius: 4px;
+        padding: 8px;
+        right: 0px;
+        position: absolute;
+        margin: 20px 10px;
+        cursor: pointer;
+    }
+
+    .overlay {
+        height: 100%;
+        background-color: rgb(0,0,0, 0.9);
+        z-index: 9;
+        position: fixed;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+
+    .paginas {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+        width: 150px;
+    }
+
+    .botao-menu {
+        position: absolute;
+        height: 100px;
+        width: 200px;
+        right:70px;
+        top: 220px;
+    }
+
+    .closebtn {
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        color: #667085;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .paginas li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .section-cabecalho {
+        width: 400px;
+        height: 220px;
+    }
+
+    .section-cabecalho h2{
+        top: 30px;
+    }
+
+    .section-cabecalho h3{
+        top: 50px;
+        font-size: 1.5em;
+    }
+
+    .section-cabecalho p{
+        top: 80px;
+        font-size: 14px;
+    }
+
+
+    .lista-itens-inf {
+        margin-top: 20px;
+    }
+
+    .lista-itens-inf h3 {
+        font-size: 2em;
+    }
+
+    .section-inf {
+        height: 580px;
+    }
+
+    .container-inf {
+        left: 0px;
+    }
+
+    .vagas {
+        height: 1280px;
+        margin-top: 20px;
+    }
+
+    .cabecalho-vagas {
+        height: 420px;
+        width: 90%;
+        top: 0px;
+    }
+
+    .cabecalho-vagas  h2{
+        left: 120px;
+        font-size: 0.8em;
+        top: 10px;
+    }
+
+    .cabecalho-vagas  h3{
+        
+        font-size: 1em;
+    }
+
+    .cabecalho-vagas p {
+        font-size: 15px;
+        top: 90px;
+    }
+
+    .cabecalho-vagas img {
+        width: 100%;
+        height: 200px;
+        left: 0px;
+    }
+
+    .vagas-abertas {
+        height: 600px;
+        top: 0px;
+        margin-top: 20px;
+    }
+
+    li.lista-item {
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .vagas-abertas h3{
+        font-size: 0.9em;
+    }
+
+    .vagas-abertas p{
+        font-size: 13px;
+    }
+
+    .primeira-sec {
+        height: 320px;
+    }
+
+    .segunda-sec {
+        height: 420px;
+    }
+
+
+    .depoimento {
+        margin-bottom: 10px;
+        width: 90%;
+        height: 290px;
+    }
+
+    .depoimento h2{
+        font-size: 0.7em;
+        top: 50px;
+    }
+
+    .depoimento p{
+        font-size: 14px;
+        margin: 0px 10px;
+        top: 90px;
+    }
+
+    .depoimento img{
+        left: 160px;
+        height: 40px;
+        top: 170px;
+
+    }
+
+    p.Colaboradora {
+        top: 170px;
+        left: 1px;
+        font-size: 13px;
+    }
+
+    p.cargo {
+        top: 180px;
+    }
+
+
+
+    .footer {
+        height: 300px;
+    }
+
+
+    .container-footer {
+        width: 80%;
+        height: 300px;
+    }
+
+    .container-footer h2{
+        top: 20px;
+        font-size: 1.2em;
+    }
+
+    .container-footer p{
+       font-size: 13px;
+       top: 100px;
+    }
+
+    .input-email {
+        width: 200px;
+        left: 10px;
+        top: 150px;
+    }
+
+    .botao-menu-footer{
+        
+        left: 220px;
+        top: 194px;
+    }
+
+    #reservado {
+        font-size: 10px;
+        top: 200px;
+    }
+
+
+
+}
