@@ -1,0 +1,12 @@
+.contato-form__form {
+    height: 42px;
+    width: 288px;
+    display: flex;
+}
+
+@media screen and (max-width:480px) {
+    .contato-form__form {
+        width: 100%;
+    }
+    
+}

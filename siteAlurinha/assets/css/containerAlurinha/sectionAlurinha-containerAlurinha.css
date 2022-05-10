@@ -1,0 +1,15 @@
+.section-alurinha__container-alurinha {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+
+@media screen and (max-width:480px)  {
+    .section-alurinha__container-alurinha {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+}

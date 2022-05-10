@@ -1,0 +1,5 @@
+@media screen and (max-width:480px) {
+    .container__topicos {
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.rodape__patrocinadores {
+    background-color: #F2F5F7;
+    height: 107px;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .rodape__patrocinadores {
+       flex-direction: column;
+       height: 300px;
+    }
+}

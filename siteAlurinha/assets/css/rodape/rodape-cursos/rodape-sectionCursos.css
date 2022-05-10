@@ -1,0 +1,11 @@
+.rodape__section-cursos {
+    background-color: #324C64;
+    height: 350px;
+}
+
+@media screen and (max-width:480px) {
+    .rodape__section-cursos {
+        
+        height: 870px;
+    }
+}

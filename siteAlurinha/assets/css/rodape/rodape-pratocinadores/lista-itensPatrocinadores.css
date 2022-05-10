@@ -1,0 +1,9 @@
+
+@media screen and (max-width:480px) {
+    .lista__itens-patrocinadores {
+        margin-bottom: 20px;
+        width: 50%;
+        text-align: center;
+    }
+}
+

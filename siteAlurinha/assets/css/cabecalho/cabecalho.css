@@ -1,0 +1,10 @@
+.cabecalho {
+    height: 80px;
+    width: 100%;
+}
+
+@media screen and (max-width:480px) {
+    .cabecalho {
+        height: 340px;
+    }
+}

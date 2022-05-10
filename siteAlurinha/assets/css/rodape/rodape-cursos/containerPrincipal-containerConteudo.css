@@ -1,0 +1,14 @@
+.container-principal__container-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:480px) {
+
+    .container-principal__container-conteudo {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+}

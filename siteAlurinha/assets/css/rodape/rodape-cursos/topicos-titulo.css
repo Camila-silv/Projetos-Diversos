@@ -1,0 +1,26 @@
+.topicos__titulo {
+    font-size: 20px;
+    margin: 15px 0px 15px 0px;
+    padding-left: 6px;
+    font-weight: bold;
+}
+
+.topicos__titulo-backend {
+    color: #25D285;
+    border-left: 4px solid #25D285;
+}
+
+.topicos__titulo-frontend {
+    color: #5EC6F3;
+    border-left: 4px solid #5EC6F3;
+}
+
+.topicos__titulo-frameworks {
+    color: #AD85BF;
+    border-left: 4px solid #AD85BF;
+}
+
+.topicos__titulo-BD {
+    color: #EC6E5A;
+    border-left: 4px solid #EC6E5A;
+}

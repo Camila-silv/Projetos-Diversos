@@ -1,0 +1,19 @@
+.container-alurinha__video {
+    width: 50%;
+    margin-right: 40px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width:480px) {
+    .container-alurinha__video {
+        width: 90%;
+        margin: 1%;
+        margin-top: 30px;
+        flex-grow: 1;
+    }
+
+    iframe {
+        width: 100%;
+        height: 315p;
+    }
+}

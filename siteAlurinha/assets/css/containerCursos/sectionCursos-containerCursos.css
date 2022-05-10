@@ -1,0 +1,15 @@
+.section-cursos__container-cursos {
+    padding-top: 23px;
+    width: 80%;
+    margin: 0 auto;
+    height: 680px;
+}
+
+@media screen and (max-width:480px) {
+    .section-cursos__container-cursos {
+        padding-top: 23px;
+        width: 90%;
+        margin: 0 auto;
+        height: 2400px;
+    }
+}

@@ -1,0 +1,8 @@
+.form__input-botao {
+    background-color: #4DBA7A;
+    color: #fff;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    width: 54px;
+    cursor: pointer;
+}

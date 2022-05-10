@@ -1,0 +1,14 @@
+.patrocinadores__contato-form {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+}
+
+@media screen and (max-width:480px) {
+    .patrocinadores__contato-form {
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+}

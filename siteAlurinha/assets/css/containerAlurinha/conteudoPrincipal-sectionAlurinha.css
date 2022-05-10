@@ -1,0 +1,19 @@
+.conteudo-principal__section-alurinha {
+    background-color: #5E9EDC;
+    margin-bottom: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:480px) {
+    .conteudo-principal__section-alurinha {
+        background-color: #5E9EDC;
+        margin-bottom: 20px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}

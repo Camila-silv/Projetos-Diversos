@@ -1,0 +1,23 @@
+.container-alurinha__container-vantagens {
+   
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 315px;
+    width: 50%;
+    flex-grow: 1;
+}
+
+@media screen and (max-width:480px) {
+    .container-alurinha__container-vantagens {
+   
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: 315px;
+        width: 100%;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,8 @@
+.form__input-email {
+    border: 1px solid #4DBA7A;
+    border-radius: 5px 0px 0px 5px;
+    width: 190px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: 0;
+}

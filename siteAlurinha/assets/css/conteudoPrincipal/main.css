@@ -1,0 +1,10 @@
+:root{
+    --branco: #FFFFFF ;
+}
+
+.corpo-pagina {
+    background-color: var(--branco);
+    font-family: 'Open Sans', sans-serif;
+    height: 1635px;
+    width: 100%;
+}

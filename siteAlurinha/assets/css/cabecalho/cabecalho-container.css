@@ -1,0 +1,15 @@
+.cabecalho__container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+@media screen and (max-width:480px) {
+    .cabecalho__container {
+        flex-direction: column;
+        width: 100%;
+    }
+}

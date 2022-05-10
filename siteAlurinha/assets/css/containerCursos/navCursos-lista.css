@@ -1,0 +1,5 @@
+.nav-cursos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
