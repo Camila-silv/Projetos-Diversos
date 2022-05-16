@@ -1,0 +1,5 @@
+.container-sobre__conteudo {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+}

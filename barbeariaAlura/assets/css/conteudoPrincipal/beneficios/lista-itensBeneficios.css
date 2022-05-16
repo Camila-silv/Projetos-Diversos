@@ -1,0 +1,15 @@
+.lista__itens-beneficios::before {
+    content: "★";
+}
+
+
+
+.lista__itens-beneficios {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.lista__itens-beneficios:nth-child(1){
+    font-weight: 400;
+}

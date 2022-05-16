@@ -1,0 +1,8 @@
+.lista__preco-produto {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lista__preco-produto:hover {
+    text-decoration: underline;
+}

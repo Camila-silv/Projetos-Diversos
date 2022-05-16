@@ -1,0 +1,6 @@
+.section-produtos__container-produtos {
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    justify-content: space-around;
+}

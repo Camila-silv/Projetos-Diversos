@@ -1,0 +1,13 @@
+.menu-principal__link {
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.menu-principal__link:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
