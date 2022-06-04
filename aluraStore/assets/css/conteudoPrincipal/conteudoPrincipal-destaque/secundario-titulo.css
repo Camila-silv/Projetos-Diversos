@@ -1,0 +1,10 @@
+.secundario__titulo {
+   
+    color: var(--branco);
+    font-size: 1.438rem;
+    background-color: var(--transparente);
+    text-align: center;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    font-weight: bold;
+}

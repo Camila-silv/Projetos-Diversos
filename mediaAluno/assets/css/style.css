@@ -1,0 +1,153 @@
+:root {
+    --cinza: #eeeeec;
+    --branco: #FFFFFF;
+    --laranja: #FFD345;
+}
+
+.body {
+    background-color: var(--cinza);
+    font-family: 'Titillium Web', sans-serif;
+    height: 900px;
+    width: 100%;
+    position: fixed;
+}
+
+.main {
+    width: 45%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    height: 375px;
+    background-color: var(--branco);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.021);
+}
+
+.secCalcularMedia {
+    height: 400px;
+   
+}
+
+.container-cabecalho {
+    background-color: var(--laranja);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container-cabecalho > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bangers', cursive;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.7em;
+}
+
+.container-cabecalho > .fa-solid {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.container-cabecalho > .fa-solid:hover{
+    color: var(--cinza);
+}
+
+.container-cabecalho > .fa-minus {    
+    left: 20px;
+    
+}
+
+.container-cabecalho > .fa-circle-info {
+    left: 50px;
+}
+
+.container-media {
+    margin: 50px 15px 0px 15px;
+    position: relative;
+    height: 150px;
+    
+}
+
+.sub-container-string{
+   
+    height: 150px;
+    position: absolute;
+    left: 60px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.sub-container-string > label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.mediaString {
+    font-size: 20px;
+}
+
+.entradaDeMedia {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.sub-container-entrada {
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    padding: 10px 20px 0px 20px;
+
+}
+
+.sub-container-entrada > input {
+    display: block;
+        
+}
+
+.sub-container-entrada > input:focus {
+    background-color: var(--cinza);    
+}
+
+
+.container-botao {
+    height: 50px;
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container-botao > .botao {
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    transition: .5s;
+}
+
+.container-botao > .botao:hover {
+    background-color:#f8c620;
+
+}
+
+.containerFooter {
+    background-color: #cececb;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+   
+}
+
+.containerFooter > p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#YHWH {
+    display: none;    
+}

@@ -1,0 +1,13 @@
+.lista__itens-principal {
+    margin-left: 25px;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 3px solid var(--cinza);
+}
+
+.lista__itens-principal:nth-child(1) {
+    margin-left: 0px;
+}
+
+.lista__itens-principal:hover{
+    border-bottom: 3px solid var(--azul) ;
+}

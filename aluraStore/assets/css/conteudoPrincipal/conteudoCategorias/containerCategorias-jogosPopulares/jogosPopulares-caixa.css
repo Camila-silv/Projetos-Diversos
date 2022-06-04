@@ -1,0 +1,4 @@
+.jogos-populares__caixa {
+    display: flex;
+    justify-content: space-between;
+}

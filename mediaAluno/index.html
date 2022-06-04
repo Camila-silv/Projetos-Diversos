@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <link rel="shortcut icon" href="ICON/icon.png" type="image/x-icon">
 
     <!-- FONTES -->
@@ -30,6 +31,7 @@
                     <form>
 
                         <div class="sub-container-string">
+
                             <label for="media1" class="mediaString">Insira a primeira nota:</label>
 
                             <label for="media2" class="mediaString">Insira a segunda nota:</label>
@@ -43,10 +45,10 @@
                 
                         <div class="sub-container-entrada">
 
-                            <input type="text" id="media1" class="entradaDeMedia">
-                            <input type="text" id="media2" class="entradaDeMedia">
-                            <input type="text" id="media3" class="entradaDeMedia">
-                            <input type="text" id="media4" class="entradaDeMedia">
+                            <input type="text" class="entradaDeMedia nota1">
+                            <input type="text" class="entradaDeMedia nota2">
+                            <input type="text" class="entradaDeMedia nota3">
+                            <input type="text" class="entradaDeMedia nota4">
 
                         </div>
                     </form>
@@ -56,7 +58,7 @@
             </div>
 
             <div class="container-botao">
-                <button class="botao">Calcular</button>
+                <button class="botao" onclick="calcularMedia()">Calcular</button>
             </div>
 
             <footer class="containerFooter">
@@ -66,7 +68,7 @@
     </main>
 
 
-    <p id="YHWH">YHWH</p>
     <script src="https://kit.fontawesome.com/de114e8a58.js" crossorigin="anonymous"></script>
+    <script src="/assets/javascript/main.js"></script>
 </body>
 </html>

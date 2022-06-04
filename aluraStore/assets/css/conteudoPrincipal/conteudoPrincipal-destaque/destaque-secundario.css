@@ -1,0 +1,30 @@
+.destaque__secundario:nth-child(2){
+    background-image: url("../../../img/pubg.jpg");
+    grid-column: 4/4;
+    grid-row: 1/2;
+}
+
+.destaque__secundario:nth-child(3){
+    background-image: url("../../../img/slack.png");
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.destaque__secundario:nth-child(4){
+    background-image: url("../../../img/whatsapp.png");
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.destaque__secundario:nth-child(5){
+    background-image: url("../../../img/cs-go.jpg");
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.destaque__secundario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+

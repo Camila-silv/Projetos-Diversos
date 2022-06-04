@@ -1,0 +1,7 @@
+.blocos__paragrafo {
+    text-align: justify;
+    font-size: 0.813rem;
+    line-height: 1.063rem;
+    padding-bottom: 30px;
+    grid-area: corpo-card;
+}

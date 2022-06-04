@@ -1,0 +1,6 @@
+.cabecalho-principal {
+    grid-area: cabecalho;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
