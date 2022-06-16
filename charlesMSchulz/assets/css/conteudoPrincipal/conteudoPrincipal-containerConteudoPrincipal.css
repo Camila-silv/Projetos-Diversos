@@ -1,0 +1,6 @@
+.conteudo-principal__container-conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--largura-padrao);
+}

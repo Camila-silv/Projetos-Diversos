@@ -1,0 +1,17 @@
+.inf-sobre-autor__caixa-inf {
+    flex: 1;
+    padding: 0rem 1.25rem;
+}
+
+.inf-sobre-autor__caixa-inf__img {
+    background-image: url("https://cdn.storyasset.link/7IqpTP4VMIfCcCmDg3agwlHcBYB3/Peanuts-gang-ms-cdsdfybjge.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15.625rem;
+}
+
+.inf-sobre-autor__caixa-inf__parag {
+    font-size: 1.188rem;
+    text-align: justify;
+}

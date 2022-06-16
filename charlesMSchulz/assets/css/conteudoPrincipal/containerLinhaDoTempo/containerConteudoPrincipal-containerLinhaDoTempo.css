@@ -1,0 +1,11 @@
+.container-conteudo-principal__container-linha-do-tempo {
+    background-color: var(--cinza);
+    border: 0.188rem dashed #000;
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    border-radius: 1.25rem;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
