@@ -42,7 +42,7 @@
 
 <div align="left">
   <h2>Autor</h2>
-  <img border-radius="50%" src="https://media-exp1.licdn.com/dms/image/C4D03AQE_-h4ESFKeww/profile-displayphoto-shrink_200_200/0/1646939930529?e=1655337600&v=beta&t=RHeY_7gbyD7Z1qbmwUwDMxnpvdGtf-38idJV3QsPCT0" width="100px" alt=""/>
+  <img border-radius="50%" src="https://media-exp1.licdn.com/dms/image/C4D03AQE_-h4ESFKeww/profile-displayphoto-shrink_200_200/0/1646939930529?e=1660780800&v=beta&t=P2XuPgLpmNdAprz8cmFanad1rzXMLOeNZyDqce4Utlw" width="100px" alt=""/>
   <p>Feito por Camila Silva 🚀!</p>
   <a href = "mailto:cf.silv466@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/camila-silva-2064681b5/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
