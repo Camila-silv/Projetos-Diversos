@@ -1,0 +1,18 @@
+.bloco-conteudo-rodape__img {
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bloco-conteudo-rodape__img--01 {
+    background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/45279/1549910747/%242gbjrqdcqs2");
+}
+
+.bloco-conteudo-rodape__img--02 {
+    background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/45279/1549910747/%244x2bqprih2b");
+}
+
+.bloco-conteudo-rodape__img--03 {
+    background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/45279/1549910747/%247www4pin7c");
+}

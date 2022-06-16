@@ -1,0 +1,7 @@
+.bloco-conteudo-rodape__parag {
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 60px;
+    font-size: 1rem;
+    color: var(--parag-rodape);
+}

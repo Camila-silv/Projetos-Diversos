@@ -1,0 +1,6 @@
+.conteudo-principal__container-conteudo-principal {
+    width: var(--largura-base);
+    display: flex;
+    padding: 60px 0px;
+    justify-content: space-between;
+}
