@@ -1,0 +1,14 @@
+.formulario__lbl-form {
+    color: var(--itens-form);
+    font-size: 1rem;
+    padding: 15px 0px;
+}
+
+.formulario__lbl-form--padding {
+    padding: 5px 0px;
+}
+
+.formulario__lbl-form--altura-linha {
+    line-height: 25px;
+}
+

@@ -1,0 +1,7 @@
+.container-conteudo-principal__bloco-form {
+   width: 500px;
+    background-color: var(--cinza);
+    border-radius: 3%;
+    padding: 40px 40px;
+    
+}

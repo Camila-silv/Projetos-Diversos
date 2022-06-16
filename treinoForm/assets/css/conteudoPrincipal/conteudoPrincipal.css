@@ -1,0 +1,6 @@
+.conteudo-principal {
+    background-color: var(--azul-claro);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
