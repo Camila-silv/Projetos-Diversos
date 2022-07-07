@@ -1,0 +1,18 @@
+.container-conteudo-principal__input-pesquisar {
+    width: 550px;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 25px 0px;
+    border-radius: 25px;
+    border: 1px solid #bebdbd;
+    outline: none;
+}
+
+.container-conteudo-principal__input-pesquisar:hover{
+    box-shadow: 2px 2px 5px rgb(189, 187, 187);
+}
+
+.container-conteudo-principal__input-pesquisar:focus {
+    box-shadow: 2px 2px 5px rgb(189, 187, 187);
+}

@@ -1,0 +1,9 @@
+.container-negocios__link-container-negocios {
+    color: var(--cinza-escuro);
+    text-decoration: none;
+}
+
+.container-negocios__link-container-negocios:hover {
+ text-decoration: underline;
+}
+

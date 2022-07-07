@@ -1,0 +1,6 @@
+.rodape-principal {
+    grid-area: rodape-principal;
+    background-color: var(--cinza-branco);
+    display: flex;
+    justify-content: center;
+}

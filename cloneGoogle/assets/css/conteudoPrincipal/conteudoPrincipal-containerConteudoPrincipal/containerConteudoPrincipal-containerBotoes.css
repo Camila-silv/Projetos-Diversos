@@ -1,0 +1,4 @@
+.container-conteudo-principal__container-botoes {
+    display: flex;
+    gap:15px;
+}

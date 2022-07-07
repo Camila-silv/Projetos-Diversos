@@ -1,0 +1,5 @@
+.form-pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

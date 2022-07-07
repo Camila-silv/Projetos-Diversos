@@ -1,0 +1,21 @@
+:root {
+    --preto-claro: #202124;
+    --preto: #000000;
+    --cinza: #F2F2F2;
+    --cinza-branco: #F8F9FA;
+    --cinza-escuro: #81858A;
+    --azul: #2B7DE9;
+    --branco: #FFFFFF;
+
+    --largura-base: 95%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho-principal"
+    "conteudo-principal"
+    "rodape-principal";
+    grid-template-rows: auto calc(100vh - 171px) auto;
+    font-family: Arial, Helvetica, sans-serif;
+}

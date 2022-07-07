@@ -1,0 +1,8 @@
+.container-config__link-container-config {
+    color: var(--cinza-escuro);
+    text-decoration: none;
+}
+
+.container-config__link-container-config:hover {
+    text-decoration: underline;
+}
