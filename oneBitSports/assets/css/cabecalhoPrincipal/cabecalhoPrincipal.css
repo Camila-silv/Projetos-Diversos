@@ -1,0 +1,7 @@
+.cabecalho-principal {
+    background-color: var(--cinza-escuro);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+.container-outros-conteudos__extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-outros-conteudos__extras:hover .extras__parag{
+    text-decoration: underline;
+}

@@ -1,0 +1,4 @@
+.container-cabecalho-principal__img {
+    height: 40px;
+    grid-area: cabecalho;
+}

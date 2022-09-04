@@ -1,0 +1,9 @@
+.rodape {
+    grid-area: rodape;
+    background-color: var(--cinza-escuro);
+    margin-top: 20px;
+    min-height: 40px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}

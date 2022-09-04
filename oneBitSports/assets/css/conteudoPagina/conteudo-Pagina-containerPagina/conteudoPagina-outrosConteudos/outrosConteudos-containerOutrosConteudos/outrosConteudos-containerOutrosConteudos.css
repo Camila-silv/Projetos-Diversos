@@ -1,0 +1,13 @@
+.outros-conteudos__container-outros-conteudos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0px;
+    padding: 0px 20px;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 630px){
+    .outros-conteudos__container-outros-conteudos{
+        min-width: auto;
+    }
+}

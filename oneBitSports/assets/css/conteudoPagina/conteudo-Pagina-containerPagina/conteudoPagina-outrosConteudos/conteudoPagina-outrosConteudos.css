@@ -1,0 +1,8 @@
+.conteudo-pagina__outros-conteudos {
+    grid-area: outros-conteudos;
+    background-color: var(--cinza);
+    color: var(--branco);
+    width: 100%;
+    height: 100%;
+}
+

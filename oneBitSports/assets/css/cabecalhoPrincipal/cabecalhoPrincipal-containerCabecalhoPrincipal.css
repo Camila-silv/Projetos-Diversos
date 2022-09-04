@@ -1,0 +1,14 @@
+.cabecalho-principal__container-cabecalho-principal {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+@media screen and (max-width: 456px){
+    .cabecalho-principal__container-cabecalho-principal {
+        justify-content: center;
+    }
+}
