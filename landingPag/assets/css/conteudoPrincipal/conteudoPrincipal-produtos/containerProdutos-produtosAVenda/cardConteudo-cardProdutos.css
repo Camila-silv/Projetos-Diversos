@@ -1,0 +1,7 @@
+.card-conteudo__card-produtos {
+   height: auto;
+   display: grid;
+   grid-template-areas: 
+   "card-cabecalho-produtos"
+   "card-corpo-produtos";
+}

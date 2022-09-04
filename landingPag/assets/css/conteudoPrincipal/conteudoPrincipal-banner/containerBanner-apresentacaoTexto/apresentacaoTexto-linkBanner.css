@@ -1,0 +1,8 @@
+.apresentacao-texto__link-banner {
+    border: 1px solid var(--branco);
+    padding: 10px;
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

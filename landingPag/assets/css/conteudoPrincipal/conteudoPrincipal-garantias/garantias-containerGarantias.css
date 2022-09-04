@@ -1,0 +1,6 @@
+.garantias__container-garantias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 5px;
+}

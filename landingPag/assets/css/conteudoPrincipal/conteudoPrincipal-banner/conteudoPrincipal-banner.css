@@ -1,0 +1,11 @@
+.conteudo-principal__banner {
+    background-image: url("../../../img/fundoBanner-01.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-area: banner;
+}

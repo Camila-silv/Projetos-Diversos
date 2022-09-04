@@ -1,0 +1,13 @@
+:root{
+    --azul-claro: #20A3DC;
+    --branco: #FFFFFF;
+    --cinza: #d6d6d4;
+    --vermelho: #e34036;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo-principal";
+}

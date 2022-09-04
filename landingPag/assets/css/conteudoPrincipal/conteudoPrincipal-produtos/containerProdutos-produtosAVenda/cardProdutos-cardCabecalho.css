@@ -1,0 +1,9 @@
+.card-produtos__card-cabecalho {
+    grid-area: card-cabecalho-produtos;
+    display: flex;
+    justify-content: center;
+}
+
+.card-cabecalho__img-produtos {
+    height: 200px;
+}

@@ -1,0 +1,13 @@
+.card-conteudo__etiqueta {
+    color: var(--branco);
+}
+
+.etiqueta__frase {
+    background-color: var(--vermelho);
+    border-radius: 15px;
+    padding: 10px 5px;
+    font-size: 12px;
+    margin: 10px;
+    text-align: center;
+    width: 26%;
+}

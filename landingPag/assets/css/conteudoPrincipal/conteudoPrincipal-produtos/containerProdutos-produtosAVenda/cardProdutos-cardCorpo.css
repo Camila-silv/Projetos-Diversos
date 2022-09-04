@@ -1,0 +1,6 @@
+.card-produtos__card-corpo {
+    text-align: center;
+    padding: 30px 30px;
+    grid-area: card-corpo-produtos;
+    background-color: var(--branco);
+}

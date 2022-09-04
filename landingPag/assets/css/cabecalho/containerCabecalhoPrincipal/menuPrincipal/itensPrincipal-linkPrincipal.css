@@ -1,0 +1,6 @@
+.itens-principal__link-principal {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}

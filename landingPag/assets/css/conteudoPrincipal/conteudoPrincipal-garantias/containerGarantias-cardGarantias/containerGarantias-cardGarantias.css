@@ -1,0 +1,8 @@
+.container-garantias__card-garantias {
+    display: grid;
+    grid-template-areas: 
+    "card-cabecalho"
+    "card-corpo";
+    flex: 1;
+
+}

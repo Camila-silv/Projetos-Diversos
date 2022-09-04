@@ -1,0 +1,4 @@
+.container-produtos__produtos-a-venda {
+    display: flex;
+    justify-content: space-between;
+}
