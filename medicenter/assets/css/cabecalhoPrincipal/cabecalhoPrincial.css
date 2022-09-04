@@ -1,0 +1,12 @@
+.cabecalho-princial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 6.25rem;
+}
+
+@media screen and (max-width: 900px){
+    .cabecalho-princial{
+        height: 120px;
+    }
+}

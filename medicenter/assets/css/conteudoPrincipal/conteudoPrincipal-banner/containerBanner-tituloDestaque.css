@@ -1,0 +1,16 @@
+.container-banner__titulo-destaque {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--branco);
+}
+
+
+@media screen and (max-width: 600px){
+
+    .container-banner__titulo-destaque {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

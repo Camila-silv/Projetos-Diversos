@@ -1,0 +1,10 @@
+.lista-hr-estabelecimento__itens-hr-estabelecimento {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--cinza-escuro);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+}

@@ -1,0 +1,18 @@
+.cabecalho-principal__container-cabecalho-principal {
+    width: var(--largura-base);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px){
+    .cabecalho-principal__container-cabecalho-principal{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho-principal__container-cabecalho-principal{
+        flex-direction: row;
+    }
+}

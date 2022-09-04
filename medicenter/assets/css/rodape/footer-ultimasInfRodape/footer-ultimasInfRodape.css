@@ -1,0 +1,12 @@
+.footer__ultimas-inf-rodape {
+    width: var(--largura-base);
+    justify-content: center;
+    color: var(--branco);
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    .footer__ultimas-inf-rodape{
+        flex-direction: column;
+    }
+}

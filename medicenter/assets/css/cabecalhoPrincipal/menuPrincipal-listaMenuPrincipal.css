@@ -1,0 +1,17 @@
+@media screen and (min-width: 600px){
+
+    .menu-principal__lista-menu-principal {
+        display: flex;
+        
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .menu-principal__lista-menu-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+}

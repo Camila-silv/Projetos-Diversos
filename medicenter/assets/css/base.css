@@ -1,0 +1,19 @@
+:root{
+    --azul-claro: #00ABE4;
+    --branco: #fff;
+    --cinza-escuro: #727272;
+
+    --borda-footer: #2c2c2c;
+
+    --banner-cor-1: #39aae1;
+    --banner-cor-2: #0079c7;
+    --banner-cor-3: #2b4c99;
+
+    --largura-base: 95%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--branco);
+}
+

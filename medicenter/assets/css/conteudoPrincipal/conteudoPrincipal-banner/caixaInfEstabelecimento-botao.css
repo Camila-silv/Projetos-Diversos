@@ -1,0 +1,19 @@
+.caixa-inf-estabelecimento__botao {
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 7px;
+    transition: background-color .2s linear;
+}
+
+.caixa-inf-estabelecimento__botao > .fa-arrow-right-long {
+    font-size: 10px;
+}
+
+.caixa-inf-estabelecimento__botao:hover{
+    background-color: #3d92bd;
+}

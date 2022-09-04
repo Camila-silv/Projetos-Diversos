@@ -1,0 +1,19 @@
+.lista-menu-principal__itens-menu-principal {
+    font-size: 1.063rem;
+    text-transform: uppercase;
+       
+}
+
+@media screen and (max-width: 600px){
+    .lista-menu-principal__itens-menu-principal{
+        margin-bottom: 30px;
+       
+    }
+}
+
+@media screen and (max-width: 900px){
+    .lista-menu-principal__itens-menu-principal{
+        font-size: 14px;
+    }
+}
+

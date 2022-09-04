@@ -1,0 +1,15 @@
+.itens-menu-principal__link-menu-principal {
+    border: 0.063rem solid rgba(0, 0, 0, 0);
+    padding: 0.625rem;
+    margin-left: 0.125rem;
+    transition: background-color .4s;
+    border-radius: 0.188rem;
+    color: var(--cinza-escuro);
+    text-decoration: none;
+}
+
+.itens-menu-principal__link-menu-principal--ativo, .itens-menu-principal__link-menu-principal:hover {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+}
+

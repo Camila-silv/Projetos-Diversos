@@ -1,0 +1,5 @@
+@media screen and (max-width: 900px){
+    .container-cabecalho-principal__logo {
+        margin-top: 20px;
+    }
+}

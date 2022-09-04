@@ -1,0 +1,11 @@
+.container-banner__inf-estabelecimento {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width: 600px){
+    .container-banner__inf-estabelecimento{
+        height: auto;
+        flex-direction: column;
+    }
+}

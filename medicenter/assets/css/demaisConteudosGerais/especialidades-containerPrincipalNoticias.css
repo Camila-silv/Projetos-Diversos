@@ -1,0 +1,13 @@
+.especialidades__container-principal-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width: 600px){
+
+    .especialidades__container-principal-noticias{
+        flex-direction: column;
+    }
+
+}

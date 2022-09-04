@@ -1,0 +1,10 @@
+.demais-conteudos-gerais__container {
+    width: var(--largura-base);
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    .demais-conteudos-gerais__container{
+        flex-direction: column;
+    }
+}

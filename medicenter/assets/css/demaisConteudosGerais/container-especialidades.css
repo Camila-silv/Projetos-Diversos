@@ -1,0 +1,6 @@
+.container__especialidades {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+

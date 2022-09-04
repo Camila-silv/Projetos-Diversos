@@ -1,0 +1,24 @@
+.menu__itens {
+    flex: 1;
+}
+
+.menu__itens--fundo1 {
+    background-color: var(--banner-cor-1);
+}
+
+.menu__itens--fundo2 {
+    background-color: var(--banner-cor-2);
+}
+
+.menu__itens--fundo3 {
+    background-color: var(--banner-cor-3);
+}
+
+.menu__itens--fundo1, .menu__itens--fundo2, .menu__itens--fundo3 {
+    transition: background-color .3s linear;
+} 
+
+.menu__itens--fundo1:hover , .menu__itens--fundo2:hover, .menu__itens--fundo3:hover {
+    background-color: #3d92bd ;
+}
+

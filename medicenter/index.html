@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/cabecalhoPrincial.css">
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/cabecalhoPrincipal-containerCabecalhoPrincipal.css">
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/containerCabecalhoPrincipal-logo.css">
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/containerCabecalhoPrincipal-menuPrincipal.css">
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/listaMenuPrincipal-itensMenuPrincipal.css">
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/menuPrincipal-listaMenuPrincipal.css">
+    <link rel="stylesheet" href="./assets/css/cabecalhoPrincipal/itensMenuPrincipal-linkMenuPrincipal.css">
+
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/banner-containerBanner.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/caixaInfEstabelecimento-paragsBanner.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/caixaInfEstabelecimento-titulosBanner.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/containerBanner-infEstabelecimento.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/conteudoPrincipal-banner.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/infEstabelecimento-caixaInfEstabelecimento.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/caixaInfEstabelecimento-listaHrEstabelecimento.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/listaHrEstabelecimento-itensHrEstabelecimento.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/tituloDestaque-paragBanner.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/tituloDestaque-tituloBanner.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/containerBanner-tituloDestaque.css">
+    <link rel="stylesheet" href="./assets/css/conteudoPrincipal/conteudoPrincipal-banner/caixaInfEstabelecimento-botao.css">
+
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/demaisConteudosGerais.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/demaisConteudosGerais-container.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/container-especialidades.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/container-infDemaisAssuntos.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/especialidades-containerPrincipalNoticias.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/containerPrincipalNoticias-caixaNoticia.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/titulos.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/caixaNoticia-img.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/caixaNoticia-tituloNoticia.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/caixaNoticia-parags.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/caixasSetores-janelas.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/departamentos-caixasSetores.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/contatosMedicenter-parag.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/contatosGerais-meiosContatos.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/departamentos-contatosMedicenter.css">
+    <link rel="stylesheet" href="./assets/css/demaisConteudosGerais/contatosMedicenter-contatosGerais.css">
+
+    <link rel="stylesheet" href="./assets/css/rodape/footer.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-menu/footer-menu.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-menu/menu-itens.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-menu/itens-linksMenuRodape.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-menu/linksMenuRodape-titulo.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-menu/linksMenuRodape-parags.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-menu/faSolid-tamanho.css">
+
+
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/footer-ultimasInfRodape.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/ultimasInfRodape-itensUltimmasInf.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/itensUltimmasInf-titulo.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/primeiroBloco/itensUltimmasInf-parag.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/primeiroBloco/itensUltimmasInf-enderecoClinicaContato.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/primeiroBloco/enderecoClinicaContato-containerClinica.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/primeiroBloco/containerClinica-contatos.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/primeiroBloco/itensUltimmasInf-redesSociais.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/primeiroBloco/redesSociais-icones.css">
+
+
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/segundoBloco/containerBloco2-data.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/segundoBloco/containerBloco2-parag.css">
+
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/terceiroBloco/containerBloco3-data.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-ultimasInfRodape/terceiroBloco/containerBloco3-parag.css">
+
+
+    <link rel="stylesheet" href="./assets/css/rodape/footer-copyright/footer-copyright.css">
+    <link rel="stylesheet" href="./assets/css/rodape/footer-copyright/copyright-parag.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <title>Medicenter</title>
+    
+</head>
+<body>
+
+    <header class="cabecalho-princial">
+
+        <div class="cabecalho-principal__container-cabecalho-principal">
+
+            <div class="container-cabecalho-principal__logo"><img src="./assets/img/logo.png"></div>
+
+
+            <i class="fa-solid fa-bars nav-burguer" onclick="abrirAba()"></i>
+
+            <div id="navBar" class="overlay">
+                <div class="container-btn-close"><i class="fa-solid fa-xmark btn-close" onclick="fecharAba()"></i></div>
+
+                <nav class="container-cabecalho-principal__menu-principal">  
+                    <ul class="menu-principal__lista-menu-principal">
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal itens-menu-principal__link-menu-principal--ativo">Home</a></li>
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal">Blog</a></li>
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal">Pages</a></li>
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal">Departments</a></li>
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal">Timetable</a></li>
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal">Gallery</a></li>
+                        <li class="lista-menu-principal__itens-menu-principal"><a href="/" class="itens-menu-principal__link-menu-principal">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+           
+        </div>
+
+    </header>
+
+    
+
+        <section class="conteudo-principal__banner">
+            <div class="banner__container-banner">
+
+                <div class="container-banner__titulo-destaque">
+
+                    <h2 class="titulo-destaque__titulo-banner">Top Notch <br> experience</h2>
+
+                    <p class="titulo-destaque__parag-banner">Medicenter is a responsive template <br>perfect for all screen sizes</p>
+
+                </div>
+                <div class="container-banner__inf-estabelecimento">
+
+                    <div class="inf-estabelecimento__caixa-inf-estabelecimento inf-estabelecimento__caixa-inf-estabelecimento--fundo1">
+                        <h3 class="caixa-inf-estabelecimento__titulos-banner">Emergency Case</h3>
+
+                        <p class="caixa-inf-estabelecimento__parags-banner">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, voluptas eveniet praesentium culpa debitis optio doloribus quidem magni dolorum</p>
+
+                        <a href="/" class="caixa-inf-estabelecimento__botao">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <div class="inf-estabelecimento__caixa-inf-estabelecimento inf-estabelecimento__caixa-inf-estabelecimento--fundo2">
+                        <h3 class="caixa-inf-estabelecimento__titulos-banner">Doctors Timetable</h3>
+
+                        <p class="caixa-inf-estabelecimento__parags-banner">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, voluptas eveniet praesentium culpa debitis optio doloribus quidem magni dolorum</p>
+
+                        <a href="/" class="caixa-inf-estabelecimento__botao">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                        
+                    </div>
+
+                    <div class="inf-estabelecimento__caixa-inf-estabelecimento inf-estabelecimento__caixa-inf-estabelecimento--fundo3">
+                        <h3 class="caixa-inf-estabelecimento__titulos-banner">Opening Hours</h3>
+
+                        <ul class="caixa-inf-estabelecimento__lista-hr-estabelecimento">
+
+                            <li class="lista-hr-estabelecimento__itens-hr-estabelecimento"><i>Monday - Friday</i>  <i>8.00 - 17.00</i></li>
+
+                            <li class="lista-hr-estabelecimento__itens-hr-estabelecimento"><i>Saturday</i> <i>9.30 - 17.30</i></li>
+
+                            <li class="lista-hr-estabelecimento__itens-hr-estabelecimento"><i>Sunday</i>  <i>9.30 - 15.00</i></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demais-conteudos-gerais">
+            <div class="demais-conteudos-gerais__container">
+                <section class="container__especialidades">
+                    
+                    <h2 class="demais-conteudos-gerais__titulo"> <span class="demais-conteudos-gerais__titulo--borda">Latest</span> News</h2>
+
+                    <div class="especialidades__container-principal-noticias">
+                        <div class="container-principal-noticias__caixa-noticia">
+                            <i class="fa-solid fa-house-medical"></i>
+
+                            <div class="caixa-noticia__img"></div>
+
+                            <h3 class="caixa-noticia__titulo-noticia">Lorem ipsum sit amat velum</h3>
+
+                            <p class="caixa-noticia__parags">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, recusandae accusamus ipsa eius numquam excepturi ducimus facere culpa quibusdam corrupti nisi enim ullam mollitia adipisci doloremque non blanditiis dolores tempore!</p>
+                        </div>
+                        <div class="container-principal-noticias__caixa-noticia">
+                            <i class="fa-solid fa-house-medical"></i>
+
+                            <div class="caixa-noticia__img"></div>
+
+                            <h3 class="caixa-noticia__titulo-noticia">Lorem ipsum sit amat velum</h3>
+
+                            <p class="caixa-noticia__parags">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, recusandae accusamus ipsa eius numquam excepturi ducimus facere culpa quibusdam corrupti nisi enim ullam mollitia adipisci doloremque non blanditiis dolores tempore!</p>
+                        </div>
+                        <div class="container-principal-noticias__caixa-noticia">
+                            <i class="fa-solid fa-house-medical"></i>
+
+                            <div class="caixa-noticia__img"></div>
+
+                            <h3 class="caixa-noticia__titulo-noticia">Lorem ipsum sit amat velum</h3>
+
+                            <p class="caixa-noticia__parags">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, recusandae accusamus ipsa eius numquam excepturi ducimus facere culpa quibusdam corrupti nisi enim ullam mollitia adipisci doloremque non blanditiis dolores tempore!</p>
+                        </div>
+                        <div class="container-principal-noticias__caixa-noticia">
+                            <i class="fa-solid fa-house-medical"></i>
+
+                            <div class="caixa-noticia__img"></div>
+
+                            <h3 class="caixa-noticia__titulo-noticia">Lorem ipsum sit amat velum</h3>
+
+                            <p class="caixa-noticia__parags">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, recusandae accusamus ipsa eius numquam excepturi ducimus facere culpa quibusdam corrupti nisi enim ullam mollitia adipisci doloremque non blanditiis dolores tempore!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="container__inf-demais-assuntos">
+                    <div class="inf-demais-assuntos__departamentos">
+                        <h3 class="demais-conteudos-gerais__titulo"> <span class="demais-conteudos-gerais__titulo--borda">Depart</span>aments</h3>
+
+                        <div class="departamentos__caixas-setores">
+                            <div class="caixas-setores__janelas"></div>
+                            <div class="caixas-setores__janelas"></div>
+                            <div class="caixas-setores__janelas"></div>
+                            <div class="caixas-setores__janelas"></div>
+                            <div class="caixas-setores__janelas"></div>
+                            <div class="caixas-setores__janelas"></div>
+                        </div>
+                    </div>
+
+                    <div class="departamentos__contatos-medicenter">
+                        <h3 class="demais-conteudos-gerais__titulo"> <span class="demais-conteudos-gerais__titulo--borda">Make A</span>n Appointment</h3>
+
+                        <p class="contatos-medicenter__parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error tenetur cupiditate provident repellendus sed soluta aliquam</p>
+
+                        <address class="contatos-medicenter__contatos-gerais">
+                            <p class="contatos-gerais__meios-contatos contatos-gerais__meios-contatos--borda"><i class="fa-solid fa-mobile fa-solid--cor"></i> by phone: <strong class="contatos-gerais__meios-contatos--enfase">1-800-643-4300</strong></p>
+
+                            <p class="contatos-gerais__meios-contatos"><i class="fa-solid fa-envelope fa-solid--cor"></i> by e-mail: <a href="/">mediacenter@mail.com</a></p>
+
+                            <p class="contatos-gerais__meios-contatos"><i class="fa-solid fa-inbox fa-solid--cor"></i> or <a href="/">alguma coisa</a> on our contact page</p>
+                        </address>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    
+
+    <footer>
+
+        <div class="footer__menu">
+            <div class="menu__itens menu__itens--fundo1">
+                <a href="/" class="itens__links-menu-rodape">
+                    <h3 class="links-menu-rodape__titulo">Health Insurance</h3>
+
+                    <p class="links-menu-rodape__parags">Here in medicenter we have individual <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i></p>
+                </a>
+            </div>
+                
+            <div class="menu__itens menu__itens--fundo2">
+                <a href="/" class="itens__links-menu-rodape">
+                    <h3 class="links-menu-rodape__titulo">Medical Records</h3>
+
+                    <p class="links-menu-rodape__parags">Here in medicenter we have individual <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i></p>
+                </a>
+            </div>
+
+            <div class="menu__itens menu__itens--fundo3">
+                <a href="/" class="itens__links-menu-rodape">
+                    <h3 class="links-menu-rodape__titulo">Online Bill Pay</h3>
+
+                    <p class="links-menu-rodape__parags">Here in medicenter we have individual <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i></p>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__ultimas-inf-rodape">
+            <div class="ultimas-inf-rodape__itens-ultimmas-inf">
+                <h3 class="itens-ultimmas-inf__titulo"><span class="itens-ultimmas-inf__titulo--borda">Medic</span>enter Clinic</h3>
+
+                <p class="itens-ultimmas-inf__parag">
+                    Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada individual.
+                </p>
+
+                <address class="itens-ultimmas-inf__endereco-clinica-contato">
+                    <div class="endereco-clinica-contato__container-clinica">
+                        <p class="container-clinica__endereco">
+                            Medicenter Clinic <br> 33 Farlane Street <br> Keilor East <br> VIC 3033, Australia
+                        </p>
+                    </div>
+
+                    <div class="endereco-clinica-contato__container-clinica">
+                        <p class="container-clinica__contatos">+123 655 655</p>
+                        <p class="container-clinica__contatos">+123 755 755</p>
+                        <p class="container-clinica__contatos container-clinica__contatos--color">medicenter@mail.com</p>
+                    </div>
+                </address>
+
+                <div class="itens-ultimmas-inf__redes-sociais">
+                    <i class="fa-brands fa-facebook-square redes-sociais__icones"></i>
+
+                    <i class="fa-brands fa-twitter redes-sociais__icones"></i>
+
+                    <i class="fa-solid fa-calendar-days redes-sociais__icones"></i>
+
+                    <i class="fa-solid fa-envelope redes-sociais__icones"></i>
+                </div>
+
+            </div>
+
+            <div class="ultimas-inf-rodape__itens-ultimmas-inf">
+                <h3 class="itens-ultimmas-inf__titulo"><span class="itens-ultimmas-inf__titulo--borda">Latest</span> Posts</h3>
+
+                <div class="itens-ultimmas-inf__container-bloco-2">
+                    <p class="container-bloco-2__parag"><i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i> Mauris adipiscing mauris fringilla turpis inerdum: pulvinar nisi malesuada.</p>
+                    <p class="container-bloco-2__data">6 years ago</p>
+                </div>
+
+                <div class="itens-ultimmas-inf__container-bloco-2">
+                    <p class="container-bloco-2__parag"> <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i> Lorem ipsum dolor sit amu velum.</p>
+                    <p class="container-bloco-2__data">6 years ago</p>
+                </div>
+
+                <div class="itens-ultimmas-inf__container-bloco-2">
+                    <p class="container-bloco-2__parag"> <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i> Mauris adipiscing mauris fringilla turpis inerdum: pulvinar nisi malesuada.</p>
+                    <p class="container-bloco-2__data">6 years ago</p>
+                </div>
+            </div>
+
+            <div class="ultimas-inf-rodape__itens-ultimmas-inf">
+                <h3 class="itens-ultimmas-inf__titulo"><span class="itens-ultimmas-inf__titulo--borda">Latest</span> Tweets</h3>
+
+                <div class="itens-ultimmas-inf__container-bloco-3">
+                    <p class="container-bloco-3__parag"><i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i> We've relesed new version (v1.2) of uor #Cleaning Company #Maid #Gardening #WordPress Theme. Please che... <span class="container-bloco-3__parag--cor">alguma coisa</span></p>
+                    <p class="container-bloco-3__data">4 years ago</p>
+                </div>
+
+                <div class="itens-ultimmas-inf__container-bloco-3">
+                    <p class="container-bloco-3__parag"> <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i> We've relesed new version (v1.2) of uor #Cleaning Company #Maid #Gardening #WordPress Theme. Please che...<span class="container-bloco-3__parag--cor">alguma coisa</span></p>
+                    <p class="container-bloco-3__data">6 years ago</p>
+                </div>
+
+                <div class="itens-ultimmas-inf__container-bloco-3">
+                    <p class="container-bloco-3__parag"> <i class="fa-solid fa-arrow-right-long fa-solid--tamanho"></i> We've relesed new version (v1.2) of uor #Cleaning Company #Maid #Gardening #WordPress Theme. Please che... <span class="container-bloco-3__parag--cor">alguma coisa</span></p>
+                    <p class="container-bloco-3__data">7 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p class="copyright__parag">
+                Todos os direitos reservados - 2022 | Desenvolvido por Camila Silva
+            </p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>    
+    <script src="https://kit.fontawesome.com/de114e8a58.js" crossorigin="anonymous"></script>    
+</body>
+</html>
