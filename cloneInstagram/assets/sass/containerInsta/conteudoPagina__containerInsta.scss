@@ -1,0 +1,12 @@
+.conteudoPagina__containerInsta {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .containerInsta__bloco {
+        border: 1px solid transparent;
+        width: 380px;
+    }
+}

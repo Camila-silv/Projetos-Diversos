@@ -1,0 +1,16 @@
+.conteudoPagina__containerImgTelefone {
+
+    height: 564px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+
+    .containerImgTelefone__imgTelefone {
+        background-image: url("../images/celular.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 500px;
+    }
+}

@@ -1,0 +1,104 @@
+#containerInsta__containerLogin {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 13px;
+    background-color: #FFFFFF;
+    border-color: #d4c9cd;
+
+    .containerLogin__logoInstagram {
+        display: inline-block;
+        padding: 50px 0px 30px;
+    }
+
+    .containerLogin__formLogin {
+
+        display: flex;
+        flex-direction: column;
+
+        
+
+        .formLogin__usuario {
+            margin-bottom: 8px;
+        }
+
+        .formLogin__senha {
+            margin-bottom: 15px;
+        }
+
+        .formLogin__input {
+            height: 35px;
+            width: 300px;
+            outline: 0;
+        }
+
+        .formLogin__input::placeholder {
+            background-color: $cinza;
+            
+        }
+
+        .formLogin__botao {
+            background-color: $azulClaroBotao;
+            color: $branco;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 0px;
+        }
+
+        .formLogin__containerSeparador {
+            
+            padding-top: 20px;
+            display: flex;
+            gap: 13px;
+
+            .containerSeparador__divisoria {
+                height: 1px;
+                background-color: #b8b3b4;
+                flex-shrink: 1;
+                flex-grow: 1;
+                -webkit-flex-grow: 1;
+                position: relative;
+                top: 6px;
+            }
+
+            .containerSeparador__Separador {
+                text-transform: uppercase;
+                color: #a59ea0;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .containerLogin__loginFacebook {
+
+        margin: 30px 0px 20px;
+        display: flex;
+        align-items: center;
+        
+
+        .loginFacebook__logoFacebook {
+            height: 18px;
+            padding-right: 6px;
+        }
+
+        .loginFacebook__link {
+            color: #465D8D;
+            font-size: 15px;
+        }
+
+        .loginFacebook__link:visited{
+            color: #465D8D;            
+        }
+
+    }
+
+    .containerLogin__linkRecupecaoSenha {
+
+        margin-bottom: 25px;
+        font-size: 13px;
+        color: #465D8D;
+    }
+}

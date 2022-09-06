@@ -1,0 +1,25 @@
+#containerInsta__containerCadastro{
+    background-color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    border: 1px solid #d4c9c9;
+    
+
+    .containerCadastro__parag {
+        margin-right: 5px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .containerCadastro__link {
+        color: #0095F6;
+        font-size: 15px;
+
+        .containerCadastro__link:visited {
+            color: #0095F6;
+        }
+    }
+}
