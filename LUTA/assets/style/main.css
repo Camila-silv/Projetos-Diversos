@@ -1,0 +1,450 @@
+body {
+  background-image: url("../images/background.gif");
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Press Start 2P", cursive;
+  color: #FFF;
+}
+
+.layout-botao {
+  padding: 20px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  user-select: none;
+}
+.layout-botao:hover {
+  transform: scale(1.2);
+}
+
+.esconder-conteudo {
+  display: none;
+}
+
+.tela-alerta-padrao {
+  display: none;
+}
+
+.mostrar-tela-alerta-padrao {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1.4rem;
+  border-radius: 1rem;
+  height: 100px;
+  z-index: 4;
+  background-color: rgb(156, 41, 41);
+  user-select: none;
+  line-height: 2rem;
+}
+.mostrar-tela-alerta-padrao p {
+  color: rgb(179, 179, 179);
+}
+.mostrar-tela-alerta-padrao .botao-fechar-padrao {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.3rem;
+  color: rgb(249, 249, 249);
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+.mostrar-tela-alerta-padrao .botao-fechar-padrao:hover {
+  transform: scale(1.2);
+}
+
+.conteudo-principal {
+  background-color: rgba(0, 0, 0, 0.499);
+  height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.conteudo-principal .conteudo-principal__efeito-sonoro {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.conteudo-principal .conteudo-principal__botao {
+  background-color: #F00;
+  padding: 2.5rem 3rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1rem 1rem #000;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+  user-select: none;
+  position: absolute;
+  margin: 0rem 1.5rem;
+  display: block;
+}
+.conteudo-principal .conteudo-principal__botao:hover {
+  transform: scale(1.2);
+}
+.conteudo-principal .conteudo-principal__container-conteudo-principal {
+  display: none;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 0rem 2rem 0rem;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .container-conteudo-principal__container-cabecalho {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .container-conteudo-principal__container-cabecalho .container-conteudo-principal__botao-voltar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .container-conteudo-principal__container-cabecalho .container-conteudo-principal__botao-voltar:hover {
+  transform: scale(1.2);
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .container-conteudo-principal__titulo {
+  text-align: center;
+  margin: 1.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .container-conteudo-principal__alerta-vitoria {
+  display: none;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria {
+  position: absolute;
+  z-index: 6;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria .alerta-vitoria {
+  background-color: transparent;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1.5rem;
+  border-radius: 1.5rem;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria .alerta-vitoria p {
+  text-transform: uppercase;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria .alerta-vitoria__player-ataque {
+  background-color: #F00;
+  display: none;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria .mostrar-alerta-vitoria__player-ataque {
+  background-color: #F00;
+  display: flex;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria .alerta-vitoria__player-defesa {
+  background-color: #00F;
+  display: none;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-vitoria .mostrar-alerta-vitoria__player-defesa {
+  background-color: #00F;
+  display: flex;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .container-conteudo-principal__alerta-elixir {
+  display: none;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-elixir {
+  position: absolute;
+  z-index: 6;
+  background-color: rgb(5, 142, 37);
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  height: 8rem;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-elixir .alerta-elixir__botao-fechar {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.conteudo-principal .mostrar-conteudo-principal__container-conteudo-principal .mostrar-container-conteudo-principal__alerta-elixir .alerta-elixir__botao-fechar:hover {
+  transform: scale(1.2);
+}
+.conteudo-principal .conteudo-principal__caixa-inf {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  display: flex;
+}
+.conteudo-principal .conteudo-principal__caixa-inf .icon-informacao {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: color 0.3s linear;
+}
+.conteudo-principal .conteudo-principal__caixa-inf .icon-informacao:hover {
+  color: rgb(100, 99, 99);
+}
+.conteudo-principal .conteudo-principal__caixa-inf .fa-sharp {
+  color: white;
+}
+.conteudo-principal .conteudo-principal__caixa-inf .caixa-inf__parag {
+  display: none;
+}
+.conteudo-principal .conteudo-principal__caixa-inf .mostrar-caixa-inf__parag {
+  background-color: rgb(41, 40, 40);
+  padding: 1rem;
+  position: absolute;
+  right: 7rem;
+  bottom: 3.5rem;
+  border-radius: 1.5rem;
+  display: block;
+}
+
+.container-conteudo-principal__container-tela-jogo {
+  width: 750px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.71);
+  z-index: 4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+  padding: 10px 10px;
+  overflow: hidden;
+  color: rgb(41, 40, 40);
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__container-img {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__container-img .container-img__img {
+  background-image: url("../images/vs.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__tela-play {
+  background-color: rgba(240, 248, 255, 0.493);
+  width: 33%;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__tela-play .tela-play__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__tela-play .tela-play__container-personagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__tela-play .tela-play__container-personagem .container-personagem__propriedades div {
+  text-align: center;
+  text-transform: uppercase;
+}
+.container-conteudo-principal__container-tela-jogo .container-tela-jogo__tela-play .tela-play__container-personagem .container-personagem__propriedades p {
+  margin-bottom: 15px;
+}
+
+.container-conteudo-principal__menu-controle {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+.container-conteudo-principal__menu-controle .menu-controle__ataque {
+  background-color: rgb(255, 0, 0);
+}
+.container-conteudo-principal__menu-controle .menu-controle__ataque:hover {
+  background-color: rgba(255, 0, 0, 0.538);
+}
+.container-conteudo-principal__menu-controle .menu-controle__defesa {
+  background-color: rgb(0, 0, 255);
+}
+.container-conteudo-principal__menu-controle .menu-controle__defesa:hover {
+  background-color: rgba(0, 0, 255, 0.538);
+}
+
+.conteudo-principal__painel-escolher-plays {
+  display: none;
+}
+
+.mostrar-conteudo-principal__painel-escolher-plays {
+  position: absolute;
+  width: 750px;
+  height: 550px;
+  z-index: 4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 10px;
+  overflow: hidden;
+  color: rgb(41, 40, 40);
+  flex-direction: column;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__titulo {
+  color: #FFF;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .container-personagem__escolha-player label {
+  display: block;
+  margin-bottom: 15px;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .container-personagem__escolha-player input {
+  height: 30px;
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 13px;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #000;
+  border: none;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__menu-controle {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__menu-controle .menu-controle__start {
+  background-color: rgb(255, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__menu-controle .menu-controle__start:hover {
+  background-color: rgba(255, 0, 0, 0.538);
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__menu-controle .menu-controle__voltar {
+  background-color: rgb(0, 0, 255);
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__menu-controle .menu-controle__voltar:hover {
+  background-color: rgba(0, 0, 255, 0.538);
+}
+.mostrar-conteudo-principal__painel-escolher-plays .container-personagem__escolha-player input {
+  outline: none;
+  margin-bottom: 10px;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .painel-escolher-plays__alerta-preenchimento {
+  display: none;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .mostrar-painel-escolher-plays__alerta-preenchimento {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1.4rem;
+  border-radius: 1rem;
+  height: 100px;
+  z-index: 4;
+  background-color: rgb(156, 41, 41);
+  user-select: none;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .mostrar-painel-escolher-plays__alerta-preenchimento p {
+  color: rgb(179, 179, 179);
+}
+.mostrar-conteudo-principal__painel-escolher-plays .mostrar-painel-escolher-plays__alerta-preenchimento .alerta-preenchimento__botao-fechar {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.3rem;
+  color: rgb(249, 249, 249);
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+.mostrar-conteudo-principal__painel-escolher-plays .mostrar-painel-escolher-plays__alerta-preenchimento .alerta-preenchimento__botao-fechar:hover {
+  transform: scale(1.2);
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial {
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__titulo {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__conteudo {
+  background-color: rgba(240, 248, 255, 0.493);
+  margin: 1rem 2rem;
+  line-height: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__conteudo .span-player-ataque {
+  color: rgb(255, 0, 0);
+  text-transform: uppercase;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__conteudo .span-player-defesa {
+  color: rgb(0, 47, 255);
+  text-transform: uppercase;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__conteudo .conteudo__titulo {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__conteudo .lista-regras-jogo li {
+  padding-bottom: 1.5rem;
+}
+.conteudo-principal .conteudo-principal__aba-tutorial .aba-tutorial__conteudo .container-inf {
+  padding-left: 2rem;
+}
+.conteudo-principal .layout-botao .botao-tutorial {
+  color: rgb(255, 255, 255);
+}
+.conteudo-principal .layout-botao .botao-tutorial:hover {
+  transform: scale(1);
+}
+.conteudo-principal .layout-botao--tutorial {
+  bottom: 1rem;
+  padding: 2rem;
+  background-color: rgb(11, 187, 58);
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: rgb(36, 37, 37);
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,88 @@
+.conteudo-principal {
+
+    display: flex;
+    flex-direction: column;
+
+    .conteudo-principal__aba-tutorial {
+        background-color: rgba(0, 0, 0, 0.71);
+        width: 90%;
+        height: auto;
+        border-radius: 1.0rem;
+    
+        .aba-tutorial__titulo {
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 1.0rem;
+            text-transform: uppercase;
+        }
+    
+        .aba-tutorial__conteudo {
+            background-color: rgba(240, 248, 255, 0.493);
+            margin: 1.0rem 2.0rem;
+            line-height: 2.0rem;
+            padding: 1.5rem 2.0rem;
+            border-radius: 1.0rem;
+    
+            .span-player-ataque {
+                color: rgb(255, 0, 0);
+                text-transform: uppercase;
+            }
+    
+            .span-player-defesa {
+                color: rgb(0, 47, 255);
+                text-transform: uppercase;
+            }
+    
+            .conteudo__titulo{
+                text-transform: uppercase;
+                padding-bottom: 1.0rem;
+                padding-top: 2.0rem;
+                padding-bottom: 1.0rem;
+            }
+    
+            .lista-regras-jogo {
+
+                
+
+                li {
+                    padding-bottom: 1.5rem;
+                }
+            }
+
+            .container-inf {
+                padding-left: 2.0rem;
+            }
+            
+        }
+    }
+
+    .layout-botao {
+
+        
+
+        .botao-tutorial {            
+            
+            color: rgb(255, 255, 255);
+            
+        
+            &:hover {
+                transform: scale(1.0);
+            }
+        }
+    }
+
+    .layout-botao--tutorial {
+        bottom: 1.0rem;
+        padding: 2.0rem;
+        background-color: rgb(11, 187, 58);
+        margin-top: 1.0rem;
+    }
+    
+    
+
+
+   
+}
+
+
+

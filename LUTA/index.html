@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <script src="./assets/javascript/calculoDeDano1.js" defer></script>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/de114e8a58.js" crossorigin="anonymous" defer></script>
+    <title>Luta Luta</title>
+</head>
+
+<body>
+
+    <main class="conteudo-principal">
+        <div class="conteudo-principal__botao">start</div>
+
+        <audio controls="controls" loop class="conteudo-principal__efeito-sonoro">
+            <source src="./assets/efeitos-sonoros/Dance Energetic.wav" type="audio/wav" />
+            seu navegador não suporta esse audio.
+        </audio>
+
+
+        <form class="conteudo-principal__painel-escolher-plays">
+
+            <h2 class="painel-escolher-plays__titulo">Escolha os Jogadores</h2>
+
+            <section class="container-conteudo-principal__container-tela-jogo">
+
+                <div class="container-tela-jogo__tela-play">
+
+                    <h2 class="tela-play__titulo">Play de Ataque</h2>
+
+                    <div class="tela-play__container-personagem">
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="player-ataque">Nome do Play:</label>
+                            <input name="player-ataque" id="player-ataque" type="text">
+                        </div>
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="poder-de-ataque">Poder de Ataque:</label>
+                            <input name="poder-de-ataque" id="poder-de-ataque" type="text">
+                        </div>
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="energia-ataque">Energia:</label>
+                            <input name="energia-ataque" id="energia-ataque" type="text">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-tela-jogo__container-img">
+                    <div class="container-img__img"></div>
+                </div>
+
+                <div class="container-tela-jogo__tela-play">
+
+                    <h2 class="tela-play__titulo">Play de Defesa</h2>
+
+                    <div class="tela-play__container-personagem">
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="player-defesa">Nome do Play:</label>
+                            <input name="player-defesa" id="player-defesa" type="text">
+                        </div>
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="poder-de-defesa">Poder de Defesa:</label>
+                            <input name="poder-de-defesa" id="poder-de-defesa" type="text">
+                        </div>
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="hp-player-defesa">vida:</label>
+                            <input name="hp-player-defesa" id="hp-player-defesa" type="text">
+                        </div>
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="escudo-player-defesa">Escudo:</label>
+                            <input name="escudo-player-defesa" id="escudo-player-defesa" type="text">
+                        </div>
+
+                        <div class="container-personagem__propriedades container-personagem__escolha-player">
+                            <label for="elixir-player-defesa">Total de Elixir:</label>
+                            <input name="elixir-player-defesa" id="elixir-player-defesa" type="text">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="tela-alerta-padrao">
+                    <span class="botao-fechar-padrao">x</span>
+                    <p>Alert de Regras: <br> 1- maximo de elixir: 5 <br> 2- maximo de atributos de personsagens ate 100 <br> 3- valor de escudo somente: sim/nao</p>
+                </div>
+            </section>
+
+            <div class="painel-escolher-plays__menu-controle">
+                <input class="menu-controle__start layout-botao" type="submit" value="Start">
+                <div class="menu-controle__voltar layout-botao">Voltar</div>
+            </div>
+
+            <div class="painel-escolher-plays__alerta-preenchimento">
+                <span class="alerta-preenchimento__botao-fechar">x</span>
+                <p>Algum campo vazio, preencha todos!!</p>
+            </div>
+        </form>
+
+        <div class="conteudo-principal__container-conteudo-principal">
+
+            <div class="container-conteudo-principal__alerta-vitoria">
+                <div class="alerta-vitoria__player-ataque alerta-vitoria">
+                    <p class="player-ataque__parag-alerta-vitoria">Player de Ataque venceu!!</p>
+                </div>
+
+                <div class="alerta-vitoria__player-defesa alerta-vitoria">
+                    <p class="player-ataque__parag-alerta-vitoria">Player de Defesa venceu!!</p>
+                </div>
+            </div>
+
+            <div class="container-conteudo-principal__alerta-elixir">
+                <span class="alerta-elixir__botao-fechar">x</span>
+                <p>Sem elixir X.X</p>
+            </div>
+
+            <div class="container-conteudo-principal__container-cabecalho">
+                <h2 class="container-conteudo-principal__titulo">Campo de batalha</h2>
+                <div class="container-conteudo-principal__botao-voltar">x</div>
+            </div>
+
+            <section class="container-conteudo-principal__container-tela-jogo">
+
+                <div class="container-tela-jogo__tela-play">
+
+                    <h2 class="tela-play__titulo">Play de Ataque</h2>
+
+                    <div class="tela-play__container-personagem">
+
+                        <div class="container-personagem__propriedades">
+                            <p>Nome do Play:</p>
+                            <div id="container-name-player-ataque"></div>
+                        </div>
+
+                        <div class="container-personagem__propriedades">
+                            <p>Poder de Ataque:</p>
+                            <div id="container-poder-ataque-player-ataque"></div>
+                        </div>
+
+                        <div class="container-personagem__propriedades">
+                            <p>Energia:</p>
+                            <div id="container-energia-player-ataque"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-tela-jogo__container-img">
+                    <div class="container-img__img"></div>
+                </div>
+
+                <div class="container-tela-jogo__tela-play">
+
+                    <h2 class="tela-play__titulo">Play de Defesa</h2>
+
+                    <div class="tela-play__container-personagem">
+
+                        <div class="container-personagem__propriedades">
+                            <p>Nome do Play:</p>
+                            <div id="container-name-player-defesa"></div>
+                        </div>
+
+                        <div class="container-personagem__propriedades">
+                            <p>Poder de Defesa:</p>
+                            <div id="container-poder-defesa-player-defesa"></div>
+                        </div>
+
+                        <div class="container-personagem__propriedades">
+                            <p>vida:</p>
+                            <div id="container-hp-player-defesa"></div>
+                        </div>
+
+                        <div class="container-personagem__propriedades">
+                            <p>Escudo:</p>
+                            <div id="container-escudo-player-defesa"></div>
+                        </div>
+
+                        <div class="container-personagem__propriedades">
+                            <p>Total de Elixir:</p>
+                            <div id="container-elixir-player-defesa"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+            <div class="container-conteudo-principal__menu-controle">
+                <div class="menu-controle__ataque layout-botao">Atacar</div>
+                <div class="menu-controle__defesa layout-botao">Tomar Elixir</div>
+            </div>
+        </div>
+
+        <div class="conteudo-principal__caixa-inf">
+            <p class="caixa-inf__parag">Como jogar</p>
+            <a href="./tutorial.html">
+                <i class="fa-sharp fa-solid fa-circle-info icon-informacao"></i>
+            </a>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>Todos os direitos reservados - 2023 | Desenvolvido por Camila Silva</p>
+    </footer>
+</body>
+
+</html>
