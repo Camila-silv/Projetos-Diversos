@@ -1,9 +1,0 @@
-@media screen and (max-width:480px) {
-    .container__navPrincipal {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-top: 20px;
-    }
-
-}
