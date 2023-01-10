@@ -1,0 +1,44 @@
+@media (max-width: 670px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .container-conteudo-principal__container-img {
+        display: none;
+    }
+
+    .container-conteudo-principal__conteudo-abas {
+        width: 100%;
+    }
+
+    
+
+    .footer {
+
+    
+        .footer__parag {
+            font-size: 1.4rem;
+        } 
+    }
+}
+
+@media (max-width: 372px) {
+
+    
+    
+
+    .footer {
+
+    flex-direction: column;
+
+        .footer__parag {
+            font-size: 1.2rem;
+            
+            .parag__dev {
+                display: block;
+                text-align: center;
+            }
+        } 
+    }
+}
