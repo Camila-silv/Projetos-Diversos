@@ -1,0 +1,106 @@
+.container-conteudo-principal__conteudo-abas {
+
+    width: 50%;
+    padding: 1.0rem 1.5rem;
+
+    .conteudo-abas__menu-abas {
+
+        display: flex;
+        gap: 1.0rem;
+        text-transform: uppercase;
+        margin-bottom: 1.0rem;
+        font-weight: bold;
+        color: rgb(158, 161, 161);
+
+
+        .menu-abas__abas {
+            cursor: pointer;
+            padding-bottom: .6rem;
+            transition: color .3s linear;
+
+            &:hover {
+                color: rgba(129, 129, 129, 0.97);
+            }
+
+        }
+
+        .menu-abas__abas--selecionado {
+            border-bottom: .2rem solid rgb(59, 162, 231);
+            color: white;
+        }
+    }
+
+
+    .conteudo-abas__form {
+
+        display: flex;
+        flex-direction: column;
+        margin: 1.0rem 0rem;
+        display: inline-block;
+
+        .form__campo-preenchimento {
+            width: 100%;
+            margin-bottom: 2.0rem;
+            border: none;
+            border-bottom: .1rem solid rgba(179, 178, 178, 0.622);
+            background-color: transparent;
+            padding: .6rem 0rem;
+            color: rgba(209, 208, 208, 0.842);
+            outline: none;
+            font-size: 1.5rem;
+        }
+
+
+        .form__container-botao-contato {
+            display: flex;
+            justify-content: end;
+
+
+        }
+
+    }
+
+    .esconder-conteudo-abas__form {
+        display: none;
+    }
+
+    .conteudo-abas__inf-recruta-cadastrado {
+        
+        display: none;
+    }
+
+    .mostrar-conteudo-abas__inf-recruta-cadastrado {
+        overflow-y: auto;
+        height: 240px;
+        padding-right: 7.0rem;
+
+        .container-recrutas__container-recruta {
+
+            .container-recruta__campo-inf {
+                margin-top: 2.0rem;
+                font-size: 1.5rem;
+                font-weight: 300;
+                margin-bottom: 1.0rem;
+                text-transform: uppercase;
+                color: rgba(209, 208, 208, 0.842);
+            }
+
+            .container-recruta__container-remover {
+                display: flex;
+                justify-content: end;
+                margin-top: 4.5rem;
+
+                .container-remover__botao-deletar {
+                    background-color: rgb(66, 69, 69);
+                    color: white;
+                    
+
+                    &:hover {
+                        background-color: rgb(96, 95, 95);
+                    }
+                }
+            }
+        }
+    }
+
+}
