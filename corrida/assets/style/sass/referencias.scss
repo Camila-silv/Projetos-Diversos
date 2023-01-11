@@ -1,0 +1,74 @@
+//add variavel
+$cor: #fff;
+
+
+body {
+    font-family: 'Seymour One', sans-serif;
+}
+
+.botao-padrao {
+    background-color: rgb(181, 41, 41);
+    padding: 2.0rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .3s linear;
+    color: rgb(181, 180, 180);
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+
+.container-alerta {
+
+    .alerta-padrao {
+        display: none;
+    }
+    
+}
+
+.container-alerta {
+
+    position: absolute;
+    
+    .mostrar-alerta-padrao {
+        
+        background-color: aquamarine;
+        line-height: 2.0rem;
+        text-align: center;
+        padding: 2.0rem;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 10px #000;
+    
+        .alerta-padrao__botao-fechar {
+    
+            position: absolute;
+            top: .5rem;
+            right: 1.0rem;
+            cursor: pointer;
+            transition: transform .2s linear;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .alerta-jogador2 {
+        background-color: rgb(35, 35, 166);
+        color: white;
+    }
+
+    .alerta-jogador1 {
+        background-color: rgb(31, 132, 46);
+    }
+
+    .alerta-preenchimento {
+        background-color: rgb(132, 31, 56);
+        color: white;
+    }
+}
+

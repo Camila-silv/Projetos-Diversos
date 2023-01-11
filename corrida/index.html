@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/css/reset.css">
+    <link rel="stylesheet" href="./assets/style/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/image/icon/game-controller.png" type="image/x-icon">
+    <script src="./assets/javascript/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/de114e8a58.js" crossorigin="anonymous" defer></script>
+    <title>Turbo Fast</title>
+</head>
+
+<body>
+    <main class="conteudo-principal">
+
+
+
+        <div class="conteudo-principal__container-principal">
+            <audio controls="controls" loop class="audio">
+                <source src="./assets/musica/musica.mp3" type="audio/mp3">
+                <p>Seu seu naveagor não é compativel com esse audio.</p>
+            </audio>
+
+            <div class="container-botao-audio">
+
+                <i class="fa-sharp fa-solid fa-microphone-slash botao-audio"></i>
+
+            </div>
+
+
+
+            <h1 class="container-principal__titulo">Turbo Fast</h1>
+
+            <div class="container-principal__container-conteudo-principal">
+
+                <div class="container-conteudo-principal__aba-start">
+
+                    <div class="aba-start__jogador">
+
+                    </div>
+
+                    <div class="aba-start__jogador">
+
+                    </div>
+
+                </div>
+
+                <div class="container-conteudo-principal__container-controle">
+
+                    <div class="container-controle__botao-acelera botao-padrao">
+                        <div>Acelrar</div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="container-principal__container-velocidade">
+
+                <div class="container-velocidade__menu-velocidade">
+
+                    <div class="menu-velocidade__jogadores">
+                        <h2 class="jogadores__titulo">Jogador 1º</h2>
+
+                        <img src="./assets/image/play2.png" class="jogadores__img">
+
+                        <div class="jogadores__container-input">
+                            <label class="container-input__label" for="velocidade-play-1">velocidade aqui:</label>
+                            <input class="container-input__input-velocidade" type="text" id="velocidade-play-1"
+                                value="">
+                        </div>
+                    </div>
+
+                    <div class="menu-velocidade__jogadores">
+
+                        <h2 class="jogadores__titulo">Jogador 2º</h2>
+
+                        <img src="./assets/image/play1.png" class="jogadores__img">
+
+                        <div class="jogadores__container-input">
+                            <label class="container-input__label" for="velocidade-play-2">velocidade aqui:</label>
+                            <input class="container-input__input-velocidade" type="text" id="velocidade-play-2"
+                                value="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container-velocidade__container-controle">
+
+                    <div class="botao-padrao container-controle__botao-start">
+                        <div>Start</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="container-alerta">
+                <!-- [CAMPO DE ALERTAS] -->
+                <div class="alerta-padrao alerta-jogador1">
+                    <i class="alerta-padrao__botao-fechar">x</i>
+                    <p>Fim de partida <br> Jogador 1º ganhou</p>
+                </div>
+
+                <div class="alerta-padrao alerta-jogador2">
+                    <i class="alerta-padrao__botao-fechar">x</i>
+                    <p>Fim de partida <br> Jogador 2º ganhou</p>
+                </div>
+
+                <div class="alerta-padrao alerta-preenchimento">
+                    <i class="alerta-padrao__botao-fechar">x</i>
+                    <p>Algum campo vazio, adicione a velocidade.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados - 2023 | Desenvolvido por Camila Silva</p>
+    </footer>
+</body>
+
+</html>
