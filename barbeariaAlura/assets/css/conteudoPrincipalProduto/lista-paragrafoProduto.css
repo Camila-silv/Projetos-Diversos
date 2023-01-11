@@ -1,9 +1,0 @@
-.lista__paragrafo-produto {
-    font-size: 18px;
-    padding: 0px 15px 0px 15px;
-    text-align: center;
-}
-
-.lista__paragrafo-produto:hover {
-    text-decoration: underline;
-}
