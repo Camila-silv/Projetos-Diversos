@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link rel="stylesheet" href="./assets/style/css/reset.css">
+    <link rel="stylesheet" href="./assets/style/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./assets/javascript/main.js" defer></script>
+    <!-- 100;300;400;500;700;900 -->
+    <title>Conversor de medidas</title>
+</head>
+
+<body>
+    <main class="conteudo-principal">
+        <div class="container-conversor__background background-padrao"></div>
+        <div class="conteudo-principal__conversor conteudo-padrao">
+            <div class="conversor__container-conversor">
+                <h2 class="container-conversor__titulo">Converter agora</h2>
+
+
+                <form class="container-conversor__form-conversor">
+
+                    <div class="form-conversor__container-entrada">
+                        <label class="form-conversor__label">Valor:</label>
+                        <input class="form-conversor__input-entrada" type="text" value="">
+                    </div>
+
+
+                    <div class="form-conversor__escolha-conversao">
+                        <div class="escolha-conversao__opcao-escolha elemento1" data-value="mm">Milímetro (mm)</div>
+                        <div class="escolha-conversao__opcao-escolha elemento2" data-value="cm">Centímetro (cm)</div>
+                        <div class="escolha-conversao__opcao-escolha elemento3" data-value="dm">Decímetro (dm)</div>
+                        <div class="escolha-conversao__opcao-escolha elemento4" data-value="dam">Decâmetro (dam)</div>
+                        <div class="escolha-conversao__opcao-escolha elemento5" data-value="hm">Hectômetro (hm)</div>
+                        <div class="escolha-conversao__opcao-escolha elemento6" data-value="km">Quilômetro (km)</div>
+                    </div>
+
+                    <input class="form-conversor__botao-converter" type="submit" value="converter">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="esconder-background background-padrao"></div>
+        <div class="esconder-resultado conteudo-padrao">
+            <div class="resultado__container-resultado">
+                <i class="container-resultado__botao-fechar">x</i>
+
+
+                <h2 class="container-resultado__titulo">Resultado de conversao:</h2>
+                <div class="container-resultado__resultado">
+                    <span class="resultado__parag"> 12m </span> -> <span class="resultado__unidade-conversao">12m</span>
+                </div>
+                
+                
+
+            </div>
+        </div>
+
+
+        <div class="esconder-alerta">
+            <i class="alerta-padrao__botao-fechar">x</i>
+            <p>Insira um valor para continuar a conversão e a medida desejada.</p>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

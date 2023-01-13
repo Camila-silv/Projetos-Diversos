@@ -1,0 +1,103 @@
+@media screen and (min-width: 280px) {
+    .background-padrao {
+        height: 81%;
+        width: 91%;
+        border-radius: 1.5rem;
+    }
+
+    .conteudo-padrao {
+
+        height: 80%;
+        width: 88%;
+        border-radius: 1.5rem;
+    }
+
+
+    .form-conversor__container-entrada {
+        width: 100%;
+    }
+
+
+    .conteudo-principal__conversor {
+
+        .conversor__container-conversor {
+
+            .container-conversor__form-conversor {
+                .form-conversor__escolha-conversao {
+                    display: grid;
+                    grid-template-areas:
+                        "item1 item2"
+                        "item4 item3"
+                        "item5 item6";
+                }
+            }
+
+        }
+    }
+
+
+
+
+
+
+    .container-conversor__form-conversor {
+        align-items: center;
+    }
+
+    .form-conversor__botao-converter {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 380px) {
+    .background-padrao {
+        height: 81%;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .conteudo-padrao {
+
+        height: 80%;
+        width: 88%;
+        border-radius: 1.5rem;
+    }
+
+
+    .form-conversor__container-entrada {
+        width: 100%;
+    }
+
+    .conteudo-principal__conversor {
+
+        .conversor__container-conversor {
+
+            .container-conversor__form-conversor {
+                .form-conversor__escolha-conversao {
+                    display: grid;
+                    grid-template-areas:
+                        "item1 item2 item4"
+                        "item3 item5 item6";
+                }
+            }
+
+        }
+    }
+
+
+
+
+    .container-conversor__form-conversor {
+        align-items: center;
+    }
+
+    .form-conversor__botao-converter {
+        width: 50%;
+    }
+
+}
+
+
+
+
