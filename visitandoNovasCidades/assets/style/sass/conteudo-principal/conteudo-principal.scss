@@ -1,0 +1,41 @@
+.conteudo-principal {
+    
+    grid-area: conteudo-principal;
+    width: 100%;
+    position: relative;
+
+    .conteudo-principal__alertas {
+
+        position: absolute;
+        bottom: 300px;
+        width: 100%;
+
+        .alertas__preenchimento {
+
+            background: linear-gradient(rgb(255, 255, 255), rgb(143, 118, 87));
+            margin: auto auto;
+            width: 20%;
+            padding: 2.0rem 0rem;
+            border-radius: 1.5rem;
+            position: relative;
+
+            .preenchimento__botao-fechar {
+                font-size: 1.0rem;
+                position: absolute;
+                right: .8rem;
+                top: .5rem;
+                cursor: pointer;
+            }
+
+            p {
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .esconder-alerta {
+        display: none;
+    }
+}

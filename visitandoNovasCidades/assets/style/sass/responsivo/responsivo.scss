@@ -1,0 +1,157 @@
+@media screen and (max-width: 990px) {
+
+
+
+
+    .conteudo-principal__container-conteudo-principal {
+
+
+        .container-conteudo-principal__sec-abas {
+
+            .sec-abas__container-form {
+
+                .container-form__corpo-form {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+
+    .conteudo-principal__container-conteudo-principal .container-conteudo-principal__sec-abas .sec-abas__cidades-visitadas .cidades-visitadas__corpo-conteudo {
+        width: 80%;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+
+    .container-conteudo-principal__sec-abas {
+
+        .sec-abas__container-form {
+
+            .container-form__corpo-form {
+
+                width: 100%;
+
+                .corpo-form__cabecalho {
+
+                    .cabecalho__container-cabecalho {
+
+
+
+                        .container-cabecalho__img {
+
+                            display: none;
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .conteudo-principal__container-conteudo-principal .container-conteudo-principal__sec-abas .sec-abas__container-form .container-form__corpo-form .corpo-form__cabecalho .cabecalho__container-cabecalho {
+        justify-content: center;
+    }
+
+
+    .conteudo-principal__container-conteudo-principal .container-conteudo-principal__sec-abas .sec-abas__cidades-visitadas .cidades-visitadas__corpo-conteudo {
+        width: 100%;
+
+        .container-cabecalho-cid__img {
+            display: none;
+        }
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 60%;
+    }
+
+
+    .conteudo-principal__container-conteudo-principal {
+
+        .container-conteudo-principal__menu {
+
+            .menu__container-menu {
+
+                gap: 4.0rem;
+
+            }
+        }
+
+        .container-conteudo-principal__sec-abas {
+
+            .sec-abas__container-form {
+
+                .container-form__corpo-form {
+
+                    width: 100%;
+
+                    .corpo-form__cabecalho {
+
+                        .cabecalho__container-cabecalho {
+
+                            .container-cabecalho__container-titulo {
+
+                                .container-titulo__titulo {
+
+                                    font-size: 3.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+
+
+    #input-validar {
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 292px) {
+
+
+
+    #input-validar {
+        font-size: 8px;
+    }
+
+
+
+
+}

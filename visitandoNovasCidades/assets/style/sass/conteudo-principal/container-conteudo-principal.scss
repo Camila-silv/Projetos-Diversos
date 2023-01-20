@@ -1,0 +1,460 @@
+.conteudo-principal__container-conteudo-principal {
+
+    .container-conteudo-principal__banner {
+
+        background: url("https://www.teahub.io/photos/full/100-1003510_world-map-red-k-hd-desktop-wallpaper.jpg");
+        height: calc(100vh - 180px);
+
+        .banner__pelicula {
+
+            border-top: 3.5px dashed black;
+            background-color: rgba(0, 0, 0, 0.679);
+            height: 100%;
+            max-width: 1536px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .banner__sliders {
+
+                height: 100%;
+                width: 90%;
+                display: flex;
+                position: relative;
+                overflow-x: hidden;
+
+                .sliders__container-sliders {
+
+                    width: 4149px;
+                    display: flex;
+                    position: absolute;
+                    height: 100%;
+                    left: 0px;
+                    transition: left .6s linear;
+
+
+                    .container-sliders__slide {
+
+                        width: 1383px;
+                        display: flex;
+                        align-items: center;
+
+
+                        .slide__titulo {
+                            font-size: 4.0rem;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            color: white;
+                            line-height: 5.0rem;
+                            padding-right: 10px;
+                        }
+
+                        .slide__icone {
+                            height: 6.0rem;
+                            width: 6.0rem;
+                            background: url("../../images/image/aviao.png");
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+
+
+                        }
+
+                    }
+
+                }
+
+
+
+            }
+
+            .banner__menu-slide {
+
+                height: 3.0rem;
+                position: absolute;
+                display: flex;
+                gap: 1.5rem;
+                bottom: 0px;
+                width: 100%;
+                justify-content: center;
+
+                .menu-slide__item {
+
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    background-color: white;
+                    border-radius: 2.0rem;
+                    cursor: pointer;
+                    transition: background-color .2s linear;
+
+                    &:hover {
+                        background-color: rgb(143, 118, 87);
+                    }
+
+                }
+
+                .menu-slide__item--ativo {
+                    background-color: rgb(143, 118, 87);
+                }
+            }
+        }
+
+    }
+
+    .container-conteudo-principal__menu {
+
+        display: flex;
+        justify-content: center;
+        height: 10.0rem;
+
+        .menu__container-menu {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10.0rem;
+
+            .container-menu__item {
+
+                .item__img-icone {
+
+                    height: 60px;
+                    width: 60px;
+                    background-color: rgb(143, 118, 87);
+                    border-radius: 4.0rem;
+                    cursor: pointer;
+                    transition: background-color .3s linear;
+
+                    &:hover {
+
+                        background-color: rgb(198, 165, 125);
+                    }
+
+                }
+
+                .item__img-icone::before {
+
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../../images/image/balao.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    padding: 20px;
+                    margin: 10px 10px;
+                }
+
+                .item__img-icone--balao::before {
+
+                    background-image: url("../../images/image/balao.png");
+                }
+
+                .item__img-icone--coqueiro::before {
+
+                    background-image: url("../../images/image/coqueiro.png");
+                }
+
+                .item__img-icone--mala::before {
+
+                    background-image: url("../../images/image/mala.png");
+                }
+
+                .item__titulo {
+
+                    text-align: center;
+                    margin-top: .5rem;
+                    text-transform: uppercase;
+
+                }
+
+                .item__img-icone--ativo {
+                    background-color: rgb(198, 165, 125);
+                }
+            }
+        }
+    }
+
+    .container-conteudo-principal__sec-abas {
+
+        background: linear-gradient(rgb(255, 255, 255), rgb(143, 118, 87));
+        height: 600px;
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+
+
+        .sec-abas__container-form {
+
+            width: 90%;
+            height: 100%;
+
+            .container-form__corpo-form {
+
+                height: 90%;
+                width: 50%;
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.608);
+                user-select: none;
+                transition: scale .3s linear;
+
+                .corpo-form__cabecalho {
+
+                    background-color: rgb(113, 88, 88);
+                    width: 100%;
+                    height: 36%;
+
+                    .cabecalho__container-cabecalho {
+
+                        width: 90%;
+                        height: 100%;
+                        display: flex;
+                        margin: 0rem auto;
+                        justify-content: flex-end;
+                        font-family: 'Abel', sans-serif;
+
+                        .container-cabecalho__container-titulo {
+
+                            .container-titulo__titulo {
+                                color: white;
+                                text-transform: uppercase;
+                                justify-content: flex-end;
+                                font-size: 5.0rem;
+                                display: flex;
+                            }
+
+                            .container-titulo__inf {
+
+                                font-size: 1.1rem;
+                            }
+                        }
+
+                        .container-cabecalho__img {
+
+                            height: 100%;
+                            width: 30%;
+                            background-image: url("../../images/image/duvida-removebg-preview.png");
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                        }
+                    }
+                }
+
+                .corpo-form__corpo {
+
+                    width: 100%;
+                    height: 70%;
+                    display: flex;
+                    justify-content: center;
+
+                    .corpo__container-corpo {
+
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .container-corpo__container-inputs-nome-compl {
+
+                            display: flex;
+                            gap: 1.5rem;
+
+                            div {
+
+                                width: 100%;
+
+
+                                .container-inputs-nome-compl__parag {
+
+                                    margin: .4rem 0rem;
+                                }
+
+                            }
+
+
+                        }
+
+                        .container-corpo__lbl {
+                            margin: 1.2rem 0rem;
+                            display: inline-block;
+                            font-size: 1.3rem;
+                        }
+
+                        .container-corpo__lbl::after {
+                            content: "*";
+                            margin-left: .5rem;
+                            color: rgb(204, 44, 44);
+                        }
+
+                        .container-corpo__input-obs {
+                            height: 30%;
+                        }
+
+
+                    }
+                }
+
+
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        .sec-abas__cidades-visitadas {
+
+            width: 90%;
+            height: 100%;
+            overflow-y: auto;
+
+            .cidades-visitadas__corpo-conteudo {
+
+                height: 80%;
+                width: 50%;
+                margin: 30px auto;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.608);
+                user-select: none;
+                transition: scale .3s linear;
+
+                .corpo-conteudo__cabecalho-cid {
+
+                    background-color: rgb(113, 88, 88);
+                    width: 100%;
+                    height: 45%;
+
+
+                    .cabecalho-cid__container-cabecalho-cid {
+
+                        width: 90%;
+                        height: 100%;
+                        display: flex;
+                        margin: 0rem auto;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-family: 'Abel', sans-serif;
+
+
+
+                        .container-cabecalho-cid__titulo {
+                            color: white;
+                            text-transform: uppercase;
+                            justify-content: flex-end;
+                            font-size: 5.0rem;
+
+                        }
+
+                        .container-cabecalho-cid__img {
+
+                            height: 100%;
+                            width: 30%;
+                            background-image: url("../../images/image/viajante.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+
+
+                }
+
+                .corpo-conteudo__corpo-cid {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                    .corpo-cid__container-corpo-cid {
+
+
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .container-corpo-cid__list-inf {
+
+
+                            display: flex;
+                            padding: 1.0rem 0rem;
+                            flex-direction: column;
+
+                            .list-inf__item-inf {
+
+                                padding: 0rem 1.5rem;
+
+                                .item-inf__titulo {
+
+                                    display: inline-block;
+                                    font-size: 2.0rem;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+
+                                }
+
+                                .item-inf_parag {
+                                    text-align: center;
+                                    padding: 2.0rem 0rem;
+                                    font-size: 1.5rem;
+                                    text-transform: uppercase;
+                                    overflow-y: auto;
+                                    max-height: 100px;
+                                }
+
+                                .item-inf_parag--observacao {
+
+                                    text-align: left;
+                                    line-height: 2.0rem;
+                                }
+
+                            }
+                        }
+
+
+
+
+                        .container-corpo-cid__input-botao {
+                            border: none;
+                            width: 30%;
+                            height: 3.0rem;
+                            cursor: pointer;
+                            margin: 0rem auto;
+                            border-radius: .5rem;
+                            text-transform: uppercase;
+                            margin-top: 1.7rem;
+                            background-color: rgb(113, 88, 88);
+                            color: white;
+                            font-weight: bold;
+                            transition: background-color .2s linear;
+
+                            &:hover {
+                                background-color: rgba(113, 88, 88, 0.873);
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        .esconder-container {
+            display: none;
+        }
+    }
+
+
+
+}
