@@ -1,0 +1,52 @@
+body {
+
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+
+    .trailer-video {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+        gap: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.745);
+
+
+        .trailer-video__trailer {
+           
+                       
+            height:400px;
+            width:660px;
+        }
+
+        .trailer-video__botao-fechar {
+
+            display: flex;
+            z-index: 100;
+            font-size: 20px;
+            color: rgb(255, 0, 0);
+            background-color: #FFF;
+            padding: .5rem 1.0rem;
+            border-radius: 1.0rem;
+            cursor: pointer;
+            transition: scale .3s linear;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+
+    .esconder-conteudo {
+        display: none;
+    }
+
+    
+}
