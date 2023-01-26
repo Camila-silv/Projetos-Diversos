@@ -1,0 +1,30 @@
+.menu-principal {
+    grid-area: menu;
+    padding: 1.5rem 0rem 0rem 6.0rem;
+
+    .menu-principal__logo {
+
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 676px) {
+
+    .menu-principal {
+        
+        padding: 1.5rem 1.5rem;
+        position: absolute;
+        width: 16.0rem;
+        transition: width .4s linear;
+    }
+
+    .mostrar-menu {
+        background-color: rgba(238, 236, 234, 0.615);
+        padding: 1.5rem 1.5rem;
+        width: 50%;
+        z-index: 4;
+        border-bottom-right-radius: 1.5rem;
+    }
+}

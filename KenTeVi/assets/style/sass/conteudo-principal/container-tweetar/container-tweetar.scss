@@ -1,0 +1,56 @@
+.conteudo-principal__container-tweetar {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 150px;
+    align-items: end;
+    padding: 1.0rem 1.0rem;
+    border-bottom: 1.0rem solid $cinza-azulado;
+
+
+
+    .container-twittar__entrada {
+
+        border: none;
+        width: 100%;
+        height: 50px;
+        padding-left: 4.0rem;
+        padding-top: 2.0rem;
+        font-size: 1.5rem;
+        outline: none;
+        resize: none;
+
+    }
+
+    .container-twittar__botao {
+
+        color: $branco;
+        background-color: $azul-principal;
+        opacity: 0.4;
+        font-weight: bold;
+        padding: 1.3rem 2.0rem;
+        border-radius: 1.7rem;
+        border: none;
+        cursor: pointer;
+        width: 10.6rem;
+        transition: scale .3s linear;
+        margin-right: 1.5rem;
+
+        &:hover {
+            scale: 1.1;
+        }
+
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .conteudo-principal__container-tweetar {
+
+        .container-twittar__botao {
+            height: 4.0rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

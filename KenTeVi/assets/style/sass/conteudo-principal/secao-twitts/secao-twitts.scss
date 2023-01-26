@@ -1,0 +1,69 @@
+.conteudo-principal__secao-twitts {
+
+    .secao-twitts__container-twitts {
+
+        display: flex;
+        padding: 4.0rem 0rem;
+        border-bottom: 1px solid $cinza-azulado;
+
+        .container-twitts__publicacao {
+
+            padding: 0rem 1.5rem;
+
+            .publicacao__container-usuario {
+
+                display: flex;
+
+                .container-usuario__nome {
+    
+                    color: $preto;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                }
+    
+                .usuario-verificado {
+                    
+                    display: inline-block;
+                    background: url("../../images/verifica.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 15px;
+                    width: 15px;
+                    margin-left: .5rem;
+                }
+    
+                .container-usuario__nick {
+    
+                    color: $cinza;
+                    font-size: 1.3rem;
+                    margin-left: .5rem;
+                }
+
+                .container-usuario__hrs-post {
+                    color: $cinza;
+                    font-size: 1.3rem;
+                    margin-left: .5rem;
+                }
+            }
+
+            .publicacao__parag {
+                font-size: 1.3rem;
+                line-height: 2.0rem;
+                padding: .5rem 0rem;
+                user-select:text;
+
+                .hasht {
+                    color: $azul-principal;
+                }
+            }
+    
+        }
+
+        
+        .container-twitts__img-perfil {
+
+            height: 4.0rem;
+            padding-left: 2.0rem;
+        }
+    }
+}

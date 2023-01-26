@@ -1,0 +1,13 @@
+.rodape {
+    grid-area: rodape;
+    border-top: 1px solid $cinza-azulado;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        font-size: 1.3rem;
+        color: $cinza-escuro;
+    }
+}
