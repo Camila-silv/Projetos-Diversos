@@ -1,0 +1,37 @@
+.initial-section__input-form {
+    
+    display: flex;
+    justify-content: space-between;
+    height: 13.0rem;
+    width: 50%;
+    max-width: 28.1rem;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2.0rem;
+    
+
+    .container-name__input, .container-value__input {
+        border: none;
+        border-bottom: 2px solid $cinza;
+        background-color: transparent;
+        outline: none;
+        width: 100%;
+        max-width: 28.3rem;
+        min-width: 19.4rem;
+        color: $cinza;
+        padding: .5rem 0rem .5rem .5rem;
+        
+    }
+
+    .container-name__icon, .container-value__icon {
+        position: absolute;
+        margin-left: -2.0rem;
+        font-size: 1.6rem;
+        color: $cinza;
+    }
+
+    .input-form__button {
+
+        
+    }
+}
