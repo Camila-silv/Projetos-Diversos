@@ -1,0 +1,37 @@
+.container-main-content__section-multiplication-table {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .section-multiplication-table__button {
+
+        
+        padding: 1.5rem;
+        cursor: pointer;
+        color: #FFF;
+        font-size: 8.0rem;
+        transition: all .3s;
+        position: relative;
+
+       
+    }
+
+    .section-multiplication-table__button:nth-child(1) {
+        
+        &:hover {
+            
+            transform: translateX(-10px);
+        }
+    }
+
+    .section-multiplication-table__button:nth-child(3) {
+        
+        &:hover {
+          
+            transform: translateX(10px);
+        }
+
+    }
+}
