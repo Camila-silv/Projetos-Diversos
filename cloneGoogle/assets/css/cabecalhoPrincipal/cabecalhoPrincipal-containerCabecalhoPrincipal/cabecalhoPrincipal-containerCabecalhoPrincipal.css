@@ -1,5 +1,0 @@
-.cabecalho-principal__container-cabecalho-principal {
-    display: flex;
-    justify-content: end;
-    width: var(--largura-base);
-}
