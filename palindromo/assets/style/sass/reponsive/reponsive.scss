@@ -1,0 +1,36 @@
+@media screen and (max-width: 518px) {
+  .main-content__section-alerts {
+    .section-alerts__container-alert {
+      width: 400px;
+
+      .alert__label {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .main-content__section-alerts {
+    .section-alerts__container-alert {
+      width: 300px;
+
+      .alert__label {
+        font-size: 0.8rem;
+      }
+
+      .container-alert__button-close {
+        width: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 314px) {
+    .main-content__section-alerts {
+      .section-alerts__container-alert {
+        width: 230px;  
+       
+      }
+    }
+  }

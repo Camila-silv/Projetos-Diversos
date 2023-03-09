@@ -1,0 +1,102 @@
+.main-content__section-alerts {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 0rem;
+    left: 0rem;
+
+    .section-alerts__container-alert {
+
+        background-color: #8100f9;
+        border-radius: 50%;
+        height: 80px;
+        width: 500px;
+        padding: 2.0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        user-select: none;
+
+        .alert__label {
+
+            font-size: 3.0rem;
+            text-transform: uppercase;
+            color: #FFF;
+        }
+
+        .container-alert__button-close {
+
+            height: 20px;
+            width: 15px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            top: 20px;
+            right: 40px;
+            
+
+            .button-close__line {
+
+                height:.3rem;
+                width: 100%;
+                position: absolute;
+                background-color: #FFF;
+                display: flex;
+                border-radius: 1.5rem;
+                transition: .4s;                
+
+            }
+
+            .button-close__line:nth-child(1) {
+                
+                transform: rotate(-130deg);
+            }
+
+            .button-close__line:nth-child(2) {
+                
+                transform: rotate(130deg);
+            }
+
+            &:hover .button-close__line {
+                background-color: aqua;
+            }
+
+            
+        }
+
+        
+        .alert__label--font-size {
+            font-size: 1.3rem;
+        }   
+
+        .alert__label--sapce {
+            margin-bottom: .5rem;
+        }
+        
+        
+        .container-alert__container-not-palindromo {
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+
+    }
+
+    .hide-content {
+        display: none;
+    }
+}
+
+.hide-content {
+    display: none;
+}
