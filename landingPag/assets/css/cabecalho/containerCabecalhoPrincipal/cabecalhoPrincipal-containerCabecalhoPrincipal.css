@@ -1,7 +1,0 @@
-.cabecalho-principal__container-cabecalho-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    flex-wrap: wrap;
-}

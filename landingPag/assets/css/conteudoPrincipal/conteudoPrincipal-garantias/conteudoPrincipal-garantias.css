@@ -1,9 +1,0 @@
-.conteudo-principal__garantias {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    grid-area: garantias;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 15px;
-}

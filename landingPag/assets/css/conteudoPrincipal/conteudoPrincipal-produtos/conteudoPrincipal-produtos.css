@@ -1,8 +1,0 @@
-.conteudo-principal__produtos {
-    grid-area: produtos;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 30px;
-}

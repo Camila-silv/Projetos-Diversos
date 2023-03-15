@@ -1,8 +1,0 @@
-.conteudo-principal{
-    width: 100%;
-    grid-area: conteudo-principal;
-    grid-template-areas: 
-    "banner"
-    "garantias"
-    "produtos";
-}
