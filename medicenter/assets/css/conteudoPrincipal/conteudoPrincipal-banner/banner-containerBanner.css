@@ -1,7 +1,0 @@
-.banner__container-banner {
-    width: var(--largura-base);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
