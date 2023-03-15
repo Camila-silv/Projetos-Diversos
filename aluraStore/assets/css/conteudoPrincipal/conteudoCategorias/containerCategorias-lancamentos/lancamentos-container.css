@@ -1,7 +1,0 @@
-.lancamentos__container  {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--cinza-escuro);
-    margin-bottom: 20px;
-}

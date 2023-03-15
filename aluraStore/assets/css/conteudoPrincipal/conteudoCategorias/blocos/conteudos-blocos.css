@@ -1,9 +1,0 @@
-.conteudos__blocos {
-    padding: .75rem;
-    grid-area: card-conteudo;
-    display: grid;
-    grid-template-areas: 
-    "cabecalho-card"
-    "corpo-card";
-    grid-template-rows: 50px auto;
-}

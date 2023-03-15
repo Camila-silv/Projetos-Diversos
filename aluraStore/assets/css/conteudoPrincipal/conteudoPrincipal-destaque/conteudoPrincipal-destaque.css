@@ -1,9 +1,0 @@
-.conteudo-principal__destaque {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33.33% 33.33% 33.33%;
-    height: calc(100vh - 60px);
-    width: 95%;
-    margin: 0px auto;
-}
-
