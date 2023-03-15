@@ -1,9 +1,0 @@
-.lista-nav-principal__itens-nav-principal {
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    transition: border-color .2s linear;
-}
-
-
-.lista-nav-principal__itens-nav-principal:hover {
-    border-color: black;
-}
