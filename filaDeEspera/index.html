@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/css/reset.css" />
+    <link rel="stylesheet" href="./assets/style/css/main.css" />
+    <title>Fila de Espera</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/javascript/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/de114e8a58.js" crossorigin="anonymous" defer></script>
+    <link rel="shortcut icon" href="./assets/images/icons/icon.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <header class="main-header">
+      <div class="main-header__container-header">
+        <a class="container-header__logo" href="/"></a>
+
+        <div class="container-header__watch-container">
+          <span class="watch-container__watch-hr" data-hours="--">--</span>:<span class="watch-container__watch-min" data-min="--">--</span>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="main-content__patient-call">
+        <div class="patient-call__container-call">
+          <h2 class="container-call__title default-title">Paciente</h2>
+          <div class="container-call__call-box">
+            <span class="call-box__label">--</span>
+          </div>
+        </div>
+
+        <div class="patient-call__container-call ">
+          <h2 class="container-call__title default-title">Consultório</h2>
+          <div class="container-call__call-box call-box--modification">
+            <span class="call-box__label call-box__label--modification">--</span>
+          </div>
+        </div>
+
+        <button class="patient-call__button">Atender</button>
+      </section>
+
+      
+      <section class="main-content__waiting-section">
+        <h2 class="waiting-section__title default-title">Fila de espera</h2>
+
+        <div class="waiting-section__container">
+          <i class="fa-solid fa-arrow-left container__arrow"></i>
+          <div class="slider">
+            <ul class="waiting-section__patient-list">
+              
+              
+            </ul>
+          </div>
+          <i class="fa-solid fa-arrow-right container__arrow"></i>
+        </div>
+
+        
+      </section>
+
+      <section class="main-content__add-patient">
+        <h2 class="add-patient__title default-title">Novo paciente</h2>
+
+        <form class="add-patient__form-add-patient">
+          <input class="form-add-patient__input" type="text" placeholder="Nome" maxlength="15">
+          <button class="form-add-patient__button">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <span class="main-footer__label">Desenvolvido por Camila Silva | 2023</span>
+    </footer>
+  </body>
+</html>

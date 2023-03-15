@@ -1,0 +1,40 @@
+.add-patient__form-add-patient {
+  background-color: $dark-blue;
+  width: 500px;
+  height: 300px;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+
+  .form-add-patient__input {
+    outline: none;
+    background-color: #cccccc5b;
+    border: none;
+    text-align: center;
+    color: $white;
+  }
+
+  .form-add-patient__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 10px #ccc;
+    }
+  }
+
+  .form-add-patient__input,
+  .form-add-patient__button {
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+  }
+}

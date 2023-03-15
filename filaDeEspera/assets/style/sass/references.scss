@@ -1,0 +1,21 @@
+$dark-blue: #0a2538;
+$green: #4fbc79;
+$dark-green: #2e6a45;
+$light-blue: #296681;
+$white: #fff;
+$default-font: "Roboto", sans-serif;
+
+body {
+  font-family: $default-font;
+  position: relative;
+  height: 1150px;
+}
+
+.default-title {
+  color: $light-blue;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.0rem;
+  margin-bottom: 0.5rem;
+}

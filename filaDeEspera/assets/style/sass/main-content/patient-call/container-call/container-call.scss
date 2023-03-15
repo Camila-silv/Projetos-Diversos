@@ -1,0 +1,34 @@
+.patient-call__container-call {
+
+    
+
+    .container-call__call-box {
+
+        border: 2px solid $light-blue;
+        width: 350px;
+        height: 200px;
+        border-radius: 1.0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .call-box__label {
+            font-size: 6.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $light-blue;
+        }
+
+        .call-box__label--modification {
+            font-size: 8.0rem;
+            color: $white;            
+
+        }
+
+        
+    }
+
+    .call-box--modification {
+        background-color: $green;
+    }
+}

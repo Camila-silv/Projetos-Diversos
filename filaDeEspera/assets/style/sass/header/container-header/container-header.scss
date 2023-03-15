@@ -1,0 +1,22 @@
+.main-header__container-header {
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .container-header__logo {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  .container-header__watch-container {
+    color: $white;
+    font-size: 2.5rem;
+
+    
+  }
+}
