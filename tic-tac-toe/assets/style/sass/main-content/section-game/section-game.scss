@@ -1,0 +1,67 @@
+.container-main-content__section-game {
+
+
+    height: 82%;
+    display: grid;
+    grid-template-areas: 
+    "button1 button2 button3"
+    "button4 button5 button6"
+    "button7 button8 button9";
+    gap: 1.5rem;
+
+    .section-game__button {
+
+        cursor: pointer;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 1.0rem;
+        transition: .3s;
+        width: 20.0rem;
+        height: 17.4rem;
+        color: $bg-color;
+        text-transform: uppercase;
+        font-size: 13.0rem;
+        font-family: 'Varela Round', sans-serif;
+
+        &:hover {
+            background-color: #d7d5d5;
+        }
+        
+    }
+
+    .section-game__button:nth-child(1) {
+        grid-area: button1;
+    }
+
+    .section-game__button:nth-child(2) {
+        grid-area: button2;
+    }
+
+    .section-game__button:nth-child(3) {
+        grid-area: button3;
+    }
+
+    .section-game__button:nth-child(4) {
+        grid-area: button4;
+    }
+
+    .section-game__button:nth-child(5) {
+        grid-area: button5;
+    }
+
+    .section-game__button:nth-child(6) {
+        grid-area: button6;
+    }
+
+    .section-game__button:nth-child(7) {
+        grid-area: button7;
+    }
+
+    .section-game__button:nth-child(8) {
+        grid-area: button8;
+    }
+
+    .section-game__button:nth-child(9) {
+        grid-area: button9;
+    }
+}

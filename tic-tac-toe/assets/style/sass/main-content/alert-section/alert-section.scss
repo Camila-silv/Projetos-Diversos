@@ -1,0 +1,48 @@
+.main-content__alert-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .alert-section__alert {
+    background-color: $bg-color;
+    color: $primary-color;
+    height: 8rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1rem black;
+
+    .alert__close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      cursor: pointer;
+    }
+
+    .alert__lbl {
+      text-transform: uppercase;
+      font-weight: bold;
+           
+
+      .lbl__player {
+        color: red;
+        display: inline-block;
+        margin: 0 .5rem;
+      }
+    }
+  }
+
+  .hide-content {
+    display: none;
+  }
+}
+
+.hide-content {
+  display: none;
+}

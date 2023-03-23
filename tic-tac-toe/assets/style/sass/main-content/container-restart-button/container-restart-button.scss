@@ -1,0 +1,11 @@
+.main-content__container-restart-button {
+
+    cursor: pointer;
+    right: 5.0rem;
+    position: relative;
+
+    .container-restart-button__button {
+        font-size: 3.4rem;
+        color: $primary-color;
+    }
+}

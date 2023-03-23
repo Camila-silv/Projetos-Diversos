@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/css/reset.css" />
+    <link rel="stylesheet" href="./assets/style/css/main.css" />
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/de114e8a58.js" crossorigin="anonymous" defer></script>
+    <link rel="shortcut icon" href="./assets/images/icon/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="main-content__container-main-content">
+        <header class="container-main-content__container-header">
+          <div class="container-header__container">
+            <span class="container__players container__players--selected">
+              Vez do X
+            </span>
+            <span class="container__players"> Vez do O </span>
+          </div>
+        </header>
+
+        <section class="container-main-content__section-game">
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+          <button class="section-game__button"></button>
+        </section>
+      </div>
+
+      <div class="main-content__container-restart-button">
+        <i class="fa-solid fa-rotate-right container-restart-button__button"></i>
+      </div>
+
+      <section class="main-content__alert-section hide-content">
+        <div class="alert-section__alert hide-content">
+          <div class="alert__close">
+            X
+          </div>
+          <span class="alert__lbl">Jogador <span class="lbl__player">--</span> é o vencedor!!</span>
+        </div>
+
+        <div class="alert-section__alert hide-content">
+          <div class="alert__close">
+            X
+          </div>
+          <span class="alert__lbl">Já preenchido, escolha outro bloco.</span>
+        </div>
+
+        <div class="alert-section__alert hide-content">
+          <div class="alert__close">
+            X
+          </div>
+          <span class="alert__lbl">Empate</span>
+        </div>
+        
+      </section>
+    </main>
+
+  </body>
+</html>

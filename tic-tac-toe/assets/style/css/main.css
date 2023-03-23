@@ -1,0 +1,157 @@
+body {
+  background-color: #56baec;
+  height: 100vh;
+  font-family: "Varela Round", sans-serif;
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main-content .main-content__container-main-content {
+  height: 96%;
+  width: 63.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-main-content__container-header {
+  height: 7rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.container-header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 1.5rem;
+  user-select: none;
+}
+.container-header__container .container__players {
+  background-color: transparent;
+  color: #56baec;
+  width: 45%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.container-header__container .container__players--selected {
+  background-color: #56baec;
+  color: #ffffff;
+}
+
+.container-main-content__section-game {
+  height: 82%;
+  display: grid;
+  grid-template-areas: "button1 button2 button3" "button4 button5 button6" "button7 button8 button9";
+  gap: 1.5rem;
+}
+.container-main-content__section-game .section-game__button {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.3s;
+  width: 20rem;
+  height: 17.4rem;
+  color: #56baec;
+  text-transform: uppercase;
+  font-size: 13rem;
+  font-family: "Varela Round", sans-serif;
+}
+.container-main-content__section-game .section-game__button:hover {
+  background-color: #d7d5d5;
+}
+.container-main-content__section-game .section-game__button:nth-child(1) {
+  grid-area: button1;
+}
+.container-main-content__section-game .section-game__button:nth-child(2) {
+  grid-area: button2;
+}
+.container-main-content__section-game .section-game__button:nth-child(3) {
+  grid-area: button3;
+}
+.container-main-content__section-game .section-game__button:nth-child(4) {
+  grid-area: button4;
+}
+.container-main-content__section-game .section-game__button:nth-child(5) {
+  grid-area: button5;
+}
+.container-main-content__section-game .section-game__button:nth-child(6) {
+  grid-area: button6;
+}
+.container-main-content__section-game .section-game__button:nth-child(7) {
+  grid-area: button7;
+}
+.container-main-content__section-game .section-game__button:nth-child(8) {
+  grid-area: button8;
+}
+.container-main-content__section-game .section-game__button:nth-child(9) {
+  grid-area: button9;
+}
+
+.main-content__alert-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content__alert-section .alert-section__alert {
+  background-color: #56baec;
+  color: #ffffff;
+  height: 8rem;
+  width: 30rem;
+  border-radius: 1.5rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1rem black;
+}
+.main-content__alert-section .alert-section__alert .alert__close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+.main-content__alert-section .alert-section__alert .alert__lbl {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main-content__alert-section .alert-section__alert .alert__lbl .lbl__player {
+  color: red;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.main-content__alert-section .hide-content {
+  display: none;
+}
+
+.hide-content {
+  display: none;
+}
+
+.main-content__container-restart-button {
+  cursor: pointer;
+  right: 5rem;
+  position: relative;
+}
+.main-content__container-restart-button .container-restart-button__button {
+  font-size: 3.4rem;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */
