@@ -1,0 +1,20 @@
+.container-main-content__section-courses {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.0rem;
+
+    .section-courses__title {
+
+        font-weight: 900;
+        font-size: 4.0rem;
+        text-align: center;
+        margin-top: 4.0rem;
+        margin-bottom: 2.0rem;
+    }
+
+    .section-courses__button {
+
+        margin-bottom: 10.0rem;
+    }
+}

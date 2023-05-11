@@ -1,0 +1,15 @@
+.main-footer__navbar-footer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.0rem;
+    margin: 5.0rem 0;
+    
+
+    .navbar-footer__link {
+
+        color: $black;
+        font-weight: 500;
+        font-size: 2.0rem;
+    }
+}
