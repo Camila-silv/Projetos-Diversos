@@ -1,1 +1,0 @@
-import message from "./manipulacaoStyle.js"; 
