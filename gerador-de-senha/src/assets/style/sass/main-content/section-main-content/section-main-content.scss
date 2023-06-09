@@ -1,0 +1,39 @@
+.main-content__section-main-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90.0rem;
+    height: 40.0rem;
+    text-align: center;
+
+    .section-main-content__title {
+
+        font-weight: 900;
+        color: $white;
+        font-size: 6.0rem;
+        margin-bottom: 4.0rem;
+
+    }
+
+
+    .section-main-content__container-buttons {
+
+        display: flex;
+        justify-content: center;
+        gap: 3.5rem;
+        margin-bottom: 3.0rem;
+
+        .container-buttons__button {
+
+            font-weight: 500
+        }
+    }
+
+
+    .section-main-content__generated-password {
+
+        color: $white;
+        font-size: 2.0rem;
+    }
+}
