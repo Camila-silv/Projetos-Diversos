@@ -1,0 +1,4 @@
+@mixin bg-e-color($color, $bg) {
+    color: $color;
+    background-color: $bg;
+}

@@ -1,0 +1,24 @@
+@import "../base/typography";
+
+.main-header {
+  height: 6rem;
+}
+
+.main-header__main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  font: bold 1.4rem $main-font;
+  border-bottom: .3rem solid transparent;
+  color: #495371;
+
+  &:hover {
+    border-bottom: .3rem solid #74959A;
+  }
+}

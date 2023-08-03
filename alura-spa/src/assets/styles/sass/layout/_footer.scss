@@ -1,0 +1,33 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.container-product__title,
+.container-product__sub-title,
+.container-product__paragraphy {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0 1.5rem;
+}
+
+.container-footer-img__img {
+  width: 100%;
+  max-width: 55.6rem;
+}
+
+.main-footer__container-paragraphy {
+  background: rgb(241, 224, 172);
+  background: linear-gradient(
+    99deg,
+    rgba(241, 224, 172, 1) 22%,
+    rgba(116, 149, 154, 1) 71%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}

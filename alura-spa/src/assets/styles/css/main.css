@@ -1,0 +1,400 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-header {
+  height: 6rem;
+}
+
+.main-header__main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  font: bold 1.4rem "Roboto", sans-serif;
+  border-bottom: 0.3rem solid transparent;
+  color: #495371;
+}
+.main-nav__link:hover {
+  border-bottom: 0.3rem solid #74959A;
+}
+
+.banner {
+  height: 45rem;
+  background: url("../../../../public/banner.jpeg") no-repeat center;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__container-title {
+  background-color: #F1E0AC;
+  padding: 4.5rem 8rem;
+  font-weight: 300;
+  border-radius: 4.5rem;
+  margin: 0 1.5rem;
+}
+
+.container-title__title {
+  font-size: 5rem;
+  color: #495371;
+}
+
+.container-title__title--uppercase {
+  text-transform: uppercase;
+}
+
+.container-title__sub-title {
+  color: #74959A;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 400px) {
+  .banner__container-title {
+    padding: 4.5rem 3rem;
+  }
+}
+.section-services {
+  padding-bottom: 10rem;
+}
+
+.section-services__container-services {
+  margin: 0 auto;
+  max-width: 110rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.section-services__title {
+  color: #74959A;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.section-services__sub-title {
+  font-size: 4.1666666667rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.section-services__container-card {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 359px;
+  max-width: 1097px;
+}
+
+.container-card__card {
+  width: 359px;
+}
+
+.card__container-img {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.6rem solid #74959A;
+}
+
+.container-img__img {
+  width: 100%;
+}
+.container-img__img:hover {
+  animation: floatingImage 0.8s alternate infinite;
+}
+
+.card__title {
+  text-align: center;
+  font-size: 3.3333333333rem;
+  padding: 2rem 0;
+}
+
+.card__paragraphy {
+  font-size: 1.6666666667rem;
+  color: #495371;
+  line-height: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@keyframes floatingImage {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 0 -0.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .section-services__title {
+    font-size: 1.6666666667rem;
+  }
+  .section-services__sub-title {
+    font-size: 1.6666666667rem;
+    padding: 0 1.5rem;
+  }
+  .card__title {
+    font-size: 2.5rem;
+  }
+  .card__paragraphy {
+    font-size: 1.5rem;
+  }
+  .container-card__card {
+    margin-bottom: 2.5rem;
+  }
+}
+.section-discount {
+  background-color: #F1E0AC;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.section-discount__title {
+  color: #495371;
+  margin: 2rem;
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.9411764706rem;
+}
+
+.section-discount__container-input {
+  background-color: #ffffff;
+  margin-bottom: 2.5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+.section-discount__input {
+  border: none;
+  width: 30rem;
+  outline: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.section-discount__button:hover {
+  animation: bg-e-color 1s alternate infinite;
+}
+
+@keyframes bg-e-color {
+  from {
+    color: #74959A;
+    background-color: #495371;
+  }
+  to {
+    color: #495371;
+    background-color: #74959A;
+  }
+}
+@media (min-width: 360px) {
+  .section-discount__container-input {
+    min-width: 35rem;
+    max-width: 60rem;
+    width: 95%;
+  }
+}
+.button-default {
+  border: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  border-radius: 4rem;
+  font-weight: 700;
+  color: #74959A;
+  background-color: #495371;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.container-product__title,
+.container-product__sub-title,
+.container-product__paragraphy {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0 1.5rem;
+}
+
+.container-footer-img__img {
+  width: 100%;
+  max-width: 55.6rem;
+}
+
+.main-footer__container-paragraphy {
+  background: rgb(241, 224, 172);
+  background: linear-gradient(99deg, rgb(241, 224, 172) 22%, rgb(116, 149, 154) 71%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
