@@ -167,6 +167,12 @@ body {
   text-align: center;
 }
 
+.button-address {
+  background-color: #4894FF;
+  color: #FFFFFF;
+  width: 100%;
+}
+
 .container-appointments__date {
   font-weight: 700;
   font-size: 1.6rem;

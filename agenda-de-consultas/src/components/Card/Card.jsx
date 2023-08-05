@@ -1,5 +1,6 @@
 import { VscComment } from "react-icons/vsc";
 import { PiVideoCamera } from "react-icons/pi";
+import {CiLocationOn } from "react-icons/ci";
 import PropTypes from "prop-types";
 
 export default function Card({ name, modality, hour, photo, icon }) {
@@ -14,7 +15,7 @@ export default function Card({ name, modality, hour, photo, icon }) {
         <div className="container-patient__patient">
           <span className="patient__name">{name}</span>
           <span className="patient__query-modality">
-            {icon === "Consulta remota" ?  <PiVideoCamera className="query-modality__icon" /> : null}
+            {icon === "Consulta remota" ?  <PiVideoCamera className="query-modality__icon" /> : <CiLocationOn className="query-modality__icon"/>}
             
             {modality}
           </span>
@@ -36,7 +37,7 @@ export default function Card({ name, modality, hour, photo, icon }) {
                 Ligar por áudio
               </button>
             </>
-          ) : null}
+          ) : <button className="button-default button-address" >Ver endereço</button> }
         </div>
       </div>
     </div>
