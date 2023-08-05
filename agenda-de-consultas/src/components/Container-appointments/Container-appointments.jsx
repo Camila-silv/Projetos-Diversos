@@ -16,5 +16,5 @@ export default function ContainerAppointments({title, children, mClass}) {
 ContainerAppointments.propTypes = {
     title: PropTypes.string.isRequired,
     mClass: PropTypes.string,
-    children: PropTypes.element
+    children: PropTypes.element.isRequired
 };
