@@ -156,6 +156,14 @@ body {
   margin: 0 auto;
 }
 
+.container--margin-top {
+  margin-top: 4rem;
+}
+
+.container--padding-bottom {
+  padding-bottom: 3rem;
+}
+
 .button-default {
   height: 4.8rem;
   width: 13.9rem;

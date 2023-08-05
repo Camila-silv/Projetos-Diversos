@@ -49,6 +49,5 @@ Card.propTypes = {
   modality: PropTypes.string.isRequired,
   hour: PropTypes.string.isRequired,
   photo: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired
 };
