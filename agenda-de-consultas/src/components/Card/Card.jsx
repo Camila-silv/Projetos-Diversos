@@ -1,20 +1,22 @@
 import { VscComment } from "react-icons/vsc";
 import { PiVideoCamera } from "react-icons/pi";
+import PropTypes from "prop-types";
 
-export default function Card() {
+export default function Card({ name, modality, hour, photo, icon }) {
   return (
     <div className="container-appointments__appointment-information">
       <div className="appointment-information__container-patient">
         <img
           className="container-patient__img"
-          src="public/perfil-2.jpg"
-          alt=""
+          src={photo}
+          alt="Foto de perfil do usuário"
         />
         <div className="container-patient__patient">
-          <span className="patient__name">Luciana Dias</span>
+          <span className="patient__name">{name}</span>
           <span className="patient__query-modality">
-            <PiVideoCamera className="query-modality__icon" />
-            Consulta remota
+            {icon === "Consulta remota" ?  <PiVideoCamera className="query-modality__icon" /> : null}
+            
+            {modality}
           </span>
         </div>
         <span className="container-patient__container-icon">
@@ -23,18 +25,29 @@ export default function Card() {
       </div>
 
       <div className="appointment-information__container-hour">
-        <span className="container-hour__hour">
-          14:00 - 15:00 &#40;1 hora&#41;
-        </span>
+        <span className="container-hour__hour">{hour}</span>
         <div className="container-hour__query-modality">
-          <button className="query-modality__video button-default">
-            Ligar por vídeo
-          </button>
-          <button className="query-modality__audio button-default">
-            Ligar por áudio
-          </button>
+          {modality === "Consulta remota" ? (
+            <>
+              <button className="query-modality__video button-default">
+                Ligar por vídeo
+              </button>
+              <button className="query-modality__audio button-default">
+                Ligar por áudio
+              </button>
+            </>
+          ) : null}
         </div>
       </div>
     </div>
   );
 }
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  modality: PropTypes.string.isRequired,
+  hour: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired
+};
