@@ -166,6 +166,12 @@ body {
   padding-bottom: 3rem;
 }
 
+@media (min-width: 1062px) {
+  #root {
+    display: grid;
+    grid-template-areas: "nav-content header-content header-content" "nav-content main-content main-content";
+  }
+}
 .button-default {
   height: 4.8rem;
   width: 13.9rem;
@@ -200,16 +206,37 @@ body {
   font-weight: 700;
   font-size: 1.6rem;
   color: #464646;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.section-scheduled-appointments__container-appointments {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.container-appointments__container-slider {
+  height: 100%;
+}
+
+.container-slider__sliders {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-content: center;
 }
 
 .container-appointments__appointment-information {
   background-color: #FFFFFF;
   padding: 2rem 0 0.5rem 0;
-  margin-top: 1.5rem;
   border-radius: 0.8rem;
   min-width: 32.8rem;
   min-height: 17rem;
   position: relative;
+  width: 32.8rem;
 }
 
 .appointment-information__container-patient {
@@ -299,6 +326,29 @@ body {
   border: 0.1rem solid #ECECEC;
 }
 
+@media (min-width: 700px) {
+  .section-scheduled-appointments__container-appointments {
+    height: 60rem;
+  }
+  .container-appointments__container-slider {
+    width: 700px;
+    margin: 0 auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .container-slider__sliders {
+    height: 100%;
+    align-content: flex-start;
+    width: 9999px;
+  }
+}
+@media (min-width: 1062px) {
+  .container-appointments__container-slider {
+    max-width: 1062px;
+    width: 100%;
+    margin: 0 0;
+  }
+}
 .container-floating {
   display: flex;
   align-items: center;
@@ -319,6 +369,7 @@ body {
 
 .main-header {
   height: 11.1rem;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -352,10 +403,22 @@ body {
   font-size: 1.4rem;
 }
 
+@media (min-width: 1062px) {
+  .main-header {
+    grid-area: header-content;
+    width: calc(100vw - 184px);
+  }
+}
 .main-content {
   width: 100%;
 }
 
+@media (min-width: 1062px) {
+  .main-content {
+    grid-area: main-content;
+    width: calc(100vw - 184px);
+  }
+}
 .main-footer {
   display: flex;
   flex-direction: column;
@@ -406,6 +469,31 @@ body {
   justify-content: flex-end;
   position: fixed;
   padding-bottom: 9.4rem;
+}
+
+@media (min-width: 1062px) {
+  .main-footer {
+    grid-area: nav-content;
+    position: static;
+    width: 18.4rem;
+  }
+  .main-footer__nav-footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    border-radius: 0;
+  }
+  .nav-footer__links-nav-footer {
+    flex-direction: row;
+    padding-left: 1.5rem;
+  }
+  .container-floating-buttons__floating-button {
+    position: absolute;
+    right: 0;
+    bottom: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

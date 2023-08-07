@@ -1,5 +1,10 @@
 .main-content {
-
-    width: 100%;
+  width: 100%;
 }
 
+@media (min-width: 1062px) {
+  .main-content {
+    grid-area: main-content;
+    width: calc(100vw - 184px);
+  }
+}

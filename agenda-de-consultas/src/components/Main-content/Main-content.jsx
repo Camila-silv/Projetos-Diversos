@@ -30,6 +30,38 @@ export default function MainContent() {
               photo="public/perfil-4.jpg"
               icon="Consulta remota"
             />
+
+            <Card
+              name="Marcos Correia"
+              modality="Consulta remota"
+              hour="17:20 - 18:00 &#40;40 minutos&#41;"
+              photo="public/perfil-4.jpg"
+              icon="Consulta remota"
+            />
+
+            <Card
+              name="Larissa Santana"
+              modality="Consulta no local"
+              hour="16:00 - 17:00 &#40;1 hora&#41;"
+              photo="public/perfil-3.jpg"
+              icon="Consulta no local"
+            />
+
+            <Card
+              name="Marcos Correia"
+              modality="Consulta remota"
+              hour="17:20 - 18:00 &#40;40 minutos&#41;"
+              photo="public/perfil-4.jpg"
+              icon="Consulta remota"
+            />
+
+            <Card
+              name="Marcos Correia"
+              modality="Consulta remota"
+              hour="17:20 - 18:00 &#40;40 minutos&#41;"
+              photo="public/perfil-4.jpg"
+              icon="Consulta remota"
+            />
           </>
         </ContainerAppointments>
 

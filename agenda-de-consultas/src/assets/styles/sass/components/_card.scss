@@ -2,16 +2,37 @@
   font-weight: 700;
   font-size: 1.6rem;
   color: $gray;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.section-scheduled-appointments__container-appointments {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.container-appointments__container-slider {
+  height: 100%;
+}
+
+.container-slider__sliders {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-content: center;
 }
 
 .container-appointments__appointment-information {
   background-color: $primary-color;
   padding: 2rem 0 0.5rem 0;
-  margin-top: 1.5rem;
   border-radius: 0.8rem;
   min-width: 32.8rem;
   min-height: 17rem;
   position: relative;
+  width: 32.8rem;
 }
 
 .appointment-information__container-patient {
@@ -99,4 +120,31 @@
   color: $gray;
   background-color: transparent;
   border: 0.1rem solid $secundary-color;
+}
+
+@media (min-width: 700px) {
+  .section-scheduled-appointments__container-appointments {
+    height: 60rem;
+  }
+
+  .container-appointments__container-slider {
+    width: 700px;
+    margin: 0 auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .container-slider__sliders {
+    height: 100%;
+    align-content: flex-start;
+    width: 9999px;
+  }
+}
+
+@media (min-width: 1062px) {
+  .container-appointments__container-slider {
+    max-width: 1062px;
+    width: 100%;
+    margin: 0 0;
+  }
 }

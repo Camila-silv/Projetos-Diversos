@@ -1,5 +1,6 @@
 .main-header {
   height: 11.1rem;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -25,10 +26,17 @@
   font-weight: 700;
   font-size: 2.2rem;
   color: $gray;
-  margin-bottom: 1.0rem;
+  margin-bottom: 1rem;
 }
 
 .greeting-to-user__number-appointments {
   color: $light-gray;
   font-size: 1.4rem;
+}
+
+@media (min-width: 1062px) {
+  .main-header {
+    grid-area: header-content;
+    width: calc(100vw - 184px);
+  }
 }

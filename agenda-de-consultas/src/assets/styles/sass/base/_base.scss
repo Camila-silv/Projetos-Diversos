@@ -21,3 +21,12 @@ body {
 .container--padding-bottom {
     padding-bottom: 3.0rem;
 }
+
+@media (min-width: 1062px) {
+    #root {
+        display: grid;
+        grid-template-areas: 
+        "nav-content header-content header-content"
+        "nav-content main-content main-content";
+    }
+}
