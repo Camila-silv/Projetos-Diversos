@@ -1,0 +1,17 @@
+.container-floating {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.container-floating__span {
+  background-color: #ffffff;
+  color: $gray;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.container-floating__floating-button {
+  margin-bottom: 1.5rem;
+}

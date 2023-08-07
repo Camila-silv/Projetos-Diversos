@@ -152,7 +152,9 @@ body {
 }
 
 .container {
-  width: 32.8rem;
+  min-width: 32.8rem;
+  padding: 0 1.5rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -179,6 +181,19 @@ body {
   background-color: #4894FF;
   color: #FFFFFF;
   width: 100%;
+}
+
+.button-floating-button {
+  margin-right: 2rem;
+  width: 5.6rem;
+  cursor: pointer;
+  height: 5.6rem;
+  border-radius: 100%;
+  background-color: #4894FF;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  border: none;
+  box-shadow: 0rem 0rem 2rem rgba(72, 148, 255, 0.5);
 }
 
 .container-appointments__date {
@@ -284,6 +299,24 @@ body {
   border: 0.1rem solid #ECECEC;
 }
 
+.container-floating {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.container-floating__span {
+  background-color: #ffffff;
+  color: #464646;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.container-floating__floating-button {
+  margin-bottom: 1.5rem;
+}
+
 .main-header {
   height: 11.1rem;
   display: flex;
@@ -331,20 +364,6 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 9999;
-}
-
-.main-footer__floating-button {
-  margin-right: 2rem;
-  width: 5.6rem;
-  cursor: pointer;
-  height: 5.6rem;
-  border-radius: 100%;
-  background-color: #4894FF;
-  color: #FFFFFF;
-  font-size: 2.5rem;
-  border: none;
-  box-shadow: 0rem 0rem 2rem #4894FF;
 }
 
 .main-footer__nav-footer {
@@ -373,6 +392,20 @@ body {
 .links-nav-footer__icon {
   width: 2rem;
   height: 2.2rem;
+}
+
+.main-footer__container-floating-buttons {
+  background-color: rgba(0, 0, 0, 0.614);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: fixed;
+  padding-bottom: 9.4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
