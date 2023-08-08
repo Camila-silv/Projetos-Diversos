@@ -25,7 +25,7 @@ export default function ContainerModal() {
             setOpenForm(!openForm);
           }}
         >
-          Abrir modal
+          Nova consulta
         </button>
       )}
     </div>
