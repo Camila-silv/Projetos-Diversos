@@ -22,7 +22,7 @@ export default function Footer() {
           </ContainerFloating>
 
           <button
-            className="container-floating-buttons__floating-button button-floating-button"
+            className="container-floating-buttons__floating-button floating-button"
             onClick={() => {
               setLayout(!layout);
             }}
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
       ) : (
         <button
-          className="container-floating-buttons__floating-button button-floating-button"
+          className="container-floating-buttons__floating-button floating-button"
           onClick={() => {
             setLayout(!layout);
           }}

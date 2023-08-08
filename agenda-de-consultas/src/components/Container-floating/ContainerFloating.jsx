@@ -13,7 +13,7 @@ export default function ContainerFloating({label, children}) {
         </span>
       ) : null}
       <button
-        className="container-floating__floating-button button-floating-button"
+        className="container-floating__floating-button floating-button"
         onMouseOver={() => {
           setDisplayE(true);
         }}

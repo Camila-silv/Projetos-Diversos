@@ -75,8 +75,6 @@
   }
 
   .container-floating-buttons__floating-button {
-    position: absolute;
-    right: 0;
-    bottom: 3.5rem;
+    display: none;
   }
 }

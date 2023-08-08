@@ -189,7 +189,7 @@ body {
   width: 100%;
 }
 
-.button-floating-button {
+.floating-button {
   margin-right: 2rem;
   width: 5.6rem;
   cursor: pointer;
@@ -490,9 +490,7 @@ body {
     padding-left: 1.5rem;
   }
   .container-floating-buttons__floating-button {
-    position: absolute;
-    right: 0;
-    bottom: 3.5rem;
+    display: none;
   }
 }
 
