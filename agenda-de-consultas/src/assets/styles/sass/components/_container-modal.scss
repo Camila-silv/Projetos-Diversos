@@ -1,0 +1,49 @@
+.container-modal {
+
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    width: 36.0rem;
+    height: 64.0rem;
+}
+
+.container-modal__button-open {
+
+    @include bg-and-color ($quaternary-color, $primary-color);
+    border: .2rem solid transparent;
+    font-weight: 700;
+    transition: .3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &:hover {
+        @include bg-and-color ($primary-color, $quaternary-color);
+        border-color: $quaternary-color;
+    }
+
+}
+
+.container-modal__button-close {
+    @include bg-and-color ($quaternary-color, $primary-color);
+    border: .2rem solid transparent;
+    font-weight: 700;
+    transition: .3s;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    height: 4.0rem;
+    width: 4.0rem;
+
+    &:hover {
+        @include bg-and-color ($primary-color, $quaternary-color);
+        border-color: $quaternary-color;
+    }
+}
+
+@media (max-width: 1062px) {
+    .container-modal {
+      display: none;
+    }
+  }
+  

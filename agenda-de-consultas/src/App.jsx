@@ -1,3 +1,4 @@
+import ContainerModal from "./components/Container-modal/Container-modal";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Index";
 import MainContent from "./components/Main-content/Main-content";
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <MainContent />
       <Footer />
+      <ContainerModal />
     </>
   )
 }

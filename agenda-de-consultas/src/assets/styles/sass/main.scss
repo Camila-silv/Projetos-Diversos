@@ -2,9 +2,12 @@
 @import "./base/base";
 @import "./base/typography";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./components/buttons";
 @import "./components/card";
 @import "./components/container-floating";
 @import "./layout/header";
 @import "./layout/main-content";
 @import "./layout/footer";
+@import "./components/container-modal";
+@import "./components/form";
