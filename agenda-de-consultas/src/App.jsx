@@ -1,7 +1,7 @@
-import ContainerModal from "./components/Container-modal/Container-modal";
-import Footer from "./components/Footer/Footer";
+import ContainerModal from "./components/Container-modal/Index";
+import Footer from "./components/Footer/Index";
 import Header from "./components/Header/Index";
-import MainContent from "./components/Main-content/Main-content";
+import MainContent from "./components/Main-content/Index";
 
 export default function App() {
   return (
