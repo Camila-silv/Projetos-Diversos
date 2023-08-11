@@ -1,0 +1,16 @@
+.button-form {
+    background-color: #6278F7;
+    border-radius: 1.0rem;
+    height: 8.0rem;
+    width: 16.7rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 2.0rem;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: #95FFD4;
+    }
+}
