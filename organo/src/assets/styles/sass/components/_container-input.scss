@@ -1,31 +1,23 @@
-.container-input {
-
-
-}
-
 .container-input__label {
-
-    font-weight: 600;
-    font-size: 1.8rem;
-    display: block;
-    margin-bottom: 1.0rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1rem;
 }
-
 
 .container-input__input {
-
-    width: 100%;
-    height: 8.0rem;
-    background-color: #FFFFFF;
-    border: none;
-    box-shadow: 1.0rem 1.0rem 3.0rem 0 hsla(0, 0%, 0%, 0.121);
-    margin-bottom: 5.0rem;
-    outline: none;
-    font-size: 1.6rem;
-    padding: 0 4.0rem;
+  width: 100%;
+  height: 8rem;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 1rem 1rem 3rem 0 hsla(0, 0%, 0%, 0.121);
+  margin-bottom: 5rem;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 0 4rem;
 }
 
 .container-input__input::placeholder {
-    color: #AFAFAF;
-    font-weight: 400;
+  color: #afafaf;
+  font-weight: 400;
 }
