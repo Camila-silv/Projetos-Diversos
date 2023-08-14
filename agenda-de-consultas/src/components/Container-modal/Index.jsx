@@ -7,17 +7,7 @@ export default function ContainerModal() {
   return (
     <div className="container-modal">
       {openForm === true ? (
-        <>
-          <button
-            className="container-modal__button-close button-default"
-            onClick={() => {
-              setOpenForm(!openForm);
-            }}
-          >
-            x
-          </button>
-          <Form />
-        </>
+        <Form closeForm={(close) => setOpenForm(close)} close={openForm} />
       ) : (
         <button
           className="container-modal__button-open button-default"
