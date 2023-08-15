@@ -1,0 +1,54 @@
+.card-squad {
+
+    width: 26.2rem;
+    height: 27.2rem;
+    background-color: #FFF;
+    border-radius: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-squad__container-header-card {
+
+    background-color: #57C278;
+    flex: 1;
+    width: 100%;
+
+}
+
+.card-squad__container-body-card {
+
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3.0rem;
+}
+
+.container-body-card__img {
+
+    height: 12.2rem;
+    width: 12.0rem;
+    border-radius: 100%;
+    margin-top: -5.0rem;
+}
+
+.container-body-card__member {
+
+    color: #6278F7;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2.0rem;
+
+}
+
+.container-body-card__function {
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}

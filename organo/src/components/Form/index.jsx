@@ -2,11 +2,19 @@ import { useState } from "react";
 import Button from "../Button";
 import ContainerInput from "../Container-input";
 import ContainerSelect from "../Container-select";
+import PropTypes from "prop-types";
 
-export default function Form() {
+export default function Form({salvarGrupo}) {
   const submit = (e) => {
     e.preventDefault();
 
+    
+    salvarGrupo({
+      nome,
+      cargo,
+      imagem,
+      selecionado
+    })
   };
 
   const groups = [
@@ -74,4 +82,9 @@ export default function Form() {
       <Button value="Criar card" />
     </form>
   );
+}
+
+
+Form.propTypes = {
+  salvarGrupo: PropTypes.func
 }

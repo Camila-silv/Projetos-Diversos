@@ -159,6 +159,20 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+.organization-section__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #6278F7;
+  font-family: "Prata", serif;
+  margin-bottom: 8rem;
+}
+
+.title--border {
+  border-bottom: 0.4rem solid #6278F7;
+  padding-bottom: 1.5rem;
+}
+
 .form {
   width: 112.1rem;
   margin: 0 auto;
@@ -174,6 +188,30 @@ a {
   font-weight: 400;
   margin-bottom: 6rem;
   font-family: "Prata", serif;
+}
+
+.container-squads {
+  background-color: rgba(0, 200, 111, 0.15);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0 3rem 0;
+}
+
+.container-squads__title {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.container-squads__container-squad {
+  margin-top: 3rem;
+}
+
+.container-squad__container-sliders {
+  display: flex;
+  gap: 4rem;
 }
 
 .card-builder-section {
@@ -218,6 +256,53 @@ a {
 }
 .button-form:hover {
   color: #95FFD4;
+}
+
+.card-squad {
+  width: 26.2rem;
+  height: 27.2rem;
+  background-color: #FFF;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-squad__container-header-card {
+  background-color: #57C278;
+  flex: 1;
+  width: 100%;
+}
+
+.card-squad__container-body-card {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.container-body-card__img {
+  height: 12.2rem;
+  width: 12rem;
+  border-radius: 100%;
+  margin-top: -5rem;
+}
+
+.container-body-card__member {
+  color: #6278F7;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.container-body-card__function {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

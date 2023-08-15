@@ -1,0 +1,29 @@
+.container-squads {
+
+    background-color: rgba(0, 200, 111, 0.15);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3.0rem 0 3.0rem 0;
+}
+
+.container-squads__title {
+
+    font-family: $title-default;
+    font-weight: 400;
+    font-size: 3.2rem;
+    padding-bottom: 3.0rem;
+    
+}
+
+.container-squads__container-squad {
+
+    margin-top: 3.0rem;
+}
+
+.container-squad__container-sliders {
+
+    display: flex;
+    gap: 4.0rem;
+}
+
