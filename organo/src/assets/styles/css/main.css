@@ -165,7 +165,7 @@ a {
   font-size: 4rem;
   color: #6278F7;
   font-family: "Prata", serif;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 .title--border {
@@ -202,7 +202,15 @@ a {
   font-family: "Prata", serif;
   font-weight: 400;
   font-size: 3.2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+hr {
+  background-color: #57C278;
+  border: none;
+  width: 3.2rem;
+  height: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .container-squads__container-squad {
@@ -212,6 +220,12 @@ a {
 .container-squad__container-sliders {
   display: flex;
   gap: 4rem;
+}
+
+.footer {
+  height: 23.3rem;
+  background: url("public/rodape.png") center no-repeat;
+  background-size: cover;
 }
 
 .card-builder-section {
@@ -266,6 +280,7 @@ a {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.2509803922);
 }
 
 .card-squad__container-header-card {
