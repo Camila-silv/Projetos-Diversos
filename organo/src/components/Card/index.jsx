@@ -11,7 +11,7 @@ export default function Card({ name, func, src, color }) {
         <img
           className="container-body-card__img"
           src={src}
-          alt="Imagem do membro"
+          alt={`Imagem do membro, ${name}`}
         />
         <h4 className="container-body-card__member">{name}</h4>
         <span className="container-body-card__function">{func}</span>

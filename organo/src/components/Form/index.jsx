@@ -4,34 +4,29 @@ import ContainerInput from "../Container-input";
 import ContainerSelect from "../Container-select";
 import PropTypes from "prop-types";
 
-export default function Form({salvarGrupo}) {
+export default function Form({ salvarGrupo, times }) {
   const submit = (e) => {
     e.preventDefault();
 
-    
+   
     salvarGrupo({
       nome,
       cargo,
       imagem,
-      selecionado
-    })
+      selecionado,
+    });
+
+    setNome("");
+    setCargo("");
+    setImagem("public/sem-foto.png");
+    setSelecionado("Programação");
   };
 
-  const groups = [
-    "",
-    "Programação",
-    "Front-End",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
 
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
-  const [imagem, setImagem] = useState("");
-  const [selecionado, setSelecionado] = useState("");
+  const [imagem, setImagem] = useState("public/sem-foto.png");
+  const [selecionado, setSelecionado] = useState("Programação");
 
   return (
     <form className="form" onSubmit={submit}>
@@ -61,7 +56,7 @@ export default function Form({salvarGrupo}) {
         label="Imagem"
         placeholder="Informe o endereço da imagem"
         htmlFor="img"
-        valor={imagem}
+        valor={imagem}        
         aoAlterado={(valor) => setImagem(valor)}
         id="img"
       />
@@ -72,19 +67,19 @@ export default function Form({salvarGrupo}) {
         valor={selecionado}
         aoAlterado={(valor) => setSelecionado(valor)}
       >
-        {groups.map((group) => 
+        {times.map((group) => (
           <option value={group} key={group}>
             {group}
           </option>
-        )}
+        ))}
       </ContainerSelect>
 
-      <Button value="Criar card" />
+      <Button value="Criar card"/>
     </form>
   );
 }
 
-
 Form.propTypes = {
-  salvarGrupo: PropTypes.func
-}
+  salvarGrupo: PropTypes.func,
+  times: PropTypes.array,
+};

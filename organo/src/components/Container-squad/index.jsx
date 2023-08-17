@@ -3,35 +3,30 @@ import Card from "../Card";
 
 export default function ContainerSquad({ title, bg, color, members }) {
   return (
-    <section
-      className="container-squads"
-      style={{ backgroundColor: bg }}
-      onClick={() => {
-        console.log(color);
-      }}
-    >
-      <h3 className="container-squads__title">{title}</h3>
-      <hr style={{ backgroundColor: color }} />
-      <div className="container-squads__container-squad">
-        {/* container que esconde */}
-        <div className="container-squad__container-sliders">
-          {/* container que guarda */}
+    members.length > 0 ? 
+      <section className="container-squads" style={{ backgroundColor: bg }}>
+        <h3 className="container-squads__title">{title}</h3>
+        <hr style={{ backgroundColor: color }} />
+        <div className="container-squads__container-squad">
+          {/* container que esconde */}
+          <div className="container-squad__container-sliders">
+            {/* container que guarda */}
 
-          {members.map((member) => {
-            console.log(members);
-            return (
-              <Card
-                src={member.img}
-                name={member.memberName}
-                func={member.func}
-                color={color}
-                key={member.memberName}
-              />
-            );
-          })}
+            {members.map((member) => {
+              return (
+                <Card
+                  src={member.imagem}
+                  name={member.nome}
+                  func={member.cargo}
+                  color={color}
+                  key={member.nome}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section> : null
+    
   );
 }
 
