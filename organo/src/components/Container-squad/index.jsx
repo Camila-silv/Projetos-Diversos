@@ -1,17 +1,19 @@
 import PropTypes from "prop-types";
 import Card from "../Card";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 export default function ContainerSquad({ title, bg, color, members }) {
-  return (
-    members.length > 0 ? 
-      <section className="container-squads" style={{ backgroundColor: bg }}>
-        <h3 className="container-squads__title">{title}</h3>
-        <hr style={{ backgroundColor: color }} />
-        <div className="container-squads__container-squad">
-          {/* container que esconde */}
+  return members.length > 0 ? (
+    <section className="container-squads" style={{ backgroundColor: bg }}>
+      <h3 className="container-squads__title">{title}</h3>
+      <hr style={{ backgroundColor: color }} />
+      <div className="container-squads__container-squad">
+        <BsFillArrowLeftCircleFill className="arrow" />
+        <div className="container-squad__container-slider">
           <div className="container-squad__container-sliders">
-            {/* container que guarda */}
-
             {members.map((member) => {
               return (
                 <Card
@@ -25,9 +27,10 @@ export default function ContainerSquad({ title, bg, color, members }) {
             })}
           </div>
         </div>
-      </section> : null
-    
-  );
+        <BsFillArrowRightCircleFill className="arrow" />
+      </div>
+    </section>
+  ) : null;
 }
 
 ContainerSquad.propTypes = {

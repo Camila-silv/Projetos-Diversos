@@ -206,7 +206,7 @@ a {
 }
 
 hr {
-  background-color: #57C278;
+  background-color: #57c278;
   border: none;
   width: 3.2rem;
   height: 0.4rem;
@@ -214,11 +214,35 @@ hr {
 }
 
 .container-squads__container-squad {
+  position: relative;
+}
+
+.container-squad__container-slider {
   margin-top: 3rem;
+  width: 100%;
+  max-width: 147rem;
+  overflow: scroll;
+}
+
+.arrow {
+  position: absolute;
+  top: 136px;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.arrow:nth-child(1) {
+  margin-left: 1.5rem;
+}
+
+.arrow:nth-child(3) {
+  margin-right: 1.5rem;
+  right: 0;
 }
 
 .container-squad__container-sliders {
   display: flex;
+  width: 9999.9rem;
   gap: 4rem;
 }
 
