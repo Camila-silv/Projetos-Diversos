@@ -19,7 +19,6 @@ export default function Form({ salvarGrupo, times }) {
     setNome("");
     setCargo("");
     setImagem("public/sem-foto.png");
-    setSelecionado("Programação");
   };
 
 

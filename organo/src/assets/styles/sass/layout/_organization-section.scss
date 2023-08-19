@@ -17,3 +17,9 @@
     border-bottom: .4rem solid #6278F7;
     padding-bottom: 1.5rem;
 }
+
+@media (max-width: 750px) {
+    .organization-section__title {
+        font-size: 2.2rem;
+    }
+}

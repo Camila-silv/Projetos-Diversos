@@ -173,8 +173,15 @@ a {
   padding-bottom: 1.5rem;
 }
 
+@media (max-width: 750px) {
+  .organization-section__title {
+    font-size: 2.2rem;
+  }
+}
 .form {
-  width: 112.1rem;
+  max-width: 112.1rem;
+  min-width: 37rem;
+  margin: 100%;
   margin: 0 auto;
   margin-top: 8rem;
   background-color: #F6F6F6;
@@ -190,6 +197,11 @@ a {
   font-family: "Prata", serif;
 }
 
+@media (max-width: 750px) {
+  .form__title {
+    font-size: 2.2rem;
+  }
+}
 .container-squads {
   background-color: rgba(0, 200, 111, 0.15);
   display: flex;
@@ -215,13 +227,17 @@ hr {
 
 .container-squads__container-squad {
   position: relative;
+  width: 96%;
+  min-width: 38rem;
 }
 
 .container-squad__container-slider {
   margin-top: 3rem;
   width: 100%;
   max-width: 147rem;
-  overflow: scroll;
+  overflow: hidden;
+  height: 290px;
+  scroll-behavior: smooth;
 }
 
 .arrow {
@@ -242,18 +258,28 @@ hr {
 
 .container-squad__container-sliders {
   display: flex;
-  width: 9999.9rem;
+  width: 999.9rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
   gap: 4rem;
 }
 
+@media (max-width: 750px) {
+  .container-squads__title {
+    font-size: 2.2rem;
+  }
+}
 .footer {
   height: 23.3rem;
+  width: 100%;
+  min-width: 38rem;
   background: url("public/rodape.png") center no-repeat;
   background-size: cover;
 }
 
 .card-builder-section {
-  padding-bottom: 10rem;
+  padding: 0 1.5rem 10rem 1.5rem;
 }
 
 .container-input__label {

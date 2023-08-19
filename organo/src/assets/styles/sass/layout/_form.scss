@@ -1,6 +1,8 @@
 .form {
 
-    width: 112.1rem;
+    max-width: 112.1rem;
+    min-width: 37.0rem;   
+    margin: 100%;
     margin: 0 auto;
     margin-top: 8.0rem;
     background-color: #F6F6F6;
@@ -17,4 +19,10 @@
     font-weight: 400;
     margin-bottom: 6.0rem;
     font-family: $title-default;
+}
+
+@media (max-width: 750px) {
+    .form__title {
+        font-size: 2.2rem;
+    }
 }
