@@ -1,0 +1,40 @@
+.header__header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.header-navbar__icons-navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.header-navbar__link {
+  background-color: transparent;
+  border-radius: 0.4rem;
+  color: $white-normal;
+  border: 0.2rem solid $white-normal;
+  background-color: transparent;
+  padding: 0.7rem 2.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $red-normal;
+    border-color: $red-normal;
+  }
+}
+
+@media (max-width: 720px) {
+  .header__header-navbar {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .header-navbar__link {
+    display: none;
+  }
+}

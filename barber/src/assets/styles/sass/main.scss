@@ -1,0 +1,18 @@
+@import "./base/reset";
+@import "./base/typography";
+@import "./abstracts/variables";
+@import "./base/base";
+@import "./abstracts/mixins";
+
+@import "./layout/layout";
+@import "./layout/header";
+@import "./layout/section-about";
+@import "./layout/section-services";
+@import "./layout/section-location";
+@import "./layout/footer";
+
+
+@import "./components/navbar";
+@import "./components/wallpaper";
+@import "./components/featured-section";
+@import "./components/icons"

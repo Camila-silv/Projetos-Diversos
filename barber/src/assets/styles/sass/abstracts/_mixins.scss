@@ -1,0 +1,18 @@
+@keyframes translateY{
+    from {
+        transform: translateY(0) scale(1);
+        
+    } to {
+        transform: translateY(-.8rem) scale(1.1);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+        
+    } to {
+        transform: scale(1.1);
+    }
+}
+    

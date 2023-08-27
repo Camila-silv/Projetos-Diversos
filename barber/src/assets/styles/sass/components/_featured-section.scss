@@ -1,0 +1,63 @@
+.header__featured-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $white-normal;
+    height: 80vh;
+}
+
+.featured-section__title {
+
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 7.2rem;
+
+}
+
+.featured-section__label {
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1.0rem 0 4.0rem 0;
+}
+
+.featured-section__featured-section-button {
+
+    border: none;
+    background-color: $red-normal;
+    
+}
+
+.featured-section__link {
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $white-normal;
+    padding: 1.5rem 2.0rem;
+    background-color: $red-normal;
+
+    &:hover {
+        animation: scale .8s infinite alternate;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .featured-section__title {
+        font-size: 3.4rem;
+        line-height: 5.1rem;
+    }
+
+    .featured-section__label {
+        font-size: 1.6rem;
+        margin-top: 3.0rem;
+    }
+
+    .featured-section__link {
+        font-size: 1.6rem;
+    }
+}
+
