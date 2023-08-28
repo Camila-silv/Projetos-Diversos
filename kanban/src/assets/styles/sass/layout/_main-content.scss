@@ -1,0 +1,27 @@
+.main-content {
+  grid-area: main-content;
+  width: auto;
+  width: calc(100vw - 23rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content__main-content-header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-header__title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: $white-normal;
+}
+
+.main-content__task-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}

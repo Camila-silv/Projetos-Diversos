@@ -1,0 +1,24 @@
+.header {
+    grid-area: header;
+    background-color: $secondary-color;
+    width: 23.0rem;
+    padding: 0 .5rem;
+}
+
+.header__container-header-icon {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    border-bottom: .2rem solid rgb(73, 73, 73);
+}
+
+
+.container-header-icon__icon {
+
+    font-size: 8.0rem;
+    color: $white-normal;
+
+}

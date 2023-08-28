@@ -1,0 +1,55 @@
+.task-section__container-task {
+  min-height: 20rem;
+  width: 25rem;
+  background-color: #e9e8ee;
+  padding: 1rem;
+}
+
+.container-task__title,
+.container-task__container-tasks {
+  margin-bottom: 1.5rem;
+}
+
+.container-task__title {
+  background-color: #cdccd2;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container-task__container-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.container-tasks__task {
+  background-color: #fefefe;
+  padding: 1.5rem;
+}
+
+.task__label {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.container-task__button-task {
+  background-color: #05aecd;
+  color: $white-normal;
+  width: 100%;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 0.7rem 0;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #04869d;
+  }
+}

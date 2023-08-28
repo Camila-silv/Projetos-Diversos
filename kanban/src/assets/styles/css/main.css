@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;1,600&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -148,8 +149,117 @@ img {
   width: 100%;
 }
 
-body {
+#root {
   background-color: #446392;
+  font-family: "Arimo", sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header main-content" "header main-content";
+  grid-template-rows: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #263a5d;
+  width: 23rem;
+  padding: 0 0.5rem;
+}
+
+.header__container-header-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  border-bottom: 0.2rem solid rgb(73, 73, 73);
+}
+
+.container-header-icon__icon {
+  font-size: 8rem;
+  color: #FFF;
+}
+
+.main-content {
+  grid-area: main-content;
+  width: auto;
+  width: calc(100vw - 23rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content__main-content-header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-header__title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.main-content__task-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}
+
+.task-section__container-task {
+  min-height: 20rem;
+  width: 25rem;
+  background-color: #e9e8ee;
+  padding: 1rem;
+}
+
+.container-task__title,
+.container-task__container-tasks {
+  margin-bottom: 1.5rem;
+}
+
+.container-task__title {
+  background-color: #cdccd2;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container-task__container-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.container-tasks__task {
+  background-color: #fefefe;
+  padding: 1.5rem;
+}
+
+.task__label {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.container-task__button-task {
+  background-color: #05aecd;
+  color: #FFF;
+  width: 100%;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 0.7rem 0;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.5s;
+}
+.container-task__button-task:hover {
+  background-color: #04869d;
 }
 
 /*# sourceMappingURL=main.css.map */

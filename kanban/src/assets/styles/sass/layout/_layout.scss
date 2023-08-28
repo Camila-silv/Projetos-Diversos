@@ -1,0 +1,10 @@
+#root {
+    background-color: $primary-color;
+    font-family: $font-default;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header main-content"
+    "header main-content";
+    grid-template-rows: 100vh;
+}
