@@ -33,6 +33,7 @@
 
 .accordion__container-img {
   position: relative;
+  min-width: 36.1rem;
 }
 
 .container-img__img {
@@ -68,7 +69,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30rem;
+  max-width: 30rem;
+  margin-right: 1.5rem;
 }
 
 .faq-list-item__faq-item {
@@ -89,4 +91,51 @@
 .faq-list-item__accordion {
   margin-top: 2rem;
   line-height: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .accordion__container-accordion {
+    flex-direction: column;
+    padding: 0 0 5rem 0;
+    overflow: visible;
+  }
+
+  .accordion::before {
+    display: none;
+  }
+
+  .accordion__container-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 30.9rem;
+  }
+
+  .accordion__container-img {
+    max-width: 36.1rem;
+    margin: 80px 0;
+    flex: 0;
+    height: 100px;
+    display: flex;
+  }
+
+  .container-img__img {
+    right: 0;
+    position: absolute;
+    top: -270px;
+  }
+
+  .accordion__container-img::before {
+    content: "";
+    background-image: url("../../images/bg-pattern-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    right: 0rem;
+    top: -10.6rem;
+  }
+  
 }
