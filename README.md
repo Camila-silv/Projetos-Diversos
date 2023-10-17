@@ -1,5 +1,5 @@
 <h1 align="center">
- Cantinho do Desenvolvimento
+ Área de Desenvolvimento
 </h1>
 
 <div align="center">
