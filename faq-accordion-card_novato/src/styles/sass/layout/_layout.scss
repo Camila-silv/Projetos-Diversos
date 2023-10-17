@@ -1,0 +1,10 @@
+#root {
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 22%,
+    rgba(101, 101, 231, 1) 66%
+  );
+  width: 100%;
+  font-family: $font-default;
+}
