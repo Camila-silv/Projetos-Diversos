@@ -253,6 +253,10 @@ body {
   display: block;
 }
 
+.faq-list-item__faq-item--stronge {
+  font-weight: 700;
+}
+
 .faq-item__button {
   background-color: transparent;
   border: none;
