@@ -244,6 +244,7 @@ body {
   justify-content: center;
   max-width: 30rem;
   margin-right: 1.5rem;
+  cursor: pointer;
 }
 
 .faq-list-item__faq-item {
@@ -264,6 +265,10 @@ body {
 .faq-list-item__accordion {
   margin-top: 2rem;
   line-height: 1.5rem;
+}
+
+.faq-list-item__accordion--hidden {
+  display: none;
 }
 
 @media (max-width: 700px) {
