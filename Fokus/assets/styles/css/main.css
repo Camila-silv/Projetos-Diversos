@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: rgb(139, 31, 248);
+  background: linear-gradient(180deg, rgb(139, 31, 248) 0%, rgb(4, 24, 50) 50%, rgb(1, 8, 14) 100%);
+  font-family: "Unbounded", sans-serif;
+}
+
+.main-header {
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-fokus__img {
+  max-width: 156.36px;
+  height: 4rem;
+}
+
+.section-container-banner {
+  margin: 8rem 0;
+  height: 405.55px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+}
+
+.section-container-banner__container-banner-title {
+  width: 489px;
+}
+
+.container-banner-title__banner-title {
+  font-size: 5.3rem;
+  font-weight: 200;
+  color: #fff;
+  line-height: 80.55px;
+}
+
+.banner-title--strong {
+  font-weight: 700;
+  display: block;
+  line-height: 79.5px;
+}
+
+.container-banner-img__img {
+  height: 100%;
+  max-width: 483.51px;
+}
+
+/*# sourceMappingURL=main.css.map */
