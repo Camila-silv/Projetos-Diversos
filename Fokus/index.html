@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <link rel="stylesheet" href="./assets/styles/css/main.css" />
     <title>Fokus</title>
   </head>
   <body>
     <header class="main-header">
       <h1 class="main-header__logo-fokus">
-        <img src="./images/Logo e Favicons/Logo.png" alt="Logo da Fokus" class="logo-fokus__img"/>
+        <img
+          src="./images/Logo e Favicons/Logo.png"
+          alt="Logo da Fokus"
+          class="logo-fokus__img"
+        />
       </h1>
     </header>
 
@@ -17,7 +21,10 @@
       <section class="section-container-banner">
         <div class="section-container-banner__container-banner-title">
           <h2 class="container-banner-title__banner-title">
-              Otimize sua produtividade, <strong class="banner-title--strong">mergulhe no que importa</strong>
+            Otimize sua produtividade,
+            <strong class="banner-title--strong"
+              >mergulhe no que importa</strong
+            >
           </h2>
         </div>
 
@@ -29,44 +36,60 @@
           />
         </div>
       </section>
-      <section class="main-content__container-pomodoro">
-        
-        <section>
-          <div>foco descanso curto descanso longo</div>
-          <span>tempo</span>
-          <div>
-            <div>musica</div>
-            <button>Começar</button>
+
+      <div class="container-app">
+        <section class="container-app__container-pomodoro">
+          <div class="container-pomodoro__container-availability-options">
+            <button
+              class="container-availability-options__button-availability-options button-availability-options--selected"
+            >
+              Foco
+            </button>
+            <button
+              class="container-availability-options__button-availability-options"
+            >
+              Descanso curto
+            </button>
+            <button
+              class="container-availability-options__button-availability-options"
+            >
+              Descanso longo
+            </button>
           </div>
+          <span class="container-pomodoro__time">25:00</span>
+
+          <div class="container-pomodoro__container-focus-music"><div class="container-focus-music__option-control"><div class="option-control__control"></div></div><span class="container-focus-music__label">Música</span></div>
+          <button class="container-pomodoro__button-start"> <img src="./images/Ícones/play_arrow.svg" alt="" class="button-start__icon">Começar</button>
         </section>
-      </section>
-      <section>
-        <header>
-          <div>#em andamento: <span>Nome da tarefa em andamento</span></div>
-        </header>
-        <div>
-          <div>
-            <h2>Lista de tarefas:</h2>
-            <button>:</button>
-          </div>
 
-          <ul>
-            <li>icone tarefa concluida icone</li>
-          </ul>
-
+        <section>
+          <header>
+            <div>#em andamento: <span>Nome da tarefa em andamento</span></div>
+          </header>
           <div>
             <div>
-              <h3>Adicionando tarefa</h3>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <div>
-                <button>Delete</button>
-                <div><button>Cancelar</button> <button>Salvar</button></div>
-              </div>
+              <h2>Lista de tarefas:</h2>
+              <button>:</button>
             </div>
-            <button>Adicionar nova tarefa</button>
+
+            <ul>
+              <li>icone tarefa concluida icone</li>
+            </ul>
+
+            <div>
+              <div>
+                <h3>Adicionando tarefa</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div>
+                  <button>Delete</button>
+                  <div><button>Cancelar</button> <button>Salvar</button></div>
+                </div>
+              </div>
+              <button>Adicionar nova tarefa</button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer></footer>

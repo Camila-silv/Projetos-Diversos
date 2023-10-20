@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Unbounded:wght@200;400;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -153,6 +153,7 @@ body {
   background: rgb(139, 31, 248);
   background: linear-gradient(180deg, rgb(139, 31, 248) 0%, rgb(4, 24, 50) 50%, rgb(1, 8, 14) 100%);
   font-family: "Unbounded", sans-serif;
+  color: #fff;
 }
 
 .main-header {
@@ -182,7 +183,6 @@ body {
 .container-banner-title__banner-title {
   font-size: 5.3rem;
   font-weight: 200;
-  color: #fff;
   line-height: 80.55px;
 }
 
@@ -195,6 +195,103 @@ body {
 .container-banner-img__img {
   height: 100%;
   max-width: 483.51px;
+}
+
+.container-app__container-pomodoro {
+  background-color: rgba(20, 68, 128, 0.3);
+  max-width: 58.8rem;
+  margin: 0 auto;
+  padding: 2.4rem;
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  border: 0.2rem solid rgb(20, 68, 128);
+}
+
+.container-pomodoro__container-availability-options {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.container-availability-options__button-availability-options {
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  border: 0.1rem solid transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+.button-availability-options--selected {
+  font-weight: 600;
+  background-color: rgb(20, 68, 128);
+}
+
+.container-pomodoro__time {
+  font-size: 11.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-pomodoro__container-focus-music {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.container-focus-music__option-control {
+  width: 6rem;
+  height: 3.2rem;
+  border-radius: 2.4rem;
+  background-color: rgb(184, 114, 255);
+  padding: 0.4rem 0.4rem 0.4rem 3.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option-control__control {
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.container-focus-music__label {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.container-pomodoro__button-start {
+  background: rgb(184, 114, 255);
+  background: linear-gradient(180deg, rgb(184, 114, 255) 0%, rgb(20, 68, 128) 100%);
+  border: none;
+  border-radius: 3.2rem;
+  width: 18rem;
+  height: 4rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button-start__icon {
+  height: 2.4rem;
+  width: 18.85px;
 }
 
 /*# sourceMappingURL=main.css.map */
