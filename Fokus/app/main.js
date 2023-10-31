@@ -12,6 +12,8 @@ const buttonPomodoro = document.querySelector("[data-startpomodoro]");
 let tempoDecorrido = 1500;
 const focusMusic = document.getElementById("audio-focus-music");
 
+let intervaloId = null;
+
 availabilityOptions.forEach((button) => {
   button.addEventListener("click", () => {
     availabilityOptions.forEach((button) => {
@@ -92,11 +94,34 @@ document
 // ----------------------------------- parte pomodoro ----------------------------------
 
 buttonPomodoro.addEventListener("click", () => {
+  if (buttonPomodoro.dataset.active === "true") {
+    buttonPomodoro.innerHTML = `<img
+    src="./assets/images/Ícones/play_arrow.svg"
+    alt=""
+    class="button-start__icon"
+    
+  />Começar`;
+    clearInterval(intervaloId);
+    intervaloId = null;
+    buttonPomodoro.dataset.active = "false";
+    document.getElementById("stop-audio").play();
+    return;
+  }
+
+  buttonPomodoro.innerHTML = `<img
+    src="./assets/images/Ícones/pause.svg"
+    alt=""
+    class="button-start__icon"
+    
+  />Pause`;
+
+  buttonPomodoro.dataset.active = "true";
+  document.getElementById("play-audio").play();
   runPomodoro();
 });
 
 function runPomodoro() {
-  setInterval(elapsedTimeInSeconds, 1000);
+  intervaloId = setInterval(elapsedTimeInSeconds, 1000);
 }
 
 function elapsedTimeInSeconds() {

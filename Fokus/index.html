@@ -84,11 +84,12 @@
             </div>
             <span class="container-focus-music__label">Música</span>
           </div>
-          <button class="container-pomodoro__button-start" data-startpomodoro>
+          <button class="container-pomodoro__button-start" data-startpomodoro data-active="false">
             <img
               src="./assets/images/Ícones/play_arrow.svg"
               alt=""
               class="button-start__icon"
+              
             />Começar
           </button>
         </section>
@@ -154,7 +155,21 @@
       src="./assets/Músicas e sons/Opções música foco/Luna Rise, Part One.mp3"
       controls
       id="audio-focus-music"
-      class="audio-focus-music"
+      class="hide-audio"
+    ></audio>
+
+    <audio
+      src="./assets/Músicas e sons/Press play.wav"
+      controls
+      id="play-audio"
+      class="hide-audio"
+    ></audio>
+
+    <audio
+      src="./assets/Músicas e sons/Press stop button.mp3"
+      controls
+      id="stop-audio"
+      class="hide-audio"
     ></audio>
 
     <footer></footer>
