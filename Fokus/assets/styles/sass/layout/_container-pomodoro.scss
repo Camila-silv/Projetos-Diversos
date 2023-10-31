@@ -52,7 +52,7 @@
   width: 6rem;
   height: 3.2rem;
   border-radius: 2.4rem;
-  background-color: rgba(184, 114, 255, 1);
+  background-color: #ccc;
   padding: 0.4rem 0.4rem 0.4rem 0.4rem;
   display: flex;
   align-items: center;
@@ -61,8 +61,8 @@
   position: relative;
 }
 
-.option-control--disabled {
-  background-color: #CCC;
+.option-control--active {
+  background-color: rgba(184, 114, 255, 1);
 }
 
 .option-control__control {
@@ -71,12 +71,12 @@
   background-color: #fff;
   border-radius: 100%;
   position: absolute;
-  right: 0.4rem;
+  right: 3.6rem;
   transition: right 0.3s;
 }
 
-.control--disabled {
-  right: 3.6rem;
+.control--active {
+  right: 0.4rem;
 }
 
 .container-focus-music__label {

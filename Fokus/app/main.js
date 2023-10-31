@@ -10,12 +10,10 @@ const pomodoroTime = document.querySelector("[data-pomodoro-time]");
 const musicStartControl = document.querySelector("[data-option-control]");
 const buttonPomodoro = document.querySelector("[data-startpomodoro]");
 let tempoDecorrido = 1500;
+const focusMusic = document.getElementById("audio-focus-music");
 
 availabilityOptions.forEach((button) => {
   button.addEventListener("click", () => {
-    for (let i = 0; i < availabilityOptions.length; i++) {
-      availabilityOptions[i].dataset.active = "false";
-    }
     availabilityOptions.forEach((button) => {
       button.classList.remove("button-availability-options--selected");
     });
@@ -66,9 +64,15 @@ availabilityOptions.forEach((button) => {
 });
 
 musicStartControl.addEventListener("click", () => {
-  musicStartControl.classList.toggle("option-control--disabled");
-  musicStartControl.children[0].classList.toggle("control--disabled");
-  console.log(musicStartControl.children[0]);
+  musicStartControl.classList.toggle("option-control--active");
+  musicStartControl.children[0].classList.toggle("control--active");
+
+  if (musicStartControl.classList.contains("option-control--active")) {
+    focusMusic.play();
+    focusMusic.loop = "true";
+  } else {
+    focusMusic.pause();
+  }
 });
 
 document
