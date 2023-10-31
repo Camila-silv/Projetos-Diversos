@@ -1,4 +1,10 @@
 body {
+  background: #000;
+  font-family: $default-font;
+  color: #fff;
+}
+
+.focus {
   background: rgb(139, 31, 248);
   background: linear-gradient(
     180deg,
@@ -6,6 +12,24 @@ body {
     rgba(4, 24, 50, 1) 50%,
     rgba(1, 8, 14, 1) 100%
   );
-  font-family: $default-font;
-  color: #fff;
+}
+
+.short-rest {
+  background: rgb(15, 114, 92);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 114, 92, 1) 0%,
+    rgba(4, 24, 50, 1) 50%,
+    rgba(1, 8, 14, 1) 100%
+  );
+}
+
+.long-rest {
+  background: rgb(24, 117, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 117, 233, 1) 0%,
+    rgba(4, 24, 50, 1) 48.44%,
+    rgba(1, 8, 14, 1) 100%
+  );
 }

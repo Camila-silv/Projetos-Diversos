@@ -1,6 +1,6 @@
 .container-app__container-pomodoro {
   background-color: rgba(20, 68, 128, 0.3);
-  max-width: 58.8rem;
+  width: 100%;
   margin: 0 auto;
   padding: 2.4rem;
   border-radius: 3.2rem;
@@ -53,10 +53,16 @@
   height: 3.2rem;
   border-radius: 2.4rem;
   background-color: rgba(184, 114, 255, 1);
-  padding: 0.4rem 0.4rem 0.4rem 3.2rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.option-control--disabled {
+  background-color: #CCC;
 }
 
 .option-control__control {
@@ -64,6 +70,13 @@
   width: 2rem;
   background-color: #fff;
   border-radius: 100%;
+  position: absolute;
+  right: 0.4rem;
+  transition: right 0.3s;
+}
+
+.control--disabled {
+  right: 3.6rem;
 }
 
 .container-focus-music__label {

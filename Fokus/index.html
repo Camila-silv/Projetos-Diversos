@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo e Favicons/Favicon-2.png"
+      type="image/x-icon"
+    />
+
+    <script src="./app/main.js" defer></script>
     <title>Fokus</title>
   </head>
-  <body>
+  <body class="focus" id="root">
     <header class="main-header">
       <h1 class="main-header__logo-fokus">
         <img
-          src="./images/Logo e Favicons/Logo.png"
+          src="./assets/images/Logo e Favicons/Logo.png"
           alt="Logo da Fokus"
-          class="logo-fokus__img"
+          class="logo-fokus__img"          
         />
       </h1>
     </header>
 
     <main class="main-content">
       <section class="section-container-banner">
-        <div class="section-container-banner__container-banner-title">
+        <div class="section-container-banner__container-banner-title" data-container-banner-title>
           <h2 class="container-banner-title__banner-title">
             Otimize sua produtividade,
             <strong class="banner-title--strong"
@@ -30,9 +37,10 @@
 
         <div class="section-container-banner__container-banner-img">
           <img
-            src="./images/Imagem foco.png"
+            src="./assets/images/Imagem foco.png"
             alt="Ilustração de um homem de costa, usando um fone, e uma blusa."
             class="container-banner-img__img"
+            data-banner-img
           />
         </div>
       </section>
@@ -42,51 +50,95 @@
           <div class="container-pomodoro__container-availability-options">
             <button
               class="container-availability-options__button-availability-options button-availability-options--selected"
+              data-availability-options
+              id="foco"
             >
               Foco
             </button>
             <button
               class="container-availability-options__button-availability-options"
+              data-availability-options
+              id="descanso-curto"
             >
               Descanso curto
             </button>
             <button
               class="container-availability-options__button-availability-options"
+              data-availability-options
+              id="descanso-longo"
             >
               Descanso longo
             </button>
           </div>
-          <span class="container-pomodoro__time">25:00</span>
+          <span class="container-pomodoro__time" data-pomodoro-time>25:00</span>
 
-          <div class="container-pomodoro__container-focus-music"><div class="container-focus-music__option-control"><div class="option-control__control"></div></div><span class="container-focus-music__label">Música</span></div>
-          <button class="container-pomodoro__button-start"> <img src="./images/Ícones/play_arrow.svg" alt="" class="button-start__icon">Começar</button>
+          <div class="container-pomodoro__container-focus-music">
+            <div class="container-focus-music__option-control" data-option-control>
+              <div class="option-control__control"></div>
+            </div>
+            <span class="container-focus-music__label">Música</span>
+          </div>
+          <button class="container-pomodoro__button-start" data-startpomodoro>
+            <img
+              src="./assets/images/Ícones/play_arrow.svg"
+              alt=""
+              class="button-start__icon"
+              
+            />Começar
+          </button>
         </section>
 
-        <section>
-          <header>
-            <div>#em andamento: <span>Nome da tarefa em andamento</span></div>
+        <section class="container-app__section-tasks">
+          <header class="section-tasks__header-tasks">
+            <div class="header-tasks__container-task-status">
+              #Em andamento:
+              <span class="container-task-status__task-in-progress"
+                >Nome da tarefa em andamento</span
+              >
+            </div>
           </header>
-          <div>
-            <div>
-              <h2>Lista de tarefas:</h2>
-              <button>:</button>
+          <div class="section-tasks__container-tasks-list">
+            <div class="container-tasks-list__container-title-tasks-list">
+              <h2 class="container-title-tasks-list__title">
+                Lista de tarefas:
+              </h2>
+              <button class="container-title-tasks-list__button-clear">
+                <img
+                  src="./assets/images/Ícones/more_vert lilás.svg"
+                  alt=""
+                  class="button-clear__img"
+                />
+              </button>
             </div>
 
-            <ul>
-              <li>icone tarefa concluida icone</li>
-            </ul>
-
-            <div>
+            <!-- <div>
+              <ul>
+                <li>icone tarefa concluida icone</li>
+              </ul>
+  
               <div>
-                <h3>Adicionando tarefa</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
                 <div>
-                  <button>Delete</button>
-                  <div><button>Cancelar</button> <button>Salvar</button></div>
+                  <h3>Adicionando tarefa</h3>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <div>
+                    <button>Delete</button>
+                    <div><button>Cancelar</button> <button>Salvar</button></div>
+                  </div>
                 </div>
+                
               </div>
-              <button>Adicionar nova tarefa</button>
-            </div>
+            </div> -->
+
+            
+
+            <button class="container-tasks-list__button-add-task" data-button-add-task>
+              <img
+                src="./assets/images/Ícones/Add_lilás.png"
+                alt=""
+                class="button-add-task__img"
+                data-button-image
+              />Adicionar nova tarefa
+            </button>
           </div>
         </section>
       </div>
