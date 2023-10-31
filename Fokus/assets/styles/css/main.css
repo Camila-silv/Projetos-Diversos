@@ -153,6 +153,7 @@ body {
   background: #000;
   font-family: "Unbounded", sans-serif;
   color: #fff;
+  position: relative;
 }
 
 .focus {
@@ -168,6 +169,19 @@ body {
 .long-rest {
   background: rgb(24, 117, 233);
   background: linear-gradient(180deg, rgb(24, 117, 233) 0%, rgb(4, 24, 50) 48.44%, rgb(1, 8, 14) 100%);
+}
+
+body::before {
+  content: "";
+  background-image: url("../../images/Background-linhas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .main-header {

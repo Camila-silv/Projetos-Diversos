@@ -1,3 +1,5 @@
+
+
 const availabilityOptions = document.querySelectorAll(
   "[data-availability-options]"
 );
@@ -6,61 +8,103 @@ const containerBannerTitle = document.querySelector(
 );
 const bannerImg = document.querySelector("[data-banner-img]");
 const root = document.getElementById("root");
-const pomodoroTime = document.querySelector("[data-pomodoro-time]");
+
 const musicStartControl = document.querySelector("[data-option-control]");
 const buttonPomodoro = document.querySelector("[data-startpomodoro]");
 let tempoDecorrido = 1500;
 const focusMusic = document.getElementById("audio-focus-music");
 
-let intervaloId = null;
+
+
+const bannerContent = [
+  {
+    title: `<h2 class="container-banner-title__banner-title">
+    Otimize sua produtividade,
+    <strong class="banner-title--strong"
+      >mergulhe no que importa</strong
+    >
+  </h2>`,
+    img: "./assets/images/Imagem foco.png",
+    time: "25:00",
+  },
+  {
+    title: `<h2 class="container-banner-title__banner-title">
+    Que tal dar uma respirada?
+    <strong class="banner-title--strong"
+      >Faça uma pausa curta!</strong
+    >
+  </h2>`,
+    img: "./assets/images/Imagem descanso curto.png",
+    time: "05:00",
+  },
+  {
+    title: `<h2 class="container-banner-title__banner-title">
+    Hora de voltar à superfície.
+    <strong class="banner-title--strong"
+      >Faça uma pausa longa.</strong
+    >
+  </h2>`,
+    img: "./assets/images/Imagem descanso longo.png",
+    time: "15:00",
+  },
+];
+
+const focusTypes = ["short-rest", "long-rest", "focus"];
+
+function showBannerContent(title, img, time) {
+  containerBannerTitle.innerHTML = title;
+  bannerImg.src = img;
+  pomodoroTime.textContent = time;
+}
+
+function modifyStyle(selectedFocus) {
+  focusTypes.forEach((focus) => {
+    root.classList.remove(focus);
+  });
+
+  root.classList.add(selectedFocus);
+  document
+    .getElementById(selectedFocus)
+    .classList.add("button-availability-options--selected");
+}
 
 availabilityOptions.forEach((button) => {
   button.addEventListener("click", () => {
     availabilityOptions.forEach((button) => {
       button.classList.remove("button-availability-options--selected");
     });
-    if (button.id === "foco") {
-      containerBannerTitle.innerHTML = `<h2 class="container-banner-title__banner-title">
-            Otimize sua produtividade,
-            <strong class="banner-title--strong"
-              >mergulhe no que importa</strong
-            >
-          </h2>`;
-      bannerImg.src = "./assets/images/Imagem foco.png";
-      root.classList.remove("short-rest");
-      root.classList.remove("long-rest");
-      root.classList.add("focus");
-      button.classList.add("button-availability-options--selected");
-      pomodoroTime.textContent = "25:00";
-      tempoDecorrido = 1500;
-    } else if (button.id === "descanso-curto") {
-      containerBannerTitle.innerHTML = `<h2 class="container-banner-title__banner-title">
-        Que tal dar uma respirada?
-        <strong class="banner-title--strong"
-          >Faça uma pausa curta!</strong
-        >
-      </h2>`;
-      bannerImg.src = "./assets/images/Imagem descanso curto.png";
-      root.classList.remove("long-rest");
-      root.classList.remove("focus");
-      root.classList.add("short-rest");
-      button.classList.add("button-availability-options--selected");
-      pomodoroTime.textContent = "05:00";
-      tempoDecorrido = 300;
-    } else {
-      containerBannerTitle.innerHTML = `<h2 class="container-banner-title__banner-title">
-        Hora de voltar à superfície.
-        <strong class="banner-title--strong"
-          >Faça uma pausa longa.</strong
-        >
-      </h2>`;
-      bannerImg.src = "./assets/images/Imagem descanso longo.png";
-      root.classList.remove("focus");
-      root.classList.remove("short-rest");
-      root.classList.add("long-rest");
-      button.classList.add("button-availability-options--selected");
-      pomodoroTime.textContent = "15:00";
-      tempoDecorrido = 900;
+
+    switch (button.id) {
+      case "focus":
+        showBannerContent(
+          bannerContent[0].title,
+          bannerContent[0].img,
+          bannerContent[0].time
+        );
+
+        modifyStyle("focus");
+        tempoDecorrido = 1500;
+        break;
+      case "short-rest":
+        showBannerContent(
+          bannerContent[1].title,
+          bannerContent[1].img,
+          bannerContent[1].time
+        );
+
+        modifyStyle("short-rest");
+        tempoDecorrido = 300;
+        break;
+      case "long-rest":
+        showBannerContent(
+          bannerContent[2].title,
+          bannerContent[2].img,
+          bannerContent[2].time
+        );
+
+        modifyStyle("long-rest");
+        tempoDecorrido = 900;
+        break;
     }
   });
 });
@@ -91,46 +135,3 @@ document
       "./assets/images/Ícones/Add_lilás.png";
   });
 
-// ----------------------------------- parte pomodoro ----------------------------------
-
-buttonPomodoro.addEventListener("click", () => {
-  if (buttonPomodoro.dataset.active === "true") {
-    buttonPomodoro.innerHTML = `<img
-    src="./assets/images/Ícones/play_arrow.svg"
-    alt=""
-    class="button-start__icon"
-    
-  />Começar`;
-    clearInterval(intervaloId);
-    intervaloId = null;
-    buttonPomodoro.dataset.active = "false";
-    document.getElementById("stop-audio").play();
-    return;
-  }
-
-  buttonPomodoro.innerHTML = `<img
-    src="./assets/images/Ícones/pause.svg"
-    alt=""
-    class="button-start__icon"
-    
-  />Pause`;
-
-  buttonPomodoro.dataset.active = "true";
-  document.getElementById("play-audio").play();
-  runPomodoro();
-});
-
-function runPomodoro() {
-  intervaloId = setInterval(elapsedTimeInSeconds, 1000);
-}
-
-function elapsedTimeInSeconds() {
-  const time = new Date(tempoDecorrido * 1000);
-  const formattedTime = time.toLocaleTimeString("pt-Br", {
-    minute: "2-digit",
-    second: "2-digit",
-  });
-  pomodoroTime.innerHTML = `${formattedTime}`;
-
-  tempoDecorrido--;
-}

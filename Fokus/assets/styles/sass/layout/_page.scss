@@ -2,6 +2,7 @@ body {
   background: #000;
   font-family: $default-font;
   color: #fff;
+  position: relative;
 }
 
 .focus {
@@ -32,4 +33,17 @@ body {
     rgba(4, 24, 50, 1) 48.44%,
     rgba(1, 8, 14, 1) 100%
   );
+}
+
+body::before {
+  content: "";
+  background-image: url("../../images/Background-linhas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
