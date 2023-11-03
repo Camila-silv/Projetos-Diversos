@@ -1,21 +1,10 @@
-
+import { showBannerContent, modifyStyle } from "./showContent.js";
 
 const availabilityOptions = document.querySelectorAll(
   "[data-availability-options]"
 );
-const containerBannerTitle = document.querySelector(
-  "[data-container-banner-title]"
-);
-const bannerImg = document.querySelector("[data-banner-img]");
-const root = document.getElementById("root");
-
 const musicStartControl = document.querySelector("[data-option-control]");
-const buttonPomodoro = document.querySelector("[data-startpomodoro]");
-let tempoDecorrido = 1500;
 const focusMusic = document.getElementById("audio-focus-music");
-
-
-
 const bannerContent = [
   {
     title: `<h2 class="container-banner-title__banner-title">
@@ -48,25 +37,6 @@ const bannerContent = [
     time: "15:00",
   },
 ];
-
-const focusTypes = ["short-rest", "long-rest", "focus"];
-
-function showBannerContent(title, img, time) {
-  containerBannerTitle.innerHTML = title;
-  bannerImg.src = img;
-  pomodoroTime.textContent = time;
-}
-
-function modifyStyle(selectedFocus) {
-  focusTypes.forEach((focus) => {
-    root.classList.remove(focus);
-  });
-
-  root.classList.add(selectedFocus);
-  document
-    .getElementById(selectedFocus)
-    .classList.add("button-availability-options--selected");
-}
 
 availabilityOptions.forEach((button) => {
   button.addEventListener("click", () => {
@@ -134,4 +104,3 @@ document
     document.querySelector("[data-button-image]").src =
       "./assets/images/Ícones/Add_lilás.png";
   });
-

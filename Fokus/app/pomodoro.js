@@ -1,5 +1,7 @@
 const pomodoroTime = document.querySelector("[data-pomodoro-time]");
 let intervaloId = null;
+const buttonPomodoro = document.querySelector("[data-startpomodoro]");
+let tempoDecorrido = 1500;
 
 buttonPomodoro.addEventListener("click", () => {
   if (buttonPomodoro.dataset.active === "true") {
@@ -42,4 +44,3 @@ function elapsedTimeInSeconds() {
 
   tempoDecorrido--;
 }
-

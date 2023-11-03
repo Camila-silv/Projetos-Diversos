@@ -10,8 +10,9 @@
       type="image/x-icon"
     />
 
-    <script src="./app/main.js" defer></script>
+    <script src="./app/main.js" defer type="module"></script>
     <script src="./app/pomodoro.js" defer></script>
+    <script src="./app/tasks.js" defer></script>
     <title>Fokus</title>
   </head>
   <body class="focus" id="root">
@@ -85,12 +86,15 @@
             </div>
             <span class="container-focus-music__label">Música</span>
           </div>
-          <button class="container-pomodoro__button-start" data-startpomodoro data-active="false">
+          <button
+            class="container-pomodoro__button-start"
+            data-startpomodoro
+            data-active="false"
+          >
             <img
               src="./assets/images/Ícones/play_arrow.svg"
               alt=""
               class="button-start__icon"
-              
             />Começar
           </button>
         </section>
@@ -118,23 +122,86 @@
               </button>
             </div>
 
-            <!-- <div>
-              <ul>
-                <li>icone tarefa concluida icone</li>
+            <div class="container-tasks-list__tasks">
+              <ul class="tasks__list-of-created-tasks" data-tasks-list>
+                <li class="list-of-created-tasks__created-tasks">
+                  <img
+                    src="./assets/images/Ícones/Check_branco.svg"
+                    alt=""
+                    class="created-tasks__icon"
+                  />
+                  <span class="created-tasks__task-name">Tarefa concluida</span>
+
+                  <button class="created-tasks__button-edit">
+                    <img
+                      src="./assets/images/Ícones/edit (1).png"
+                      alt=""
+                      class="created-tasks__icon created-tasks__icon--custom"
+                    />
+                  </button>
+                </li>
+
+                <li class="list-of-created-tasks__created-tasks">
+                  <img
+                    src="./assets/images/Ícones/Check_branco.svg"
+                    alt=""
+                    class="created-tasks__icon"
+                  />
+                  <span class="created-tasks__task-name">Tarefa concluida</span>
+
+                  <button class="created-tasks__button-edit">
+                    <img
+                      src="./assets/images/Ícones/edit (1).png"
+                      alt=""
+                      class="created-tasks__icon created-tasks__icon--custom"
+                    />
+                  </button>
+                </li>
               </ul>
-  
-              <div>
-                <div>
-                  <h3>Adicionando tarefa</h3>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
-                  <div>
-                    <button>Delete</button>
-                    <div><button>Cancelar</button> <button>Salvar</button></div>
-                  </div>
+
+              <div
+                class="tasks__container-created-task hidden-content"
+                data-container-created-task
+              >
+                <h3 class="container-created-task__title-created-task">
+                  Adicionando tarefa
+                </h3>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="container-create-task__textarea"
+                  placeholder="No que você está trabalhando?"
+                ></textarea>
+                <div class="container-create-task__container-buttons">
+                  <button class="container-buttons__button">
+                    <img
+                      src="./assets/images/Ícones/delete_outline (1).svg"
+                      alt=""
+                      class="button__img-button-container"
+                    />Deletar
+                  </button>
+                  <button
+                    class="container-buttons__button"
+                    data-button-cancel-task-creation
+                  >
+                    <img
+                      src="./assets/images/Ícones/close (1).svg"
+                      alt=""
+                      class="button__img-button-container"
+                    />Cancelar
+                  </button>
+                  <button class="container-buttons__button" data-button-save-task>
+                    <img
+                      src="./assets/images/Ícones/save.svg"
+                      alt=""
+                      class="button__img-button-container"
+                    />Salvar
+                  </button>
                 </div>
-                
               </div>
-            </div> -->
+            </div>
 
             <button
               class="container-tasks-list__button-add-task"
@@ -175,6 +242,4 @@
 
     <footer></footer>
   </body>
-
-  
 </html>

@@ -1,7 +1,7 @@
 @import "./base/reset";
 @import "./abstracts/variables";
 @import "./base/typography";
-@import "./layout/page";
+
 
 
 @import "./layout/header";
@@ -12,3 +12,5 @@
 @import "./layout/section-tasks";
 
 @import "./components/audio";
+
+@import "./layout/page";

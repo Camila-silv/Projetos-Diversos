@@ -149,41 +149,6 @@ img {
   width: 100%;
 }
 
-body {
-  background: #000;
-  font-family: "Unbounded", sans-serif;
-  color: #fff;
-  position: relative;
-}
-
-.focus {
-  background: rgb(139, 31, 248);
-  background: linear-gradient(180deg, rgb(139, 31, 248) 0%, rgb(4, 24, 50) 50%, rgb(1, 8, 14) 100%);
-}
-
-.short-rest {
-  background: rgb(15, 114, 92);
-  background: linear-gradient(180deg, rgb(15, 114, 92) 0%, rgb(4, 24, 50) 50%, rgb(1, 8, 14) 100%);
-}
-
-.long-rest {
-  background: rgb(24, 117, 233);
-  background: linear-gradient(180deg, rgb(24, 117, 233) 0%, rgb(4, 24, 50) 48.44%, rgb(1, 8, 14) 100%);
-}
-
-body::before {
-  content: "";
-  background-image: url("../../images/Background-linhas.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -999;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-
 .main-header {
   height: 12rem;
   display: flex;
@@ -424,7 +389,170 @@ body::before {
   width: 2.4rem;
 }
 
+.container-tasks-list__tasks {
+  margin-top: 3rem;
+}
+
+.tasks__list-of-created-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.list-of-created-tasks__created-tasks {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 6.4rem;
+  border-radius: 0.8rem;
+  padding: 0 1.6rem 0 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: #000;
+  position: relative;
+}
+
+.list-of-created-tasks__created-tasks--completed {
+  background-color: rgba(0, 244, 191, 0.4);
+  height: 6.4rem;
+  border-radius: 0.8rem;
+  padding: 0 1.6rem 0 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: #000;
+  position: relative;
+}
+
+.created-tasks__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+.created-tasks__button-edit {
+  position: absolute;
+  right: 1.6rem;
+  border: 0.1rem solid #000;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.created-tasks__icon--custom {
+  margin: 0.4rem;
+}
+
+.created-tasks__task-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.tasks__container-created-task {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.container-created-task__title-created-task {
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.container-create-task__textarea {
+  height: 12rem;
+  width: 100%;
+  background-color: rgb(152, 160, 168);
+  outline: none;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.8rem;
+  resize: none;
+}
+
+.container-create-task__container-buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  gap: 1.6rem;
+}
+
+.container-buttons__button:nth-child(1) {
+  position: absolute;
+  left: 1.6rem;
+}
+
+.container-buttons__button:nth-child(3) {
+  background-color: #000;
+  border-radius: 3.2rem;
+  padding: 1.6rem;
+  color: #FFF;
+}
+
+.container-buttons__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.button__img-button-container {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
 .hide-audio {
+  display: none;
+}
+
+body {
+  background: #000;
+  font-family: "Unbounded", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.focus {
+  background: rgb(139, 31, 248);
+  background: linear-gradient(180deg, rgb(139, 31, 248) 0%, rgb(4, 24, 50) 50%, rgb(1, 8, 14) 100%);
+}
+
+.short-rest {
+  background: rgb(15, 114, 92);
+  background: linear-gradient(180deg, rgb(15, 114, 92) 0%, rgb(4, 24, 50) 50%, rgb(1, 8, 14) 100%);
+}
+
+.long-rest {
+  background: rgb(24, 117, 233);
+  background: linear-gradient(180deg, rgb(24, 117, 233) 0%, rgb(4, 24, 50) 48.44%, rgb(1, 8, 14) 100%);
+}
+
+body::before {
+  content: "";
+  background-image: url("../../images/Background-linhas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hidden-content {
   display: none;
 }
 
