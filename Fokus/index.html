@@ -124,7 +124,7 @@
 
             <div class="container-tasks-list__tasks">
               <ul class="tasks__list-of-created-tasks" data-tasks-list>
-                <li class="list-of-created-tasks__created-tasks">
+                <!-- <li class="list-of-created-tasks__created-tasks">
                   <img
                     src="./assets/images/Ícones/Check_branco.svg"
                     alt=""
@@ -132,7 +132,7 @@
                   />
                   <span class="created-tasks__task-name">Tarefa concluida</span>
 
-                  <button class="created-tasks__button-edit">
+                  <button class="created-tasks__button-edit" data-button-edit data-active-modification >
                     <img
                       src="./assets/images/Ícones/edit (1).png"
                       alt=""
@@ -149,14 +149,15 @@
                   />
                   <span class="created-tasks__task-name">Tarefa concluida</span>
 
-                  <button class="created-tasks__button-edit">
+                  <button class="created-tasks__button-edit" data-button-edit data-active-modification>
                     <img
                       src="./assets/images/Ícones/edit (1).png"
                       alt=""
                       class="created-tasks__icon created-tasks__icon--custom"
+                      
                     />
                   </button>
-                </li>
+                </li> -->
               </ul>
 
               <div
@@ -173,9 +174,10 @@
                   rows="10"
                   class="container-create-task__textarea"
                   placeholder="No que você está trabalhando?"
+                  data-input
                 ></textarea>
                 <div class="container-create-task__container-buttons">
-                  <button class="container-buttons__button">
+                  <button class="container-buttons__button" data-button-delete>
                     <img
                       src="./assets/images/Ícones/delete_outline (1).svg"
                       alt=""
@@ -243,3 +245,4 @@
     <footer></footer>
   </body>
 </html>
+

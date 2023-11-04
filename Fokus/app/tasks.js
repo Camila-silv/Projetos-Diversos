@@ -7,6 +7,8 @@ const buttonCancelTaskCreation = document.querySelector(
   "[data-button-cancel-task-creation]"
 );
 const buttonSaveTask = document.querySelector("[data-button-save-task]");
+const buttonEditTask = document.querySelectorAll("[data-button-edit]");
+const buttonDelete = document.querySelector("[data-button-delete]");
 
 const mytasks = [
   {
@@ -20,11 +22,18 @@ const mytasks = [
 ];
 
 buttonAddTask.addEventListener("click", () => {
+  const title = containerCreateTask.children[0];
   containerCreateTask.classList.remove("hidden-content");
+  title.innerText = "Adicionando tarefa";
 });
 
 buttonCancelTaskCreation.addEventListener("click", () => {
+  const buttonEditTask = document.querySelectorAll("[data-button-edit]");
   containerCreateTask.classList.add("hidden-content");
+  buttonEditTask.forEach((button) => {
+    button.dataset.activeModification = false;
+  });
+
   clearField();
 });
 
@@ -33,12 +42,25 @@ mytasks.forEach((task) => {
 });
 
 buttonSaveTask.addEventListener("click", () => {
+  const title = containerCreateTask.children[0].innerText;
   const newTask = containerCreateTask.children[1].value;
-  mytasks.push({
-    name: newTask,
-  });
-  createdTask(newTask);
-  clearField();
+
+  if (title === "Modificando tarefa") {
+    if (newTask === "") {
+      alert("A tarefa precisa ter um nome.");
+      return;
+    } else {
+      newTaskName();
+    }
+  } else if (newTask === "") {
+  } else {
+    mytasks.push({
+      name: newTask,
+      status: false,
+    });
+    createdTask(newTask);
+    clearField();
+  }
 });
 
 function createdTask(task) {
@@ -56,6 +78,17 @@ function createdTask(task) {
 
   const button = document.createElement("button");
   button.classList.add("created-tasks__button-edit");
+  button.dataset.buttonEdit = "";
+  button.dataset.activeModification = false;
+  button.addEventListener("click", () => {
+    document.querySelectorAll("[data-button-edit]").forEach((item) => {
+      item.dataset.activeModification = false;
+    });
+    const title = containerCreateTask.children[0];
+    containerCreateTask.classList.remove("hidden-content");
+    title.innerText = "Modificando tarefa";
+    button.dataset.activeModification = true;
+  });
 
   const imgButton = document.createElement("img");
   imgButton.classList.add("created-tasks__icon", "created-tasks__icon--custom");
@@ -67,7 +100,60 @@ function createdTask(task) {
   tasksList.append(li);
 }
 
-
 function clearField() {
-    containerCreateTask.children[1].value = "";
+  containerCreateTask.children[1].value = "";
+  console.log(mytasks);
+}
+
+buttonEditTask.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttonEditTask.forEach((item) => {
+      item.dataset.activeModification = false;
+    });
+    console.log(buttonEditTask);
+    const title = containerCreateTask.children[0];
+    containerCreateTask.classList.remove("hidden-content");
+    title.innerText = "Modificando tarefa";
+    button.dataset.activeModification = true;
+  });
+});
+
+buttonDelete.addEventListener("click", (ev) => {
+  const title = ev.target.parentNode.parentNode.children[0].innerText;
+
+  if (title === "Modificando tarefa") {
+    document.querySelectorAll("[data-button-edit]").forEach((item) => {
+      if (item.dataset.activeModification === "true") {
+        for (let i = 0; i < mytasks.length; i++) {
+          if (mytasks[i].name === item.parentNode.children[1].innerText) {
+            mytasks.splice(i, 1);
+          }
+        }
+
+        item.parentNode.remove();
+        containerCreateTask.classList.add("hidden-content");
+      }
+    });
+  }
+});
+
+function newTaskName() {
+  document.querySelectorAll("[data-active-modification]").forEach((item) => {
+    const newTaskName = document.querySelector("[data-input]").value;
+    if (item.dataset.activeModification === "true") {
+      mytasks.forEach((task) => {
+        if (task.name == item.parentNode.children[1].innerText) {
+          task.name = newTaskName;
+
+          return;
+        }
+      });
+
+      item.parentNode.children[1].innerText = newTaskName;
+      document.querySelector("[data-input]").value = "";
+      containerCreateTask.classList.add("hidden-content");
+
+      return;
+    }
+  });
 }

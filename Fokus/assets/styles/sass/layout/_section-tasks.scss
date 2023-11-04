@@ -117,6 +117,8 @@
   height: 2.4rem;
   width: 2.4rem;
   cursor: pointer;
+  position: relative;
+  z-index: -1;
 }
 
 .created-tasks__button-edit {
@@ -126,10 +128,13 @@
   border-radius: 100%;
   cursor: pointer;
   background-color: transparent;
+  z-index: 999;
 }
 
 .created-tasks__icon--custom {
   margin: 0.4rem;
+ 
+  position: relative;
 }
 
 .created-tasks__task-name {
