@@ -10,16 +10,7 @@ const buttonSaveTask = document.querySelector("[data-button-save-task]");
 const buttonEditTask = document.querySelectorAll("[data-button-edit]");
 const buttonDelete = document.querySelector("[data-button-delete]");
 
-const mytasks = [
-  {
-    name: "Estudar",
-    status: false,
-  },
-  {
-    name: "Lavar roupa",
-    status: false,
-  },
-];
+const mytasks = JSON.parse(localStorage.getItem("myTasks")) || [];
 
 buttonAddTask.addEventListener("click", () => {
   const title = containerCreateTask.children[0];
@@ -39,6 +30,7 @@ buttonCancelTaskCreation.addEventListener("click", () => {
 
 mytasks.forEach((task) => {
   createdTask(task.name);
+  
 });
 
 buttonSaveTask.addEventListener("click", () => {
@@ -53,6 +45,7 @@ buttonSaveTask.addEventListener("click", () => {
       newTaskName();
     }
   } else if (newTask === "") {
+    alert("Necessario escrever uma tarefa.");
   } else {
     mytasks.push({
       name: newTask,
@@ -61,6 +54,9 @@ buttonSaveTask.addEventListener("click", () => {
     createdTask(newTask);
     clearField();
   }
+
+  console.log("cheguei")
+  localStorage.setItem("myTasks", JSON.stringify(mytasks));
 });
 
 function createdTask(task) {
@@ -102,7 +98,6 @@ function createdTask(task) {
 
 function clearField() {
   containerCreateTask.children[1].value = "";
-  console.log(mytasks);
 }
 
 buttonEditTask.forEach((button) => {
@@ -127,6 +122,7 @@ buttonDelete.addEventListener("click", (ev) => {
         for (let i = 0; i < mytasks.length; i++) {
           if (mytasks[i].name === item.parentNode.children[1].innerText) {
             mytasks.splice(i, 1);
+            localStorage.setItem("myTasks", JSON.stringify(mytasks));
           }
         }
 
@@ -144,7 +140,7 @@ function newTaskName() {
       mytasks.forEach((task) => {
         if (task.name == item.parentNode.children[1].innerText) {
           task.name = newTaskName;
-
+          localStorage.setItem("myTasks", JSON.stringify(mytasks));
           return;
         }
       });
