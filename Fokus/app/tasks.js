@@ -9,7 +9,7 @@ const buttonCancelTaskCreation = document.querySelector(
 const buttonSaveTask = document.querySelector("[data-button-save-task]");
 const buttonEditTask = document.querySelectorAll("[data-button-edit]");
 const buttonDelete = document.querySelector("[data-button-delete]");
-
+const body = document.getElementById("root");
 const mytasks = JSON.parse(localStorage.getItem("myTasks")) || [];
 
 buttonAddTask.addEventListener("click", () => {
@@ -30,7 +30,6 @@ buttonCancelTaskCreation.addEventListener("click", () => {
 
 mytasks.forEach((task) => {
   createdTask(task.name);
-  
 });
 
 buttonSaveTask.addEventListener("click", () => {
@@ -55,7 +54,7 @@ buttonSaveTask.addEventListener("click", () => {
     clearField();
   }
 
-  console.log("cheguei")
+  console.log("cheguei");
   localStorage.setItem("myTasks", JSON.stringify(mytasks));
 });
 
@@ -63,10 +62,43 @@ function createdTask(task) {
   const li = document.createElement("li");
   li.classList.add("list-of-created-tasks__created-tasks");
   li.dataset.status = false;
+  li.dataset.lines = "";
 
   const img = document.createElement("img");
   img.classList.add("created-tasks__icon");
   img.src = "./assets/images/Ícones/Check_branco.svg";
+  img.dataset.completeTask = false;
+  img.addEventListener("click", (ev) => {
+    ev.target.parentNode.classList.add(
+      "list-of-created-tasks__created-tasks--completed"
+    );
+
+    mytasks.forEach((verification) => {
+      if (verification.name === ev.target.parentNode.children[1].innerText) {
+        verification.status = true;
+        localStorage.setItem("myTasks", JSON.stringify(mytasks));
+        ev.target.parentNode.dataset.status = verification.status;
+        return;
+      }
+    });
+
+    console.log(mytasks);
+  });
+
+  img.addEventListener("dblclick", (ev) => {
+    ev.target.parentNode.classList.remove(
+      "list-of-created-tasks__created-tasks--completed"
+    );
+
+    mytasks.forEach((verification) => {
+      if (verification.name === ev.target.parentNode.children[1].innerText) {
+        verification.status = false;
+        ev.target.parentNode.dataset.status = verification.status;
+        localStorage.setItem("myTasks", JSON.stringify(mytasks));
+        return;
+      }
+    });
+  });
 
   const span = document.createElement("span");
   span.classList.add("created-tasks__task-name");
@@ -153,3 +185,20 @@ function newTaskName() {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  for (let i = 0; i < mytasks.length; i++) {
+    document.querySelectorAll("[data-lines]")[i].dataset.status =
+      mytasks[i].status;
+
+    if (document.querySelectorAll("[data-lines]")[i].dataset.status == "true") {
+      document
+        .querySelectorAll("[data-lines]")
+        [i].classList.add("list-of-created-tasks__created-tasks--completed");
+    }
+  }
+});
+
+// [] - ADICIONAR ICONE DE TAREFA COMPLETA NO JS
+// [] - ADICIONAR TAREFA EM ANDAMENTO
+// [] - ADD INTERATIVIDADE DO POMODORO COM AS TAREFAS
