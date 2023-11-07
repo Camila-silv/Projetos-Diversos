@@ -1,0 +1,39 @@
+.header {
+  height: 18.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin-top: 3rem;
+}
+
+.title__img {
+  max-width: 24.8rem;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  gap: 5.4rem;
+}
+
+.divisor__img {
+  max-width: 32.8rem;
+}
+
+.divisor__line {
+  background-color: #00f4bf;
+  width: 28.2rem;
+  min-width: 6.0rem;
+  height: 0.1rem;
+}
+
+@media(max-width: 661px) {
+  .divisor__line {
+    display: none;
+  }
+}
+
