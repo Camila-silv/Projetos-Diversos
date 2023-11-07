@@ -169,6 +169,10 @@ buttonDelete.addEventListener("click", (ev) => {
           if (mytasks[i].name === item.parentNode.children[1].innerText) {
             mytasks.splice(i, 1);
             localStorage.setItem("myTasks", JSON.stringify(mytasks));
+
+            
+
+            taskInProgress.innerText = "Nome da tarefa em andamento";
           }
         }
 
