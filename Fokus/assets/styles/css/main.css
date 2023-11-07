@@ -337,6 +337,7 @@ img {
   margin-top: 3rem;
   border-top: 0.1rem solid rgb(20, 68, 128);
   padding-top: 4rem;
+  position: relative;
 }
 
 .container-tasks-list__container-title-tasks-list {
@@ -410,6 +411,7 @@ img {
   gap: 1.6rem;
   color: #000;
   position: relative;
+  cursor: pointer;
 }
 
 .list-of-created-tasks__created-tasks--completed {
@@ -422,6 +424,10 @@ img {
   gap: 1.6rem;
   color: #000;
   position: relative;
+}
+
+.list-of-created-tasks__created-tasks--selected {
+  border: 0.2rem solid #FFF;
 }
 
 .created-tasks__icon {
@@ -514,6 +520,48 @@ img {
 .button__img-button-container {
   height: 1.6rem;
   width: 1.6rem;
+}
+
+.container-tasks-list__container-clear-tasks {
+  border: 0.2rem solid rgb(20, 68, 128);
+  background-color: rgb(27, 41, 59);
+  border-radius: 0.8rem;
+  max-width: 36rem;
+  max-height: 13.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 3.2rem;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  z-index: 99999;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.container-clear-tasks__clear-tasks {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  font-weight: 400;
+}
+.container-clear-tasks__clear-tasks:hover {
+  background-color: rgba(20, 68, 128, 0.3);
+}
+
+.clear-tasks__img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.hide-content {
+  display: none;
 }
 
 .hide-audio {

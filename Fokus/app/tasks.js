@@ -11,6 +11,7 @@ const buttonEditTask = document.querySelectorAll("[data-button-edit]");
 const buttonDelete = document.querySelector("[data-button-delete]");
 const body = document.getElementById("root");
 const mytasks = JSON.parse(localStorage.getItem("myTasks")) || [];
+const taskInProgress = document.querySelector("[data-task-in-progress]");
 
 buttonAddTask.addEventListener("click", () => {
   const title = containerCreateTask.children[0];
@@ -54,7 +55,6 @@ buttonSaveTask.addEventListener("click", () => {
     clearField();
   }
 
-  console.log("cheguei");
   localStorage.setItem("myTasks", JSON.stringify(mytasks));
 });
 
@@ -63,6 +63,18 @@ function createdTask(task) {
   li.classList.add("list-of-created-tasks__created-tasks");
   li.dataset.status = false;
   li.dataset.lines = "";
+  li.dataset.selectedTask = false;
+  li.addEventListener("click", () => {
+    document
+      .querySelectorAll(".list-of-created-tasks__created-tasks")
+      .forEach((task) => {
+        task.classList.remove("list-of-created-tasks__created-tasks--selected");
+        li.dataset.selectedTask = false;
+      });
+    li.classList.add("list-of-created-tasks__created-tasks--selected");
+    li.dataset.selectedTask = true;
+    taskInProgress.innerText = li.children[1].innerText;
+  });
 
   const img = document.createElement("img");
   img.classList.add("created-tasks__icon");
@@ -72,6 +84,8 @@ function createdTask(task) {
     ev.target.parentNode.classList.add(
       "list-of-created-tasks__created-tasks--completed"
     );
+    ev.target.parentNode.children[0].src =
+      "./assets/images/Ícones/Check_verde.svg";
 
     mytasks.forEach((verification) => {
       if (verification.name === ev.target.parentNode.children[1].innerText) {
@@ -81,14 +95,14 @@ function createdTask(task) {
         return;
       }
     });
-
-    console.log(mytasks);
   });
 
   img.addEventListener("dblclick", (ev) => {
     ev.target.parentNode.classList.remove(
       "list-of-created-tasks__created-tasks--completed"
     );
+    ev.target.parentNode.children[0].src =
+      "./assets/images/Ícones/Check_branco.svg";
 
     mytasks.forEach((verification) => {
       if (verification.name === ev.target.parentNode.children[1].innerText) {
@@ -195,10 +209,46 @@ document.addEventListener("DOMContentLoaded", () => {
       document
         .querySelectorAll("[data-lines]")
         [i].classList.add("list-of-created-tasks__created-tasks--completed");
+      document.querySelectorAll("[data-lines]")[i].children[0].src =
+        "./assets/images/Ícones/Check_verde.svg";
     }
   }
 });
 
-// [] - ADICIONAR ICONE DE TAREFA COMPLETA NO JS
-// [] - ADICIONAR TAREFA EM ANDAMENTO
+document
+  .querySelector("[data-clear-completed-tasks-button]")
+  .addEventListener("click", () => {
+    const tasks = document.querySelectorAll("[data-lines]");
+
+    tasks.forEach((itens) => {
+      for (let i = 0; i < mytasks.length; i++) {
+        if (mytasks[i].status === true) {
+          mytasks.splice(i, 1);
+          localStorage.setItem("myTasks", JSON.stringify(mytasks));
+          taskInProgress.innerText = "Nome da tarefa em andamento";
+        }
+      }
+
+      if (itens.dataset.status === "true") {
+        itens.remove();
+      }
+    });
+  });
+
+document
+  .querySelector("[data-clear-all-tasks-button]")
+  .addEventListener("click", () => {
+    const tasks = document.querySelectorAll("[data-lines]");
+
+    tasks.forEach((itens) => {
+      for (let i = 0; i < mytasks.length; i++) {
+        mytasks.splice(i, 1);
+        localStorage.setItem("myTasks", JSON.stringify(mytasks));
+        taskInProgress.innerText = "Nome da tarefa em andamento";
+      }
+
+      itens.remove();
+    });
+  });
+
 // [] - ADD INTERATIVIDADE DO POMODORO COM AS TAREFAS

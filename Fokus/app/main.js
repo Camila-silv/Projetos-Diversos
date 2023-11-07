@@ -37,6 +37,12 @@ const bannerContent = [
     time: "15:00",
   },
 ];
+const buttonClearTasks = document.querySelector("[data-button-clear-tasks]");
+const containeClearTasks = document.querySelector("[data-container-clear-tasks]");
+
+buttonClearTasks.addEventListener("click", () => {
+  containeClearTasks.classList.toggle("hide-content");
+});
 
 availabilityOptions.forEach((button) => {
   button.addEventListener("click", () => {
@@ -104,3 +110,4 @@ document
     document.querySelector("[data-button-image]").src =
       "./assets/images/Ícones/Add_lilás.png";
   });
+

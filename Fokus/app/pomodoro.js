@@ -27,6 +27,7 @@ buttonPomodoro.addEventListener("click", () => {
 
   buttonPomodoro.dataset.active = "true";
   document.getElementById("play-audio").play();
+
   runPomodoro();
 });
 

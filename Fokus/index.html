@@ -103,17 +103,43 @@
           <header class="section-tasks__header-tasks">
             <div class="header-tasks__container-task-status">
               #Em andamento:
-              <span class="container-task-status__task-in-progress"
+              <span
+                class="container-task-status__task-in-progress"
+                data-task-in-progress
                 >Nome da tarefa em andamento</span
               >
             </div>
           </header>
           <div class="section-tasks__container-tasks-list">
+            <div
+              class="container-tasks-list__container-clear-tasks hide-content"
+              data-container-clear-tasks
+            >
+              <button class="container-clear-tasks__clear-tasks" data-clear-completed-tasks-button>
+                <img
+                  src="./assets/images/Ícones/delete.svg"
+                  alt=""
+                  class="clear-tasks__img"
+                />
+                <span>Limpar tarefas concluídas</span>
+              </button>
+              <button class="container-clear-tasks__clear-tasks" data-clear-all-tasks-button>
+                <img
+                  src="./assets/images/Ícones/delete.svg"
+                  alt=""
+                  class="clear-tasks__img"
+                />
+                <span>Limpar todas as tarefas</span>
+              </button>
+            </div>
             <div class="container-tasks-list__container-title-tasks-list">
               <h2 class="container-title-tasks-list__title">
                 Lista de tarefas:
               </h2>
-              <button class="container-title-tasks-list__button-clear">
+              <button
+                class="container-title-tasks-list__button-clear"
+                data-button-clear-tasks
+              >
                 <img
                   src="./assets/images/Ícones/more_vert lilás.svg"
                   alt=""
@@ -123,9 +149,7 @@
             </div>
 
             <div class="container-tasks-list__tasks">
-              <ul class="tasks__list-of-created-tasks" data-tasks-list>
-                
-              </ul>
+              <ul class="tasks__list-of-created-tasks" data-tasks-list></ul>
 
               <div
                 class="tasks__container-created-task hidden-content"
@@ -161,7 +185,10 @@
                       class="button__img-button-container"
                     />Cancelar
                   </button>
-                  <button class="container-buttons__button" data-button-save-task>
+                  <button
+                    class="container-buttons__button"
+                    data-button-save-task
+                  >
                     <img
                       src="./assets/images/Ícones/save.svg"
                       alt=""
@@ -212,4 +239,3 @@
     <footer></footer>
   </body>
 </html>
-
