@@ -4,10 +4,11 @@
   display: flex;
   justify-content: center;
   display: flex;
+  padding: 0 3.0rem;
 }
 
 .section-container-banner__container-banner-title {
-  width: 489px;
+  max-width: 489px;
 }
 
 .container-banner-title__banner-title {
@@ -26,4 +27,30 @@
 .container-banner-img__img {
   height: 100%;
   max-width: 483.51px;
+}
+
+
+// 860
+
+@media (max-width: 820px) {
+  .section-container-banner {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin: 0;
+    
+    margin-bottom: 8.0rem;
+  }
+
+  .container-banner-img__img {
+    margin-top: 2.5rem;
+  }
+
+ 
+}
+
+@media (max-width: 550px) {
+  .container-banner-title__banner-title {
+    font-size: 4.3rem;
+  }
 }

@@ -111,3 +111,31 @@
   height: 2.4rem;
   width: 18.85px;
 }
+
+@media (max-width: 550px) {
+
+
+  .container-pomodoro__time {
+    font-size: 8.2rem;
+  }
+ 
+  .container-availability-options__button-availability-options {
+    font-size: 1.3rem;
+  }
+
+  
+}
+
+@media (max-width: 423px) {
+  .container-pomodoro__time {
+    font-size: 6.2rem;
+  }
+
+  .container-availability-options__button-availability-options {
+    font-size: 1.1rem;
+  }
+
+  .container-pomodoro__container-availability-options {
+    gap: 0;
+  }
+}

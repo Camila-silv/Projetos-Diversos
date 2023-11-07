@@ -171,10 +171,11 @@ img {
   display: flex;
   justify-content: center;
   display: flex;
+  padding: 0 3rem;
 }
 
 .section-container-banner__container-banner-title {
-  width: 489px;
+  max-width: 489px;
 }
 
 .container-banner-title__banner-title {
@@ -194,6 +195,23 @@ img {
   max-width: 483.51px;
 }
 
+@media (max-width: 820px) {
+  .section-container-banner {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 8rem;
+  }
+  .container-banner-img__img {
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .container-banner-title__banner-title {
+    font-size: 4.3rem;
+  }
+}
 .container-app {
   max-width: 63.6rem;
   padding: 0 2.4rem 0 2.4rem;
@@ -310,6 +328,25 @@ img {
   width: 18.85px;
 }
 
+@media (max-width: 550px) {
+  .container-pomodoro__time {
+    font-size: 8.2rem;
+  }
+  .container-availability-options__button-availability-options {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 423px) {
+  .container-pomodoro__time {
+    font-size: 6.2rem;
+  }
+  .container-availability-options__button-availability-options {
+    font-size: 1.1rem;
+  }
+  .container-pomodoro__container-availability-options {
+    gap: 0;
+  }
+}
 .container-app__section-tasks {
   font-family: "Montserrat", sans-serif;
   margin-top: 5rem;
@@ -325,6 +362,8 @@ img {
   color: rgb(255, 255, 255);
   font-size: 1.25rem;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-task-status__task-in-progress {
@@ -564,6 +603,16 @@ img {
   display: none;
 }
 
+@media (max-width: 452px) {
+  .container-created-task__title-created-task {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 466px) {
+  .container-buttons__button {
+    font-size: 1rem;
+  }
+}
 .hide-audio {
   display: none;
 }

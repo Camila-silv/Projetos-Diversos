@@ -13,6 +13,8 @@
   color: rgba(255, 255, 255, 1);
   font-size: 1.25rem;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-task-status__task-in-progress {
@@ -262,5 +264,16 @@
   display: none;
 }
 
+@media (max-width: 452px) {
+  .container-created-task__title-created-task {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 466px) {
+  .container-buttons__button {
+    font-size: 1.0rem;
+  }
+}
 
 
