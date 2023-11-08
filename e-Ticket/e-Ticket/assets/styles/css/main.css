@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: rgb(1, 8, 14);
+  background: linear-gradient(180deg, rgb(1, 8, 14) 1%, rgb(4, 24, 50) 39%, rgb(1, 8, 14) 88%);
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  color: #FFF;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.main-header {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.container-main-header__logo {
+  width: 196px;
+  height: 3rem;
+}
+
+.main-content__eTicket-section {
+  border: 0.2rem solid #00f4bf;
+  background-image: url("../../images/PNG/Imagem sem borda.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding: 5rem 8rem;
+}
+
+.purchase-section__purchase-title {
+  font-size: 7.3rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+}
+
+.purchase-title--color {
+  color: #1875e8;
+}
+
+.purchase-section__purchase-form {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+  margin: 4rem 0rem 13rem 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container-ticket-type__input-ticket-type {
+  width: 35.6rem;
+}
+
+.container-amount__input-amount {
+  width: 6rem;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+}
+
+.purchase-section__hachuras {
+  max-width: 90rem;
+  margin-bottom: 10rem;
+}
+
+.label {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.input {
+  height: 5.6rem;
+  border: 0.1rem solid #00F4BF;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0 1.5rem;
+  font-size: 1.7rem;
+}
+
+.purchase-form__button {
+  width: 13rem;
+  height: 6.1rem;
+  background-color: #1875E8;
+  color: #FFF;
+  border: none;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.5);
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

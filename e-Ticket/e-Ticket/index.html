@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/css/main.css" />
+    <title>e-Ticket</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__container-main-header container">
+        <img
+          src="./assets/images/Logo-e-tricket.png"
+          alt="Logo do e-Ticket"
+          class="container-main-header__logo"
+        />
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="main-content__eTicket-section container">
+        <div class="eTicket-section__purchase-section">
+          <h2 class="purchase-section__purchase-title">
+            Compre seu <span class="purchase-title--color">ingresso</span>
+          </h2>
+          <form class="purchase-section__purchase-form">
+            <div class="purchase-form__container-ticket-type input-group">
+              <label for="" class="label">Escolha o tipo</label>
+              <input
+                type="text"
+                class="container-ticket-type__input-ticket-type input"
+              />
+            </div>
+            <div class="purchase-form__container-amount input-group">
+              <label for="" class="label">Qtde.</label>
+              <input type="text" class="container-amount__input-amount input" placeholder="00"/>
+            </div>
+            <button class="purchase-form__button">Comprar</button>
+          </form>
+          <img
+            src="./assets/images/SVG/Hachuras.svg"
+            alt="imagem da tira"
+            class="purchase-section__hachuras"
+          />
+        </div>
+
+        <div>
+          <h2>Quantidade disponível</h2>
+          <div>
+            <div>
+              <span>Pista</span>
+              <span>100</span>
+            </div>
+            <div>
+              <span>Cadeira superior</span>
+              <span>200</span>
+            </div>
+            <div>
+              <span>Cadeira inferior</span>
+              <span>400</span>
+            </div>
+          </div>
+          <img
+            src="./assets/images/PNG/Ingresso.png"
+            alt="Imagem do e-Ticket"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

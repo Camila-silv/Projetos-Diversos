@@ -1,0 +1,38 @@
+.purchase-section__purchase-title {
+  font-size: 7.3rem;
+  font-family: $secondary-source;
+  font-weight: 700;
+}
+
+.purchase-title--color {
+  color: #1875e8;
+}
+
+.purchase-section__purchase-form {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+  margin: 4rem 0rem 13rem 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container-ticket-type__input-ticket-type {
+  width: 35.6rem;
+}
+
+.container-amount__input-amount {
+  width: 6rem;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+}
+
+.purchase-section__hachuras {
+  max-width: 90rem;
+  margin-bottom: 10rem;
+}

@@ -1,0 +1,17 @@
+body {
+  background: rgb(1, 8, 14);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 8, 14, 1) 1%,
+    rgba(4, 24, 50, 1) 39%,
+    rgba(1, 8, 14, 1) 88%
+  );
+  background-repeat: no-repeat;
+  font-family: $primary-source;
+  color: #FFF;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
