@@ -35,3 +35,37 @@
   max-width: 22.4rem;
   height: 13.3rem;
 }
+
+@media (max-width: 1145px) {
+  .eTicket-section__tickets-available-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .tickets-available-section__available-tickets-section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 459px) {
+  .items-of-available-tickets__label {
+    font-size: 1.5rem;
+  }
+
+  .items-of-available-tickets__amount {
+    font-size: 1.7rem;
+  }
+
+  .tickets-available-section__list-of-available-tickets {
+    gap: .6rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .tickets-available-section__img {
+    width: 12.4rem;
+    height: 7.3rem;
+  }
+}
