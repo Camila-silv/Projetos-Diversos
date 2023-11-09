@@ -26,14 +26,25 @@
           <form class="purchase-section__purchase-form">
             <div class="purchase-form__container-ticket-type input-group">
               <label for="" class="label">Escolha o tipo</label>
-              <input
-                type="text"
-                class="container-ticket-type__input-ticket-type input"
-              />
+
+              <select
+                name="select"
+                class="container-ticket-type__select-ticket-type select"
+              >
+                <option value="Cadeira inferior">Cadeira inferior</option>
+                <option value="Cadeira superior" selected>
+                  Cadeira superior
+                </option>
+                <option value="Pista">Pista</option>
+              </select>
             </div>
             <div class="purchase-form__container-amount input-group">
               <label for="" class="label">Qtde.</label>
-              <input type="text" class="container-amount__input-amount input" placeholder="00"/>
+              <input
+                type="text"
+                class="container-amount__input-amount input"
+                placeholder="00"
+              />
             </div>
             <button class="purchase-form__button">Comprar</button>
           </form>
@@ -44,28 +55,50 @@
           />
         </div>
 
-        <div>
-          <h2>Quantidade disponível</h2>
-          <div>
-            <div>
-              <span>Pista</span>
-              <span>100</span>
+        <div class="eTicket-section__tickets-available-section">
+          <h2
+            class="tickets-available-section__available-tickets-section-title"
+          >
+            Quantidade disponível
+          </h2>
+          <div class="tickets-available-section__list-of-available-tickets">
+            <div class="list-of-available-tickets__items-of-available-tickets">
+              <span class="items-of-available-tickets__label">Pista</span>
+              <span class="items-of-available-tickets__amount">100</span>
             </div>
-            <div>
-              <span>Cadeira superior</span>
-              <span>200</span>
+            <div class="list-of-available-tickets__items-of-available-tickets">
+              <span class="items-of-available-tickets__label"
+                >Cadeira superior</span
+              >
+              <span class="items-of-available-tickets__amount">200</span>
             </div>
-            <div>
-              <span>Cadeira inferior</span>
-              <span>400</span>
+            <div class="list-of-available-tickets__items-of-available-tickets">
+              <span class="items-of-available-tickets__label"
+                >Cadeira inferior</span
+              >
+              <span class="items-of-available-tickets__amount">400</span>
             </div>
           </div>
           <img
             src="./assets/images/PNG/Ingresso.png"
             alt="Imagem do e-Ticket"
+            class="tickets-available-section__img"
           />
         </div>
       </section>
     </main>
+
+    <footer class="main-footer">
+      <p class="main-footer__paragraphy">
+        @ 2023 | Desenvolvido por
+        <a
+          href="https://www.linkedin.com/in/camila-silv/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="paragraphy__link"
+          >Camila Silva</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
