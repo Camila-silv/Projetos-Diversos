@@ -1,0 +1,22 @@
+
+.main-content__eTicket-section {
+  border: 0.2rem solid #00f4bf;
+  background-image: url("../../images/PNG/Imagem\ sem\ borda.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 5rem 8rem;
+  margin-top: 3.0rem;
+}
+
+.main-content__eTicket-section::before {
+  content: "";
+  position: absolute;
+  top: -1.7rem;
+  left: 0;
+  background: url("../../images/PNG/Grafismo\ verde.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 51.1rem;
+  height: 3.3rem;
+}
