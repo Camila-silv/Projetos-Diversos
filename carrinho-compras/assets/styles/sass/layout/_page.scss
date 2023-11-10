@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    #01080e 10%,
+    #fff 10%,
+    #fff 90%,
+    #01080e 90%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: $primary-source;
+}

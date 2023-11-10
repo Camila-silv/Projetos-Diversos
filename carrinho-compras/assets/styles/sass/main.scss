@@ -1,1 +1,8 @@
 @import "./base/reset";
+@import "./base/typography";
+@import "./abstracts/variables";
+
+@import "./layout/page";
+@import "./layout/main-content";
+@import "./layout/shopping-section";
+@import "./layout/cart-section";

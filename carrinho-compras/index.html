@@ -8,35 +8,35 @@
 </head>
 <body>
 
-    <main>
-        <div>
-            <section>
-                <h1>Carrinho de <span>compras</span></h1>
+    <main class="main-content">
+        <div class="main-content__container-main-content">
+            <section class="container-main-content__shopping-section">
+                <h1 class="shopping-section__shopping-section-title">Carrinho de <span class="shopping-section-title--color">compras</span></h1>
                 
-                <form>
-                    <div>
-                        <label for="">Produto</label>
-                        <select name="" id="">
+                <form class="shopping-section__shopping-section-form">
+                    <div class="shopping-section-form__group-input">
+                        <label for="" class="group-input__label">Produto</label>
+                        <select name="" id="" class="group-input__select">
                             <option value="">Fone de ouvido - R$100</option>
                             <option value="">Celular - R$1400</option>
                             <option value="">Pculus VR - R$5000</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label for="">Qtde.</label>
-                        <input type="number" placeholder="100">
+                    <div class="shopping-section-form__group-input">
+                        <label for="" class="group-input__label">Qtde.</label>
+                        <input type="number" placeholder="100" class="group-input__input">
                     </div>
 
-                    <div>
-                        <button>Adicionar</button>
-                        <button>Limpar</button>
+                    <div class="shopping-section-form__container-buttons">
+                        <button class="container-buttons__buttons">Adicionar</button>
+                        <button class="container-buttons__buttons">Limpar</button>
                     </div>
                 </form>
 
-                <img src="" alt="imagem do produto - fone">
+              
             </section>
-            <section>
+            <section class="container-main-content__cart-section">
                 <img src="" alt="imagem ilustrativa do carrinho de compras">
                 <div>
                     <div>
@@ -51,8 +51,13 @@
                     <span>Total: R$ <span>5000</span></span>
                 </div>
             </section>
+            <img src="./assets/images/oculos.png" alt="Imagem ilustrativa do produto Oculus" class="container-main-content__img">
         </div>
+
+        
     </main>
     
 </body>
 </html>
+
+<!-- [] - CUSTOMIZAR AS OPCOES DO SELECT -->
