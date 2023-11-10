@@ -1,6 +1,8 @@
 const ticketType = document.querySelector("[data-ticket-type]");
 const ticketAmount = document.querySelector("[data-ticket-amount]");
 const buyTicketButton = document.querySelector("[data-buy-ticket-button]");
+const buttonAlert = document.querySelector("[data-button-alert]");
+const popUp = document.querySelector("[data-pop-up]");
 
 let pista = document.querySelector("[data-pista]");
 let cadeiraSuperior = document.querySelector("[data-cadeira-superior]");
@@ -45,9 +47,13 @@ function buyTicket(ticketType, ticketAmount) {
     return ticketType;
   } else {
     newQuantity = parseInt(ticketType) - parseInt(ticketAmount);
-    alert("Compra efetuada com sucesso, bom show!!");
+    popUp.classList.toggle("hide-content");
     return newQuantity;
   }
 }
 
 
+buttonAlert.addEventListener("click", () => {
+    
+    popUp.classList.toggle("hide-content");
+})
