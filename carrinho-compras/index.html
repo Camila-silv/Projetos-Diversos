@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/css/main.css" />
     <title>Carrinho de compras</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main class="main-content">
-        <div class="main-content__container-main-content">
-            <section class="container-main-content__shopping-section">
-                <h1 class="shopping-section__shopping-section-title">Carrinho de <span class="shopping-section-title--color">compras</span></h1>
-                
-                <form class="shopping-section__shopping-section-form">
-                    <div class="shopping-section-form__group-input">
-                        <label for="" class="group-input__label">Produto</label>
-                        <select name="" id="" class="group-input__select">
-                            <option value="">Fone de ouvido - R$100</option>
-                            <option value="">Celular - R$1400</option>
-                            <option value="">Pculus VR - R$5000</option>
-                        </select>
-                    </div>
+      <div class="main-content__container-main-content">
+        <div>
+          <section class="container-main-content__shopping-section">
+            <h1 class="shopping-section__shopping-section-title">
+              Carrinho de
+              <span class="shopping-section-title--color">compras</span>
+            </h1>
 
-                    <div class="shopping-section-form__group-input">
-                        <label for="" class="group-input__label">Qtde.</label>
-                        <input type="number" placeholder="100" class="group-input__input">
-                    </div>
+            <form class="shopping-section__shopping-section-form">
+              <div class="shopping-section-form__group-input">
+                <label for="" class="group-input__label">Produto</label>
+                <select name="" id="" class="group-input__select">
+                  <option value="">Fone de ouvido - R$100</option>
+                  <option value="">Celular - R$1400</option>
+                  <option value="">Pculus VR - R$5000</option>
+                </select>
+              </div>
 
-                    <div class="shopping-section-form__container-buttons">
-                        <button class="container-buttons__buttons">Adicionar</button>
-                        <button class="container-buttons__buttons">Limpar</button>
-                    </div>
-                </form>
+              <div class="shopping-section-form__group-input">
+                <label for="" class="group-input__label">Qtde.</label>
+                <input
+                  type="number"
+                  placeholder="100"
+                  class="group-input__input"
+                />
+              </div>
 
-              
-            </section>
-            <section class="container-main-content__cart-section">
-                <img src="" alt="imagem ilustrativa do carrinho de compras">
-                <div>
-                    <div>
-                        <img src="" alt="icone de carrinho">
-                        <h2>Produtos no carrinho</h2>
-                    </div>
-                    <ul>
-                        <li><span>1x</span> Oculus VR <span>R$5000</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <span>Total: R$ <span>5000</span></span>
-                </div>
-            </section>
-            <img src="./assets/images/oculos.png" alt="Imagem ilustrativa do produto Oculus" class="container-main-content__img">
+              <div class="shopping-section-form__container-buttons">
+                <button class="container-buttons__buttons">Adicionar</button>
+                <button class="container-buttons__buttons">Limpar</button>
+              </div>
+            </form>
+          </section>
+          <img
+            src="./assets/images/oculos.png"
+            alt="Imagem ilustrativa do produto Oculus"
+            class="container-main-content__img"
+          />
         </div>
-
-        
+        <section class="container-main-content__cart-section">
+          <img
+            src="./assets/images/carrinho-cinza.svg"
+            alt="icone do carrinho de compras"
+            class="cart-section__cart-section-icon"
+          />
+          <div class="cart-section__container-cart">
+            <div class="container-cart__shopping-cart-title-container">
+              <img
+                src="./assets/images/icone-carrinho.svg"
+                alt="icone de carrinho"
+                class="shopping-cart-title-container__icon"
+              />
+              <h2 class="shopping-cart-title-container__title">
+                Produtos no carrinho
+              </h2>
+            </div>
+            <ul class="container-cart__shopping-list">
+              <li class="shopping-list__shopping-list-item">
+                <span class="shopping-list-item--color">1x</span> Oculus VR
+                <span class="shopping-list-item--color">R$5000</span>
+              </li>
+              <li class="shopping-list__shopping-list-item">
+                <span class="shopping-list-item--color">1x</span> Oculus VR
+                <span class="shopping-list-item--color">R$5000</span>
+              </li>
+            </ul>
+          </div>
+          <div class="cart-section__final-payment-amount-container">
+            <span
+              class="final-payment-amount-container__final-payment-amount-label"
+              >Total:
+              <span class="final-payment-amount-label--color"
+                >R$ <span class="final-payment-amount-label__amount">5000</span>
+              </span></span
+            >
+          </div>
+        </section>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
 
 <!-- [] - CUSTOMIZAR AS OPCOES DO SELECT -->
