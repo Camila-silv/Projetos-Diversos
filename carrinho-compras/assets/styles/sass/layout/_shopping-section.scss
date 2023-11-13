@@ -5,7 +5,7 @@
 .shopping-section__shopping-section-title {
   font-family: $secondary-source;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 8rem;
   margin-bottom: 3.5rem;
 }
 
@@ -36,7 +36,7 @@
   display: block;
   margin-bottom: 1rem;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .group-input__select,
@@ -96,3 +96,31 @@
 
   
 }
+
+@media (max-width: 1028px) {
+  .group-input__select {
+    width: 60%;
+    min-width: 25.2rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .shopping-section__shopping-section-title {
+    font-size: 6rem;
+  }
+
+  .shopping-section__shopping-section-form {
+    display: grid;
+    grid-template-areas:
+      "product product product"
+      "amount amount amount"
+      "buttons buttons buttons";
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+
+  .shopping-section-form__container-buttons {
+    margin-top: 2.5rem;
+  }
+  
+}
+
