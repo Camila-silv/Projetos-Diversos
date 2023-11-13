@@ -277,7 +277,13 @@ body {
 .group-input__select {
   width: 31.4rem;
   cursor: pointer;
+  font-style: italic;
+  color: #01080E;
   background: url("../../images/arrow-down.svg") no-repeat right 1rem top 50%;
+}
+
+.group-input__select--font-family {
+  font-family: Inter;
 }
 
 .group-input__input {
