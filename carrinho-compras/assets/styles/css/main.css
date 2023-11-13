@@ -374,6 +374,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-height: 12.5rem;
+  overflow: scroll;
+  scrollbar-width: thin;
+  max-width: 30rem;
+  scrollbar-color: #1875e8 transparent;
+}
+
+.container-cart__shopping-list::-webkit-scrollbar-thumb {
+  background-color: #1875e8;
+  border-radius: 20px;
+  border: 3px solid transparent;
 }
 
 .shopping-list__shopping-list-item {

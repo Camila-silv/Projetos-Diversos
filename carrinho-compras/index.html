@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/css/main.css" />
+    <script src="./app/main.js" defer></script>
     <title>Carrinho de compras</title>
   </head>
   <body>
@@ -18,26 +19,40 @@
 
             <form class="shopping-section__shopping-section-form">
               <div class="shopping-section-form__group-input">
-                <label for="" class="group-input__label">Produto</label>
-                <select name="" id="" class="group-input__select">
-                  <option value="">Fone de ouvido - R$100</option>
-                  <option value="">Celular - R$1400</option>
-                  <option value="">Pculus VR - R$5000</option>
+                <label for="selectProduct" class="group-input__label"
+                  >Produto</label
+                >
+                <select
+                  name="selectProduct"
+                  id="selectProduct"
+                  class="group-input__select"
+                >
+                  <option value="Fone de ouvido">Fone de ouvido - R$100</option>
+                  <option value="Celular">Celular - R$1400</option>
+                  <option value="Oculus VR">Oculus VR - R$5000</option>
                 </select>
               </div>
 
               <div class="shopping-section-form__group-input">
-                <label for="" class="group-input__label">Qtde.</label>
+                <label for="amountInput" class="group-input__label"
+                  >Qtde.</label
+                >
                 <input
                   type="number"
+                  id="amountInput"
                   placeholder="100"
                   class="group-input__input"
                 />
               </div>
 
               <div class="shopping-section-form__container-buttons">
-                <button class="container-buttons__buttons">Adicionar</button>
-                <button class="container-buttons__buttons">Limpar</button>
+                <button
+                  class="container-buttons__buttons"
+                  data-add-product-button
+                >
+                  Adicionar
+                </button>
+                <button class="container-buttons__buttons" data-clean-button>Limpar</button>
               </div>
             </form>
           </section>
@@ -64,23 +79,18 @@
                 Produtos no carrinho
               </h2>
             </div>
-            <ul class="container-cart__shopping-list">
-              <li class="shopping-list__shopping-list-item">
-                <span class="shopping-list-item--color">1x</span> Oculus VR
-                <span class="shopping-list-item--color">R$5000</span>
-              </li>
-              <li class="shopping-list__shopping-list-item">
-                <span class="shopping-list-item--color">1x</span> Oculus VR
-                <span class="shopping-list-item--color">R$5000</span>
-              </li>
-            </ul>
+            <ul class="container-cart__shopping-list" data-shopping-list></ul>
           </div>
           <div class="cart-section__final-payment-amount-container">
             <span
               class="final-payment-amount-container__final-payment-amount-label"
               >Total:
-              <span class="final-payment-amount-label--color"
-                >R$ <span class="final-payment-amount-label__amount">5000</span>
+              <span class="final-payment-amount-label--color" data-total-amount-payable
+                >R$
+                <span
+                  class="final-payment-amount-label__amount"
+                  >--,--</span
+                >
               </span></span
             >
           </div>
