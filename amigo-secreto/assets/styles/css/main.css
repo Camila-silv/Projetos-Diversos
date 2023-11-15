@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Inter:wght@100;200;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -160,6 +161,169 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 15%, rgb(0, 244, 191) 15%, rgb(0, 244, 191) 85%, rgb(0, 0, 0) 85%) no-repeat;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../../../../assets/images/imagem-presente.png");
+  width: 100%;
+  max-width: 66.6rem;
+  height: 58.9rem;
+}
+
+.secret-friend-section {
+  height: 55rem;
+  width: 100%;
+  max-width: 120rem;
+  background-color: #000;
+  filter: drop-shadow(0px 0px 30px #1875e8);
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+}
+
+.secret-friend-section__secret-friend-section-title {
+  font-family: "Chakra Petch", sans-serif;
+  color: #FFF;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+
+.secret-friend-section-title--color {
+  color: #1875e8;
+}
+
+.secret-friend-section__secret-friend-form {
+  font-family: "Inter", sans-serif;
+}
+
+.secret-friend-form__group-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.group-input__label {
+  color: #1875e8;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.group-input__input {
+  width: 100%;
+  background-color: transparent;
+  border: 0.1rem solid #1875e8;
+  border-radius: 0.5rem;
+  height: 5rem;
+  padding: 0 1.5rem;
+  outline: none;
+  color: #FFF;
+}
+
+.group-input__input::placeholder {
+  color: #fff;
+}
+
+.secret-friend-form__group-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.group-buttons__buttons {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 150px;
+  height: 35px;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.group-buttons__buttons:nth-child(1) {
+  background-color: #1875e8;
+  color: #fff;
+}
+
+.group-buttons__buttons:nth-child(2) {
+  background-color: #fff;
+  color: #1875e8;
+}
+
+.group-buttons__buttons:nth-child(3) {
+  background-color: transparent;
+  color: #00f4bf;
+  border-bottom: 0.1rem solid #00f4bf;
+  border-radius: 0;
+  display: block;
+  width: 80px;
+}
+
+.secret-friend-section__friends-section-for-raffle {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.friends-section-for-raffle__group-of-chosen-friends {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group-of-chosen-friends__title-of-the-chosen-group-of-friends {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1875e8;
+}
+
+.group-of-chosen-friends__friends {
+  border: 0.1rem solid #1875e8;
+  height: 4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.friends-section-for-raffle__chosen-friends-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chosen-friends-container__chosen-friends-container-title {
+  color: #00f4bf;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 40rem;
 }
 
 /*# sourceMappingURL=main.css.map */

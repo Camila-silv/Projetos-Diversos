@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
     <title>Amigo secreto</title>
-</head>
-<body>
-    <main>
-        <section>
-            <h1>Amigo <span>Secreto</span></h1>
-            <form>
-                <div>
-                    <label for=""></label>
-                    <input type="text" placeholder="Nome do amigo">
-                </div>
-                <div>
-                    <button>Adicionar</button>
-                    <button>Sortear</button>
-                    <button>Reiniciar</button>
-                </div>
-            </form>
-            <section>
-                <div>
-                    <h2>Amigos incluídos</h2>
-                    <div>
-                        aqui fica os migos
-                    </div>
-                </div>
-                <div>
-                    <h2>Sorteio</h2>
-                    <div>
-                        srorteio aqui
-                    </div>
-                </div>
-            </section>
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="secret-friend-section">
+        <h1 class="secret-friend-section__secret-friend-section-title">
+          Amigo <span class="secret-friend-section-title--color">Secreto</span>
+        </h1>
+        <form class="secret-friend-section__secret-friend-form container">
+          <div class="secret-friend-form__group-input">
+            <label for="friend-name" class="group-input__label">
+              Digite o nome de um amigo</label
+            >
+            <input
+              type="text"
+              placeholder="Nome do amigo"
+              class="group-input__input"
+              id="friend-name"
+            />
+          </div>
+          <div class="secret-friend-form__group-buttons">
+            <button class="group-buttons__buttons">Adicionar</button>
+            <button class="group-buttons__buttons">Sortear</button>
+            <button class="group-buttons__buttons">Reiniciar</button>
+          </div>
+        </form>
+        <section class="secret-friend-section__friends-section-for-raffle container">
+          <div class="friends-section-for-raffle__group-of-chosen-friends">
+            <h2
+              class="group-of-chosen-friends__title-of-the-chosen-group-of-friends"
+            >
+              Amigos incluídos
+            </h2>
+            <div class="group-of-chosen-friends__friends"></div>
+          </div>
+          <div class="friends-section-for-raffle__chosen-friends-container">
+            <h2
+              class="chosen-friends-container__chosen-friends-container-title"
+            >
+              Sorteio
+            </h2>
+            <div class="chosen-friends-container__chosen-friends">
+              srorteio aqui
+            </div>
+          </div>
         </section>
+      </section>
     </main>
-</body>
+  </body>
 </html>

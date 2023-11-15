@@ -1,0 +1,19 @@
+.main-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.main-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../../../../assets/images/imagem-presente.png");
+    width: 100%;
+    max-width: 66.6rem;
+    height: 58.9rem;
+}
