@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <link rel="stylesheet" href="./assets/styles/css/main.css" />
+    <script src="./app/main.js" defer></script>
     <title>Amigo secreto</title>
   </head>
   <body>
@@ -22,22 +23,27 @@
               placeholder="Nome do amigo"
               class="group-input__input"
               id="friend-name"
+              data-friend-name-input
             />
           </div>
           <div class="secret-friend-form__group-buttons">
-            <button class="group-buttons__buttons">Adicionar</button>
-            <button class="group-buttons__buttons">Sortear</button>
-            <button class="group-buttons__buttons">Reiniciar</button>
+            <button class="group-buttons__buttons" data-add-button>
+              Adicionar
+            </button>
+            <button class="group-buttons__buttons" data-play-button>Sortear</button>
+            <button class="group-buttons__buttons" data-clear-button>Reiniciar</button>
           </div>
         </form>
-        <section class="secret-friend-section__friends-section-for-raffle container">
+        <section
+          class="secret-friend-section__friends-section-for-raffle container"
+        >
           <div class="friends-section-for-raffle__group-of-chosen-friends">
             <h2
               class="group-of-chosen-friends__title-of-the-chosen-group-of-friends"
             >
               Amigos incluídos
             </h2>
-            <div class="group-of-chosen-friends__friends"></div>
+            <div class="group-of-chosen-friends__friends" data-friends></div>
           </div>
           <div class="friends-section-for-raffle__chosen-friends-container">
             <h2
@@ -45,8 +51,7 @@
             >
               Sorteio
             </h2>
-            <div class="chosen-friends-container__chosen-friends">
-              srorteio aqui
+            <div class="chosen-friends-container__chosen-friends" data-chosen-friends>
             </div>
           </div>
         </section>
@@ -54,3 +59,5 @@
     </main>
   </body>
 </html>
+
+

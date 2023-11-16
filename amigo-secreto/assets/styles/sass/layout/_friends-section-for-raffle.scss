@@ -9,12 +9,14 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  
 }
 
 .group-of-chosen-friends__title-of-the-chosen-group-of-friends {
   font-size: 1.5rem;
   font-weight: 700;
   color: #1875e8;
+  
 }
 
 .group-of-chosen-friends__friends {
@@ -34,6 +36,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  
 }
 
 .chosen-friends-container__chosen-friends-container-title {
@@ -43,5 +46,16 @@
 }
 
 .chosen-friends-container__chosen-friends {
-  // border: 1px solid blue;
+ 
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  color: #FFF;
+}
+
+@media (max-width: 555px) {
+  .secret-friend-section__friends-section-for-raffle {
+    flex-direction: column;
+  }
 }

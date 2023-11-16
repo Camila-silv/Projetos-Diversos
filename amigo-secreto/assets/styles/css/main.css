@@ -216,7 +216,7 @@ body {
 
 .secret-friend-section__secret-friend-section-title {
   font-family: "Chakra Petch", sans-serif;
-  color: #FFF;
+  color: #fff;
   font-size: 6rem;
   margin-bottom: 4rem;
 }
@@ -225,6 +225,11 @@ body {
   color: #1875e8;
 }
 
+@media (max-width: 555px) {
+  .secret-friend-section {
+    height: auto;
+  }
+}
 .secret-friend-section__secret-friend-form {
   font-family: "Inter", sans-serif;
 }
@@ -335,6 +340,19 @@ body {
   font-weight: 700;
 }
 
+.chosen-friends-container__chosen-friends {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  color: #FFF;
+}
+
+@media (max-width: 555px) {
+  .secret-friend-section__friends-section-for-raffle {
+    flex-direction: column;
+  }
+}
 .container {
   width: 100%;
   max-width: 40rem;
