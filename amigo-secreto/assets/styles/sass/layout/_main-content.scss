@@ -7,13 +7,30 @@
     
 }
 
-.main-content::after {
+.main-content::after{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    background: url("../../../../assets/images/imagem-presente.png");
+    background: url("../../../../assets/images/imagem-presente.png") no-repeat;
     width: 100%;
+    background-size: contain;
     max-width: 66.6rem;
     height: 58.9rem;
+    z-index: 1;
+}
+
+@media (max-width: 1144px) {
+    .main-content::after {
+        top: 132px;
+        max-width: 36.6rem;
+       
+    }
+}
+
+@media (max-width: 845px) {
+    .main-content::after {
+       display: none;
+       
+    }
 }

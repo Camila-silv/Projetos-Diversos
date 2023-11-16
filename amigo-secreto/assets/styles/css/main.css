@@ -183,12 +183,25 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background: url("../../../../assets/images/imagem-presente.png");
+  background: url("../../../../assets/images/imagem-presente.png") no-repeat;
   width: 100%;
+  background-size: contain;
   max-width: 66.6rem;
   height: 58.9rem;
+  z-index: 1;
 }
 
+@media (max-width: 1144px) {
+  .main-content::after {
+    top: 132px;
+    max-width: 36.6rem;
+  }
+}
+@media (max-width: 845px) {
+  .main-content::after {
+    display: none;
+  }
+}
 .secret-friend-section {
   height: 55rem;
   width: 100%;
@@ -198,6 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 6rem;
+  margin: 0 2rem;
 }
 
 .secret-friend-section__secret-friend-section-title {
@@ -237,7 +251,7 @@ body {
   height: 5rem;
   padding: 0 1.5rem;
   outline: none;
-  color: #FFF;
+  color: #fff;
 }
 
 .group-input__input::placeholder {
@@ -274,8 +288,7 @@ body {
   color: #00f4bf;
   border-bottom: 0.1rem solid #00f4bf;
   border-radius: 0;
-  display: block;
-  width: 80px;
+  width: 8rem;
 }
 
 .secret-friend-section__friends-section-for-raffle {
@@ -319,6 +332,7 @@ body {
 .chosen-friends-container__chosen-friends-container-title {
   color: #00f4bf;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .container {
