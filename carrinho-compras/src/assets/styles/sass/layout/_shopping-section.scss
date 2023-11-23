@@ -1,0 +1,133 @@
+.container-main-content__shopping-section {
+  flex: 1;
+}
+
+.shopping-section__shopping-section-title {
+  font-family: $secondary-source;
+  font-weight: 700;
+  font-size: 8rem;
+  margin-bottom: 3.5rem;
+}
+
+.shopping-section-title--color {
+  display: block;
+  color: #1875e8;
+}
+
+.shopping-section__shopping-section-form {
+  display: grid;
+  grid-template-areas:
+    "product product product"
+    "amount buttons buttons";
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.shopping-section-form__group-input:nth-child(1) {
+  grid-area: product;
+  margin-bottom: 2rem;
+}
+
+.shopping-section-form__group-input:nth-child(2) {
+  grid-area: amount;
+}
+
+.group-input__label {
+  color: #1875e8;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.group-input__select,
+.group-input__input {
+  border: 0.1rem solid #1875e8;
+  background-color: transparent;
+  border-radius: 1rem;
+  height: 50px;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+}
+
+.group-input__select {
+  width: 31.4rem;
+  cursor: pointer;
+  font-style: italic;
+  color: #01080E;
+  
+  background: url("public/arrow-down.svg") no-repeat right 1rem top 50%;
+}
+
+.group-input__select--font-family {
+  font-family: Inter;
+}
+
+.group-input__input {
+  text-align: center;
+  width: 7.4rem;
+  margin-right: 1.5rem;
+}
+
+.shopping-section-form__container-buttons {
+  grid-area: buttons;
+  display: flex;
+  align-items: end;
+  justify-content:flex-start;
+  gap: 1.5rem;
+}
+
+.container-buttons__buttons {
+  height: 4.8rem;
+  width: 16.0rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform .3s;
+
+  &:hover {
+    transform: scale(1.1);
+   }
+}
+
+.container-buttons__buttons:nth-child(1) {
+  background-color: #1875e8;
+  box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.5);
+}
+
+.container-buttons__buttons:nth-child(2) {
+  background-color: #000;
+  box-shadow: 0px 0px 20px 0px rgba(1, 8, 14, 0.5);
+
+  
+}
+
+@media (max-width: 1028px) {
+  .group-input__select {
+    width: 60%;
+    min-width: 25.2rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .shopping-section__shopping-section-title {
+    font-size: 6rem;
+  }
+
+  .shopping-section__shopping-section-form {
+    display: grid;
+    grid-template-areas:
+      "product product product"
+      "amount amount amount"
+      "buttons buttons buttons";
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+
+  .shopping-section-form__container-buttons {
+    margin-top: 2.5rem;
+  }
+  
+}
+

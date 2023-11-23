@@ -1,119 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/css/main.css" />
-    <script src="./app/main.js" defer></script>
     <title>Carrinho de compras</title>
   </head>
   <body>
-    <main class="main-content">
-      <div class="main-content__container-main-content">
-        <div>
-          <section class="container-main-content__shopping-section">
-            <h1 class="shopping-section__shopping-section-title">
-              Carrinho de
-              <span class="shopping-section-title--color">compras</span>
-            </h1>
-
-            <form class="shopping-section__shopping-section-form">
-              <div class="shopping-section-form__group-input">
-                <label for="selectProduct" class="group-input__label"
-                  >Produto</label
-                >
-                <select
-                  name="selectProduct"
-                  id="selectProduct"
-                  class="group-input__select"
-                >
-                  <option
-                    value="Fone de ouvido"
-                    class="group-input__select--font-family"
-                  >
-                    Fone de ouvido - R$100,00
-                  </option>
-                  <option
-                    value="Celular"
-                    class="group-input__select--font-family"
-                  >
-                    Celular - R$1.400,00
-                  </option>
-                  <option
-                    value="Oculus VR"
-                    class="group-input__select--font-family"
-                  >
-                    Oculus VR - R$5.000,00
-                  </option>
-                </select>
-              </div>
-
-              <div class="shopping-section-form__group-input">
-                <label for="amountInput" class="group-input__label"
-                  >Qtde.</label
-                >
-                <input
-                  type="number"
-                  id="amountInput"
-                  placeholder="100"
-                  class="group-input__input"
-                />
-              </div>
-
-              <div class="shopping-section-form__container-buttons">
-                <button
-                  class="container-buttons__buttons"
-                  data-add-product-button
-                >
-                  Adicionar
-                </button>
-                <button class="container-buttons__buttons" data-clean-button>
-                  Limpar
-                </button>
-              </div>
-            </form>
-          </section>
-          <img
-            src="./assets/images/oculos.png"
-            alt="Imagem ilustrativa do produto Oculus"
-            class="container-main-content__img"
-          />
-        </div>
-        <section class="container-main-content__cart-section">
-          <img
-            src="./assets/images/carrinho-cinza.svg"
-            alt="icone do carrinho de compras"
-            class="cart-section__cart-section-icon"
-          />
-          <div class="cart-section__container-cart">
-            <div class="container-cart__shopping-cart-title-container">
-              <img
-                src="./assets/images/icone-carrinho.svg"
-                alt="icone de carrinho"
-                class="shopping-cart-title-container__icon"
-              />
-              <h2 class="shopping-cart-title-container__title">
-                Produtos no carrinho
-              </h2>
-            </div>
-            <ul class="container-cart__shopping-list" data-shopping-list></ul>
-          </div>
-          <div class="cart-section__final-payment-amount-container">
-            <span
-              class="final-payment-amount-container__final-payment-amount-label"
-              >Total:
-              <span
-                class="final-payment-amount-label--color"
-                data-total-amount-payable
-                >R$
-                <span class="final-payment-amount-label__amount">--,--</span>
-              </span></span
-            >
-          </div>
-        </section>
-      </div>
-    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
-<!-- [] - CUSTOMIZAR AS OPCOES DO SELECT -->
