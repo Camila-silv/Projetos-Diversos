@@ -1,10 +1,13 @@
 .our-service-seciton {
   background: url("../../../../../public/Bg-our-services.png") no-repeat;
- 
+  font-family: "Poppins", sans-serif;
   background-size: contain;
 }
 
-
+.container-our-service-seciton__label,
+.container-our-service-seciton__title {
+  text-align: center;
+}
 
 .container-our-service-seciton__label {
   text-transform: uppercase;

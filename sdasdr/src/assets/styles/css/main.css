@@ -178,12 +178,6 @@ input[type=number] {
 
 .content-standard {
   padding: 8rem 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.content-standard__title,
-.content-standard__label {
-  text-align: center;
 }
 
 .content-standard__title {
@@ -360,7 +354,13 @@ input[type=number] {
 
 .our-service-seciton {
   background: url("../../../../../public/Bg-our-services.png") no-repeat;
+  font-family: "Poppins", sans-serif;
   background-size: contain;
+}
+
+.container-our-service-seciton__label,
+.container-our-service-seciton__title {
+  text-align: center;
 }
 
 .container-our-service-seciton__label {
@@ -419,10 +419,6 @@ input[type=number] {
   font-weight: 400;
   font-size: 1.6rem;
   color: rgb(84, 84, 84);
-}
-
-.workds-seciton {
-  background-color: rgb(254, 249, 231);
 }
 
 .default-button {
