@@ -1,55 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/assets/styles/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/styles/css/main.css" />
     <title>SDASDR</title>
-</head>
-<body>
-    <header>
-        <div>
-            <img src="" alt="logo">
+  </head>
+  <body>
+    <div class="bg-img">
+      <header class="main-header">
+        <div class="main-header__container-main-header container">
+          <img
+            src="./public/Logo.png"
+            alt="logo da SDASDR"
+            class="container-main-header__logo"
+          />
 
-            <nav>
-                <ul>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Products</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Pages</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Testomonial</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
-                </ul>
-            </nav>
-
-           
+          <nav class="container-main-header__main-navbar">
+            <ul class="main-navbar__main-navbar-link-list">
+              <li class="main-navbar-link-list__main-navbar-link-list-item">
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="main-navbar-link-list-item__link"
+                  >Home</a
+                >
+              </li>
+              <li class="main-navbar-link-list__main-navbar-link-list-item">
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="main-navbar-link-list-item__link"
+                  >Products</a
+                >
+              </li>
+              <li class="main-navbar-link-list__main-navbar-link-list-item">
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="main-navbar-link-list-item__link"
+                  >Pages</a
+                >
+              </li>
+              <li class="main-navbar-link-list__main-navbar-link-list-item">
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="main-navbar-link-list-item__link"
+                  >Blog</a
+                >
+              </li>
+              <li class="main-navbar-link-list__main-navbar-link-list-item">
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="main-navbar-link-list-item__link"
+                  >Testomonial</a
+                >
+              </li>
+              <li class="main-navbar-link-list__main-navbar-link-list-item">
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="main-navbar-link-list-item__link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <button>Get a Quote</button>
-    </header>
+        <button class="main-header__button default-button">Get a Quote</button>
+      </header>
 
-    <section>
-        <div>
-            <div>
+      <section class="banner">
+        <div class="banner__container-banner container">
+          <div class="container-banner__container-img">
+            <img
+              src="./public/Image.png"
+              alt=""
+              class="container-img__img-banner"
+            />
+          </div>
+          <div class="container-banner__container-company-presentation">
+            <h1 class="container-company-presentation__title">
+              Best Dising <br />
+              Creative Agency
+            </h1>
 
-            </div>
-            <div>
-                <h1>Best Dising Creative Agency</h1>
-                <p>
-                    Our passion for sustainability has driven us to refine our proce leaders in web sustainability and performance helping to shift towards a zero-carbon future.
-                </p>
-                <button>Get Started Now</button>
-            </div>
-
-            <div>
-                <ul>
-                    <li><a href=""><img src="" alt="Icon telephone"></a></li>
-                    <li><a href=""><img src="" alt="Icon twitter"></a></li>
-                    <li><a href=""><img src="" alt="Icon location"></a></li>
-                    <li><a href=""><img src="" alt="Icon mail"></a></li>
-                </ul>
-            </div>
+            <p class="container-company-presentation__paragraphy">
+              Our passion for sustainability has driven us to refine our proce
+              leaders in web sustainability and performance helping to shift
+              towards a zero-carbon future.
+            </p>
+            <button
+              class="container-company-presentation__button default-button"
+            >
+              Get Started Now <img src="./public/arrow-right.png" alt="" />
+            </button>
+          </div>
         </div>
+
+        <ul class="banner__contacts-list">
+          <li class="contacts-list__contacts-list-item">
+            <a href="" class="contacts-list-item__contacts-list-link"></a>
+          </li>
+          <li class="contacts-list__contacts-list-item">
+            <a href="" class="contacts-list-item__contacts-list-link"></a>
+          </li>
+          <li class="contacts-list__contacts-list-item">
+            <a href="" class="contacts-list-item__contacts-list-link"></a>
+          </li>
+          <li class="contacts-list__contacts-list-item">
+            <a href="" class="contacts-list-item__contacts-list-link"></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="our-service-seciton">
+      <div class="our-service-seciton__container-our-service-seciton container">
+        <h3 class="container-our-service-seciton__label">Our service</h3>
+
+        <h2 class="container-our-service-seciton__title">
+          We shape the perfert solutions.
+        </h2>
+
+        <div class="container-our-service-seciton__services-container">
+          <ul class="services-container__services-list">
+            <li class="services-list__item-services-list">
+              <img src="" alt="" class="item-services-list__img" />
+              <div class="item-services-list__inf-container">
+                <h3 class="inf-container__title">UI/UX Design</h3>
+
+                <span class="inf-container__label">
+                  Maintenance Update Services
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

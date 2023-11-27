@@ -1,0 +1,12 @@
+.bg-img {
+    background:  url("../../../../../public/Bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $default-font;
+}
+
+.container {
+    max-width: 120.0rem;
+    width: 100%;
+    margin: 0 auto;
+}
