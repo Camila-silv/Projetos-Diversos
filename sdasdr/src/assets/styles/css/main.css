@@ -178,6 +178,12 @@ input[type=number] {
 
 .content-standard {
   padding: 8rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.content-standard__title,
+.content-standard__label {
+  text-align: center;
 }
 
 .content-standard__title {
@@ -354,13 +360,7 @@ input[type=number] {
 
 .our-service-seciton {
   background: url("../../../../../public/Bg-our-services.png") no-repeat;
-  font-family: "Poppins", sans-serif;
   background-size: contain;
-}
-
-.container-our-service-seciton__label,
-.container-our-service-seciton__title {
-  text-align: center;
 }
 
 .container-our-service-seciton__label {
@@ -419,6 +419,253 @@ input[type=number] {
   font-weight: 400;
   font-size: 1.6rem;
   color: rgb(84, 84, 84);
+}
+
+.workds-seciton {
+  background-color: rgb(254, 252, 242);
+}
+
+.container-workds-seciton-seciton__container-our-best-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-our-best-projects__our-best-projects-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-best-projects-list__our-best-projects-list-item {
+  height: 49.7rem;
+  width: 100%;
+  max-width: 36.9rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-best-projects-list__our-best-projects-list-item:nth-child(1) {
+  background: url("../../../../../public/Add your image here.png") no-repeat;
+}
+
+.our-best-projects-list__our-best-projects-list-item:nth-child(2) {
+  background: url("../../../../../public/Add your image here(1).png") no-repeat;
+}
+
+.our-best-projects-list__our-best-projects-list-item:nth-child(3) {
+  background: url("../../../../../public/Add your image here(2).png") no-repeat;
+}
+
+.container-our-best-projects__container-scroll {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 35rem;
+}
+
+.container-scroll__item {
+  width: 2rem;
+  height: 1.2rem;
+  background-color: rgb(249, 218, 105);
+  opacity: 40%;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-scroll__item:hover {
+  background-color: rgb(249, 218, 105);
+  opacity: 100%;
+}
+
+.our-best-projects-list-item__container-project {
+  background-color: rgb(249, 218, 105);
+  border-radius: 1.2rem;
+  opacity: 90%;
+  height: 38.7rem;
+  width: 100%;
+  max-width: 34.1rem;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.container-project__container-img {
+  border: 0.5rem solid #fff;
+  background-color: rgb(183, 245, 232);
+  height: 7.8rem;
+  width: 100%;
+  max-width: 7.8rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-img__project-img {
+  width: 4.4rem;
+}
+
+.container-project__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.container-project__paragraphy,
+.container-project__link {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.container-project__paragraphy {
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: rgb(84, 84, 84);
+}
+
+.container-project__link {
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+
+.container-project__link::after {
+  content: "";
+  background: url("../../../../../public/Vector 190.png") no-repeat;
+  width: 1.9rem;
+  height: 1rem;
+  background-size: contain;
+  position: absolute;
+  top: 20%;
+  margin-left: 0.5rem;
+}
+
+.princing-plans-section {
+  background: url("../../../../../public/wallpaper-pricing-plans.png") no-repeat;
+  background-size: cover;
+}
+
+.container-princing-plans-section__container-plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-plans__plan {
+  border: 0.2rem solid #000;
+  width: 100%;
+  max-width: 37rem;
+  height: 55.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgb(251, 231, 155);
+  border-radius: 0.2rem 0.4rem 0.4rem 0.4rem;
+  padding: 2rem 4rem;
+}
+
+.plan__label {
+  color: rgb(84, 84, 84);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.plan__price {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(84, 84, 84);
+  position: relative;
+  padding: 0 0 0 1.5rem;
+}
+
+.plan__price--size {
+  font-weight: 700;
+  font-size: 4.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  color: #000;
+}
+
+.plan__price--position {
+  position: absolute;
+  left: 0;
+}
+
+.plan__label-buy {
+  background-color: rgb(0, 7, 17);
+  color: rgb(249, 218, 105);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 0;
+  margin: 4rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.plan__list-of-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.list-of-benefits__items {
+  color: rgb(84, 84, 84);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+}
+
+.items__img-price {
+  width: 1.6rem;
+  height: 1rem;
+  margin-right: 1.5rem;
+}
+
+.container-plans__plan:nth-child(1) {
+  border-radius: 3rem 0.4rem 3rem 0.4rem;
+}
+
+.container-plans__plan:nth-child(2) {
+  border-radius: 3rem;
+  background-color: #000;
+}
+
+.container-plans__plan:nth-child(2) .plan__label-buy {
+  background-color: rgb(249, 218, 105);
+  color: #000;
+}
+
+.container-plans__plan:nth-child(2) .plan__price--size {
+  color: rgb(249, 218, 105);
+}
+
+.container-plans__plan:nth-child(2) .plan__label {
+  color: rgb(224, 223, 224);
+}
+
+.container-plans__plan:nth-child(2) .plan__title {
+  color: rgb(255, 255, 255);
+  background-color: rgb(249, 218, 105);
+}
+
+.container-plans__plan:nth-child(2) .list-of-benefits__items,
+.container-plans__plan:nth-child(2) .plan__price {
+  color: #FFF;
+}
+
+.container-plans__plan:nth-child(3) {
+  border-radius: 0.4rem 3rem 0.4rem 3rem;
 }
 
 .default-button {
