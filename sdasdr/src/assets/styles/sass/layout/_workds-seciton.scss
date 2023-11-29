@@ -10,7 +10,9 @@
 
 .container-our-best-projects__our-best-projects-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3.4rem;
+  justify-content: space-around;
 }
 
 .our-best-projects-list__our-best-projects-list-item {

@@ -1,144 +1,125 @@
 .princing-plans-section {
-    background: url("../../../../../public/wallpaper-pricing-plans.png") no-repeat;
-    background-size: cover;
-}
-
-.princing-plans-section_container-princing-plans-section {
-
-
+  background: url("../../../../../public/wallpaper-pricing-plans.png") no-repeat;
+  background-size: cover;
 }
 
 .container-princing-plans-section__container-plans {
-
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin: 0 2rem;
 }
 
-
-
 .container-plans__plan {
-
-    border: .2rem solid #000;
-    width: 100%;
-    max-width: 37.0rem;
-    height: 55.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  border: 0.2rem solid #000;
+  width: 100%;
+  max-width: 37rem;
+  height: 55.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .plan__title {
-
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: rgba(251, 231, 155, 1);
-    border-radius: .2rem .4rem .4rem .4rem;
-    padding: 2.0rem 4.0rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(251, 231, 155, 1);
+  border-radius: 0.2rem 0.4rem 0.4rem 0.4rem;
+  padding: 2rem 4rem;
 }
 
 .plan__label {
-
-    color: rgba(84, 84, 84, 1);
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 4.0rem 0;
+  color: rgba(84, 84, 84, 1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 4rem 0;
 }
 
 .plan__price {
-
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: rgba(84, 84, 84, 1);
-    position: relative;
-    padding: 0 0 0 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(84, 84, 84, 1);
+  position: relative;
+  padding: 0 0 0 1.5rem;
 }
 
 .plan__price--size {
-    font-weight: 700;
-    font-size: 4.5rem;
-    padding: 0 .5rem 0 .5rem;
-    color: #000;
+  font-weight: 700;
+  font-size: 4.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  color: #000;
 }
 
 .plan__price--position {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 
 .plan__label-buy {
-
-    background-color: rgba(0, 7, 17, 1);
-    color: rgba(249, 218, 105, 1);
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 2.0rem 0;
-    margin: 4.0rem 0;
-    width: 100%;
-    text-align: center;
+  background-color: rgba(0, 7, 17, 1);
+  color: rgba(249, 218, 105, 1);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 0;
+  margin: 4rem 0;
+  width: 100%;
+  text-align: center;
 }
 
 .plan__list-of-benefits {
-
-    display: flex;
-    flex-direction: column;
-    gap: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
 }
 
 .list-of-benefits__items {
-
-    color: rgba(84, 84, 84, 1);
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-family: 'Nunito Sans', sans-serif;
-    position: relative;
+  color: rgba(84, 84, 84, 1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
 }
 
 .items__img-price {
-    width: 1.6rem;
-    height: 1.0rem;
-    margin-right: 1.5rem;
+  width: 1.6rem;
+  height: 1rem;
+  margin-right: 1.5rem;
 }
 
-
 .container-plans__plan:nth-child(1) {
-    border-radius: 3.0rem .4rem 3.0rem .4rem;
+  border-radius: 3rem 0.4rem 3rem 0.4rem;
 }
 
 .container-plans__plan:nth-child(2) {
-    border-radius: 3.0rem;  
-    background-color: #000;
+  border-radius: 3rem;
+  background-color: #000;
 }
 
-.container-plans__plan:nth-child(2) .plan__label-buy  {
-    background-color: rgba(249, 218, 105, 1);
-    color: #000;
+.container-plans__plan:nth-child(2) .plan__label-buy {
+  background-color: rgba(249, 218, 105, 1);
+  color: #000;
 }
 .container-plans__plan:nth-child(2) .plan__price--size {
-   
-    color: rgba(249, 218, 105, 1);
+  color: rgba(249, 218, 105, 1);
 }
 
 .container-plans__plan:nth-child(2) .plan__label {
-    color: rgba(224, 223, 224, 1);
+  color: rgba(224, 223, 224, 1);
 }
 
 .container-plans__plan:nth-child(2) .plan__title {
-   
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(249, 218, 105, 1);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(249, 218, 105, 1);
 }
 
 .container-plans__plan:nth-child(2) .list-of-benefits__items,
 .container-plans__plan:nth-child(2) .plan__price {
-    
-    color: #FFF;
+  color: #fff;
 }
 
 .container-plans__plan:nth-child(3) {
-    border-radius: .4rem 3.0rem .4rem 3.0rem;
+  border-radius: 0.4rem 3rem 0.4rem 3rem;
 }
-
-
