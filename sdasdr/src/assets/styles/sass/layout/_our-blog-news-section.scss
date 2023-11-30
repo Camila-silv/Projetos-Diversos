@@ -2,6 +2,7 @@
   background: url("../../../../../public/BG-our-blog-news.png") no-repeat;
   background-size: cover;
   padding-top: 5rem;
+  padding-bottom: 20.0rem;
 }
 
 .our-blog-news-section_container-our-blog-news-section {
@@ -44,16 +45,15 @@
 
 .container-news__article:nth-child(2) {
   border-radius: 3rem;
-  border: .2rem solid rgba(0, 7, 17, 1);
-
-  .article__main-content-article  {
-    background-color: rgba(249, 218, 105, 1);
-    color: #000;
-  }
-  
+  border: 0.2rem solid rgba(0, 7, 17, 1);
 
   .article__header {
     background: url("../../../../../public/Rectangle\ 22835-2.png") no-repeat;
+  }
+
+  .article__main-content-article {
+    background-color: rgba(249, 218, 105, 1);
+    color: #000;
   }
 
   .main-content-article__inf-article {
@@ -63,8 +63,6 @@
   .main-content-article__link-leran-more {
     color: #000;
   }
-
-  
 }
 
 .container-news__article:nth-child(3) {
