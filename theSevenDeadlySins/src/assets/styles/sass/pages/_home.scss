@@ -1,0 +1,17 @@
+body {
+    background: url("./public/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    background: #00000092;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+

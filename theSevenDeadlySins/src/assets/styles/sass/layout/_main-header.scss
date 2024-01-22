@@ -1,0 +1,27 @@
+.main-header {
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.container-main-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main-header__container-logo {
+  width: 20.8rem;
+  height: 10rem;
+}
+
+.container-logo__figcation {
+  display: none;
+}
+
+@media (max-width: 1533px) {
+  .main-header{
+    display: none;
+  }
+}
+
