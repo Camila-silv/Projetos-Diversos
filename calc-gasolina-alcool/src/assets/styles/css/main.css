@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+select {
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: #22272e;
+  color: #FFF;
+  font-family: sans-serif;
+}
+
+.style-default {
+  width: 100%;
+  height: 100vh;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.conteudo-principal__logo {
+  max-width: 227px;
+}
+
+.conteudo-principal__titulo {
+  margin: 2.4rem 0rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.form-conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 30rem;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-conteudo-principal__lbl-form {
+  font-size: 1.7rem;
+}
+
+.form-conteudo-principal__lbl-form::selection,
+.conteudo-principal__titulo::selection {
+  background-color: #464646;
+  color: #fff;
+}
+
+.form-conteudo-principal__input {
+  margin: 1rem 0rem 1.5rem;
+  height: 3.5rem;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+}
+
+.form-conteudo-principal__btn {
+  background-color: #119CEA;
+  border: none;
+  height: 3.5rem;
+  border-radius: 0.2rem;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.conteudo-principal__container-resultado {
+  text-align: center;
+  background-color: #00B63E;
+  border-radius: 0.2rem;
+  margin-top: 1.7rem;
+  padding: 1.5rem 2rem;
+  user-select: none;
+  transition: transform 0.3s linear;
+}
+.conteudo-principal__container-resultado:hover {
+  transform: scale(1.1);
+}
+
+.container-resultado__titulo {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.container-resultado__label {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.container-inf {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+.container-inf:hover .container-inf__texto {
+  opacity: 1;
+}
+
+.container-inf__texto {
+  background-color: #000;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  position: absolute;
+  width: 15.8rem;
+  bottom: 2.4rem;
+  right: 6rem;
+  height: 3rem;
+  top: 0.6rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.container-inf__img {
+  height: 50px;
+}
+
+.container-explicacao-sobre-o-calculo {
+  background-color: #242424;
+  max-width: 62rem;
+  padding: 2.4rem 1.4rem;
+  border: 0.1rem solid #696969;
+  border-radius: 0.4rem;
+  margin: 0 1.4rem;
+}
+
+.container-explicacao-sobre-o-calculo__paragraphy {
+  color: #fff;
+  margin-bottom: 0.8rem;
+  line-height: 150%;
+  font-size: 1.3rem;
+}
+
+.container-explicacao-sobre-o-calculo__paragraphy::selection {
+  background-color: #464646;
+  color: #fff;
+}
+
+.botao-retornar-ao-inicio {
+  background-color: #119cea;
+  height: 4.8rem;
+  width: 70%;
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  margin-top: 2.4rem;
+}
+
+/*# sourceMappingURL=main.css.map */
