@@ -1,0 +1,43 @@
+.alert-section {
+  background-color: $light-contrast-color;
+  box-shadow: $shadow;
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  font-family: $default-font;
+  border-radius: 0.8rem;
+}
+
+.alert-img-container {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.alert-section__alert {
+  font-size: 2.5rem;
+  color: $dark-contrast-color;
+  margin-bottom: 3rem;
+}
+
+.alert-section__link {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.4rem 0;
+  width: 100%;
+  max-width: 30rem;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: $light-contrast-color;
+  font-size: 1.6rem;
+  align-self: center;
+  margin-top: 2rem;
+  transition: background-color 0.6s;
+  text-align: center;
+
+  &:hover {
+    background-color: #025ec2;
+  }
+}

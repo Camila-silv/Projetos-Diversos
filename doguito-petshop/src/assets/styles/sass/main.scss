@@ -1,0 +1,11 @@
+@import "./base/reset";
+@import "./abstracts/variables";
+
+@import "./layouts/main-header";
+@import "./layouts/main-content";
+@import "./layouts/customer-section";
+@import "./layouts/new-customer-section";
+@import "./layouts/alert-section";
+@import "./layouts/client-edit-section";
+
+@import "./components/buttons";

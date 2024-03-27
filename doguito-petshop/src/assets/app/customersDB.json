@@ -1,0 +1,29 @@
+{
+  "customersDB": [
+    {
+      "client": "Camila",
+      "customerEmail": "camila@mail.com",
+      "id": "188"
+    },
+    {
+      "id": "985",
+      "client": "Luiz",
+      "customerEmail": "luiz@mail.com"
+    },
+    {
+      "id": "400",
+      "client": "Gustavo",
+      "customerEmail": "gus@mail.com"
+    },
+    {
+      "client": "Lais",
+      "customerEmail": "lais@mail.com",
+      "id": "691"
+    },
+    {
+      "id": "109",
+      "client": "Cida",
+      "customerEmail": "cida@email.com"
+    }
+  ]
+}

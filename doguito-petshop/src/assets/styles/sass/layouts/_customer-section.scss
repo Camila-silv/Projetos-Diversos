@@ -1,0 +1,86 @@
+.customer-section {
+  background-color: $light-contrast-color;
+  width: 100%;
+  max-width: 120rem; 
+  border-radius: 1rem;
+  box-shadow: $shadow;
+  padding: 3rem 0;
+  font-family: $default-font;
+}
+
+.client-section-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem 2rem 3rem;
+  border-bottom: 0.1rem solid $color-transparency;
+  margin-bottom: 2rem;
+}
+
+.label-container
+ {
+  display: flex;
+  gap: 14rem;
+}
+
+.label-container__label {
+  color: $dark-contrast-color;
+}
+
+.label-container__label,
+.client-section-header__link {
+  font-size: 2.2rem;
+}
+
+.customer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-height: 33.4rem;
+  overflow-y: scroll;
+}
+
+.customer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+}
+
+.customer-label-container {
+  position: relative;
+}
+
+.customer-label-container__label {
+  font-size: 1.4rem;
+  color: $dark-contrast-color;
+}
+
+.customer-label-container__label-email {
+  
+  position: absolute;
+  left: 20rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.button-container__button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button-container__button:nth-child(1) {
+  color: $color-success;
+}
+
+.button-container__button:nth-child(2) {
+  color: $color-warning;
+}
+
+

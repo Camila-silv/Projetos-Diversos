@@ -1,0 +1,72 @@
+.new-customer-section {
+  width: 100%;
+  max-width: 100rem;
+  background-color: $light-contrast-color;
+  border-radius: 1.5rem;
+  box-shadow: $shadow;
+  padding: 3rem;
+  font-family: $default-font;
+}
+
+.new-customer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-customer-container__title {
+  font-size: $font-size-modal-title;
+  color: $dark-contrast-color;
+  margin-bottom: 3rem;
+}
+
+.new-customer-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  height: 5.8rem;
+  border-radius: 0.3rem;
+}
+
+.new-customer-input-group__label {
+  color: $dark-contrast-color;
+  font-size: $font-size-input-label;
+  position: relative;
+  top: 3.5rem;
+  margin-bottom: 0.6rem;
+  z-index: 666;
+  pointer-events: none;
+}
+
+.new-customer-input-group__input {
+  border: none;
+  border-bottom: 0.1rem solid $color-transparency;
+  font-size: 1.6rem;
+  outline: none;
+  z-index: 3;
+  background-color: transparent;
+  color: $dark-contrast-color;
+  padding: 0 0.6rem 0.5rem 0.6rem;
+}
+
+.new-customer-input-group__label,
+.new-customer-input-group__input {
+  transition: all 0.4s;
+}
+
+.new-customer-input-group__label {
+  padding: 0 0.6rem;
+}
+
+.new-customer-input-group--customized {
+  padding-top: 0.5rem;
+}
+
+.new-customer-input-group__label--customized {
+  top: 0;
+  font-size: 1.4rem;
+}
+
+.new-customer-input-group--customized {
+  background-color: $secondary-color;
+}

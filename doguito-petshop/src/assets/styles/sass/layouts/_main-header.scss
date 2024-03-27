@@ -1,0 +1,27 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $default-font;
+  padding: 1.5rem 15rem;
+  background-color: $light-contrast-color;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: $shadow;
+  height: 11.2rem;
+}
+
+.main-header-img-container__img {
+  height: 8rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar-iten__link {
+  color: $dark-contrast-color;
+  font-size: 1.8rem;
+  cursor: pointer;
+}

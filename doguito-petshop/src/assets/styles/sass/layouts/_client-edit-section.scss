@@ -1,0 +1,54 @@
+.client-edit-section {
+  width: 100%;
+  max-width: 100rem;
+  background-color: $light-contrast-color;
+  border-radius: 1.5rem;
+  box-shadow: $shadow;
+  padding: 3rem;
+  font-family: $default-font;
+}
+
+.client-edit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-edit-container__title {
+  font-size: $font-size-modal-title;
+  color: $dark-contrast-color;
+  margin-bottom: 3rem;
+}
+
+.existing-customer-input-edit-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.existing-customer-input-edit-group__label {
+  color: $dark-contrast-color;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.existing-customer-input-edit-group__input {
+  border: none;
+  border-bottom: 0.1rem solid $color-transparency;
+  font-size: 1.6rem;
+  outline: none;
+  z-index: 3;
+  background-color: transparent;
+  color: $dark-contrast-color;
+}
+
+.existing-customer-input-edit-group__label,
+.existing-customer-input-edit-group__input {
+  padding: 0 0.6rem 0.6rem 0.6rem;
+}
+
+.client-edit-container > .client-edit-container__button {
+  margin-top: 4.5rem;
+}
+
+.existing-customer-input-edit-group:nth-child(3) {
+  margin-top: 2.5rem;
+}
